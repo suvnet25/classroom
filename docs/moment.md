@@ -1,5 +1,5 @@
 # Moment
 
-- [ ] Bla bla
+- [X] Bla bla
 - [ ] Bla bla
 - [ ] Bla bla

@@ -1,7 +1,15 @@
-#### Dagens innehåll
+#### Snabbgenomgång av C#
 
-* TBA
-* TBA
-* TBA
+* Variabler/datatyper
+* Utmatning
+* Operatorer / Uttryck / Satser
+* Villkorssatser
+* Arrayer
+* Loopar
+* Inmatning
+
+#### Övningar
+
+#### Anteckningar
 
 #### Länkar
