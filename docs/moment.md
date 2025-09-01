@@ -1,5 +1,201 @@
 # Moment
 
-- [X] Bla bla
-- [ ] Bla bla
-- [ ] Bla bla
+Vad har vi gått igenom hittills? 
+
+## **Allmänna begrepp**
+- [ ] Filsystem
+- [ ] IDE / Editor / VSCode
+- [ ] Terminal/Console
+- [ ] Miljö (Environment)
+- [ ] Ramverk / Framework
+- [ ] Applikation
+- [ ] C# och .NET
+- [ ] Kompilering
+- [ ] Källkod / Bytekod / Maskinkod
+- [ ] Algoritmer
+- [ ] Objektorienterad Programmering
+
+## **Metodik**
+- [ ] Pseudokod
+- [ ] Flödesscheman
+- [ ] Debugging
+- [ ] Kodstandard
+- [ ] Parprogrammering
+
+## **C\#**
+- [ ] Keywords
+#### Variabler
+- [ ] byte, int, long
+- [ ] float, double
+- [ ] string
+- [ ] bool
+- [ ] array
+- [ ] List<>
+- [ ] null
+- [ ] Variablers livslängd ***<- Viktigt!***
+- [ ] Reference type / Value type ***<- Viktigt!***
+- [ ] Garbage Collection
+
+#### Kontrollstrukturer
+- [ ] Operatorer/Uttryck/Satser
+- [ ] Kodblock
+- [ ] If-if else-else
+- [ ] While
+- [ ] For
+- [ ] Foreach
+
+#### Metoder
+- [ ] Metodsignatur
+- [ ] Method overloading
+- [ ] Method overriding (ex ToString())
+- [ ] Enum
+- [ ] Felhantering
+- [ ] Exceptions: Try/Catch/Finally
+- [ ] Skapa egna exceptions (Att det går att skapa är det viktiga att veta)
+
+### **.NET-bibliotek**
+- [ ] System
+- [ ] Console
+- [ ] ReadLine/WriteLine
+- [ ] Convert / Parse
+- [ ] DateTime
+- [ ] Random
+- [ ] File (ReadAllText, ReadAllLines, WriteAllText)
+
+### GIT och GitHub
+- [ ] Init
+- [ ] Add
+- [ ] Status
+- [ ] Log
+- [ ] Commit
+- [ ] Branch / Merge
+- [ ] Switch (Checkout)
+- [ ] Remote
+- [ ] Clone
+- [ ] Fetch/Push/Pull
+- [ ] GitHUB: Fork
+
+### Objektorienterad Programmering
+- [ ] Namespaces
+- [ ] Klasser
+- [ ] Object som alla klassers basklass
+- [ ] Konstruktorer	
+- [ ] Abstrakta klasser
+- [ ] Object
+- [ ] Keywordet new
+- [ ] Properties (Get/Set)
+- [ ] Inkapsling (Begreppet)
+- [ ] Polymorphism (Begreppet)
+- [ ] Arv (Begreppet)
+- [ ] Abstraktion (Begreppet)
+- [ ] Interface
+- [ ] SOLID
+- [ ] Struct
+
+## Lista på keywords som vi kommer gå igenom i kursen
+
+
+## Begrepp
+- [ ] Terminal/Console
+- [ ] Framework
+- [ ] Compiler/Parser
+- [ ] Kompilering
+- [ ] Miljö
+- [ ] Källkod / Bytekod / Maskinkod
+- [ ] Keywords
+- [ ] Applikation
+- [ ] IDE
+- [ ] Algoritmer
+- [ ] C# och .NET
+- [ ] Objektorienterad Programmering
+
+## Metodik
+- [ ] Pseudokod
+- [ ] Flödesscheman
+- [ ] Debugging
+- [ ] Kodstandard
+- [ ] Parprogrammering
+
+## C#
+### Variabler
+- [ ] byte, int
+- [ ] float
+- [ ] string
+- [ ] bool
+- [ ] array
+- [ ] List<>
+- [ ] Variablers livslängd <- Viktigt 
+- [ ] Reference type / Value type <- Viktigt!
+- [ ]  Garbage Collection
+### Kontrollstrukturer
+- [ ] If-if else-else
+- [ ] Kodblock
+- [ ] Operatorer
+- [ ] Loopar (Flödeskontroll)
+- [ ] While
+- [ ] For
+- [ ] Foreach
+### Metoder
+- [ ] Metodsignatur
+- [ ] Method overloading
+- [ ] Method overriding (ex ToString())
+- [ ] Enum
+- [ ] Felhantering
+- [ ] Exceptions: Try/Catch/Finally
+- [ ] Skapa egna exceptions (Att det går att skapa är det viktiga att veta)
+
+## .NET Libraries
+- [ ] System
+- [ ] Console
+- [ ] ReadLine
+- [ ] WriteLine
+- [ ] Convert / Parse
+- [ ] DateTime
+- [ ] Random
+- [ ] File (ReadAllText, ReadAllLines, WriteAllText)
+
+## GIT och GitHub
+- [ ] Init
+- [ ] Add
+- [ ] Status
+- [ ] Log
+- [ ] Commit
+- [ ] Branch / Merge
+- [ ] Switch (Checkout)
+- [ ] Remote
+- [ ] Clone
+- [ ] Fetch/Push/Pull
+- [ ] GitHUB: Fork
+
+## Objektorienterad Programmering
+- [ ] Namespaces
+- [ ] Klasser
+- [ ] Object som alla klassers basklass
+- [ ] Konstruktorer	
+- [ ] Abstrakta klasser
+- [ ] Object
+- [ ] Keywordet new
+- [ ] Properties (Get/Set)
+- [ ] Inkapsling (Begreppet)
+- [ ] Polymorphism (Begreppet)
+- [ ] Arv (Begreppet)
+- [ ] Abstraktion (Begreppet)
+- [ ] Interface
+- [ ] SOLID
+- [ ] Struct
+
+## Lista på keywords som vi kommer gå igenom i kursen
+
+| A–C      | C–E      | F–I     | I–O       | O–S       | T–W     |
+| -------- | -------- | ------- | --------- | --------- | ------- |
+| abstract | class    | false   | interface | override  | this    |
+| as       | const    | finally | internal  | private   | throw   |
+| base     | continue | float   | is        | protected | true    |
+| bool     | decimal  | for     | long      | public    | try     |
+| break    | default  | foreach | namespace | ref       | typeof  |
+| byte     | do       | goto    | new       | return    | virtual |
+| case     | double   | if      | null      | static    | void    |
+| catch    | else     | in      | object    | string\*  | while   |
+| char     | enum     | int     | out       | switch    |         |
+
+

@@ -1,4 +1,4 @@
-#### Snabbgenomgång av C#
+## Innehåll
 
 * Variabler/datatyper
 * Utmatning
@@ -8,7 +8,7 @@
 * Loopar
 * Inmatning
 
-#### Övningar
+---
 
 #### Anteckningar
 
