@@ -1,0 +1,1 @@
+Den här veckan handlar mest om introduktion till kursen, vi lär känna varandra lite grann, gör diagnostiskt test (visst låter det härligt!), går igenom kursplanen och så vidare. Vi kommer också att installera Visual Studio och .NET SDK på era datorer, så att ni är redo att börja koda på riktigt nästa vecka. Vi smygstartar med lite kod också.
