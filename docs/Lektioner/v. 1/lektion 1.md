@@ -2,8 +2,11 @@
 
 #### Dagens innehåll
 
-* Introduktion till C# och .NET
-* Variabler och datatyper
-* Enkla in- och utmatningar
+* Introduktion till kursen
+* Diagnostiskt test via Google Classroom
+* Kom igång med VS Code och Hello World!
+
+### Anteckningar
 
 #### Länkar
+

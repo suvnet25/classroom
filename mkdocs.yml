@@ -60,7 +60,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-HTLCGP34WH
+    property: G-MWBTY9Z173
     feedback:
       title: Hur var den här sidan?
       ratings:
