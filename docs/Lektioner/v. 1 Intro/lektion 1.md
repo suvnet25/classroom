@@ -34,7 +34,11 @@ Kolla också in guiderna för
 
 Vi snackade också lite om stränghantering och tittade på exempel med `Trim()` och `Replace()`. Vi kommer prata mycket mer om strängar, hur de kan manipuleras och formateras på olika sätt.
 
+Vi snackade också om mindre lyckade projekt, exempelvis vårdystemet Millenium eller lagersystem där utvecklare inte alltid kanske haft så bra koll på verkligheten (Eller i alla fall de som beställt programmet).
+
 ## Länkar
 
 * [Studiematerial](https://docs.suvnet.se)
 * [The Art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U)
+
+[^1]: Det finns många sätt att öppna terminalen! Om du vill ha en guide [kolla här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/console/)

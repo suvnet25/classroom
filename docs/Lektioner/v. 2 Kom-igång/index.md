@@ -1,8 +1,7 @@
 # Vecka 2
 
-1. Problemlösning
-2. Metoder och Debugging
-3. Standardbibliotek: 
+1. Metoder och Debugging
+2. Standardbibliotek: 
     * System.IO
     * Listor
     * TryParse
