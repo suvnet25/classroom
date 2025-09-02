@@ -1,4 +1,4 @@
-## Innehåll
+## **Innehåll**
 
 * Introduktion till kursen och praktisk info (1h)
 * Quiz! Via Google Classroom. Gemnomgång del 1 (1h)
@@ -9,21 +9,32 @@
 * Intro till projektstruktur i .NET
 
 ---
+## Övningar
 
-#### Anteckningar
+#### Terminalövning
+Testa om du får detta att fungera och fundera på vilka kommandon du behöver lära dig.
 
-Lär mer om terminalen [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/console/)
+1. Öppna terminalen[^1]
+2. Navigera till din hemkatalog
+3. Skapa en ny mapp som heter `SUVNET`
+4. Navigera in i mappen `SUVNET`
+5. Skapa en ny mapp som heter `OOP1` och gå in i den
+6. Skapa ett nytt projekt med kommandot `dotnet new console -n Lektion2`
+
+## Anteckningar
+
+Läs mer om terminalen [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/console/). 
 Mer om filsystemet [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/filesystem/)
 
 Kolla också in guiderna för
 
-    * [Installera VS Code och .NET](https://docs.suvnet.se/%C3%96vrigt/Guider/quickstart/)
-    * [Starta nytt .NET-projekt](https://docs.suvnet.se/%C3%96vrigt/Guider/createproject/)
-    * [Auto-save i VS Code](https://docs.suvnet.se/%C3%96vrigt/Guider/autosave/)
+* [Installera VS Code och .NET](https://docs.suvnet.se/%C3%96vrigt/Guider/quickstart/)
+* [Starta nytt .NET-projekt](https://docs.suvnet.se/%C3%96vrigt/Guider/createproject/)
+* [Auto-save i VS Code](https://docs.suvnet.se/%C3%96vrigt/Guider/autosave/)
 
 Vi snackade också lite om stränghantering och tittade på exempel med `Trim()` och `Replace()`. Vi kommer prata mycket mer om strängar, hur de kan manipuleras och formateras på olika sätt.
 
-#### Länkar
+## Länkar
 
 * [Studiematerial](https://docs.suvnet.se)
 * [The Art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U)

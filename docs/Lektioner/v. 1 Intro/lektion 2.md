@@ -16,14 +16,14 @@
 ---
 
 #### Övningar
-1. **Terminalövning**
-    1. Öppna terminalen[^1]
-    2. Navigera till din hemkatalog
-    3. Skapa en ny mapp som heter `SUVNET`
-    4. Navigera in i mappen `SUVNET`
-    5. Skapa en ny mapp som heter `OOP1` och gå in i den
-    6. Skapa ett nytt projekt med kommandot `dotnet new console -n Lektion2`
-2. 
+1. Pseudokodövning:
+    1. Skriv pseudokod för ett program som:
+        1. Ber användaren mata in två tal
+        2. Adderar talen
+        3. Skriver ut resultatet
+    2. Skriv pseudokod för ett program som:
+        1. Ber användaren mata in sitt namn
+        2. Hälsar användaren med "Hej, [namn]!"
 
 ---
 
