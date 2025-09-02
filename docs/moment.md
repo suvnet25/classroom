@@ -3,9 +3,9 @@
 Vad har vi gått igenom hittills? 
 
 ## **Allmänna begrepp**
-- [ ] Filsystem
-- [ ] IDE / Editor / VSCode
-- [ ] Terminal/Console
+- [X] Filsystem
+- [X] IDE / Editor / VSCode
+- [X] Terminal/Console
 - [ ] Miljö (Environment)
 - [ ] Ramverk / Framework
 - [ ] Applikation

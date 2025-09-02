@@ -11,7 +11,15 @@
 ---
 
 #### Anteckningar
-Kommer vi på något smart skriver vi upp det här!
+
+Lär mer om terminalen [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/console/)
+Mer om filsystemet [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/filesystem/)
+
+Kolla också in guiderna för
+
+    * [Installera VS Code och .NET](https://docs.suvnet.se/%C3%96vrigt/Guider/quickstart/)
+    * [Starta nytt .NET-projekt](https://docs.suvnet.se/%C3%96vrigt/Guider/createproject/)
+    * [Auto-save i VS Code](https://docs.suvnet.se/%C3%96vrigt/Guider/autosave/)
 
 #### Länkar
 
