@@ -1,11 +1,11 @@
 ## Innehåll
 
-* Introduktion till kursen
-* Praktisk info
-* klassrum/docs.suvnet.se
-* Quiz! Via Google Classroom
-* Lite om terminalen och filesystemet
+* Introduktion till kursen och praktisk info (1h)
+* Quiz! Via Google Classroom. Gemnomgång (1h)
+* Titta på klassrum/docs.suvnet.se + Kort om terminalen/filesystemet (1h)
+* Lite snack om vad programmering är (0.5h)
 * Kom igång med VS Code och Hello World!
+* Intro till projektstruktur i .NET
 
 ---
 
