@@ -21,12 +21,14 @@ Vad har vi gått igenom hittills?
 - [ ] Parprogrammering
 
 ## **C\#**
-- [ ] Keywords
+- [x] Keywords
 #### Variabler
-- [ ] byte, int, long
-- [ ] float, double
-- [ ] string
-- [ ] bool
+- [x] typ, namn, värde
+- [x] Deklaration och initialisering
+- [x] byte, int, long
+- [x] float, double
+- [x] string
+- [x] bool
 - [ ] array
 - [ ] List<>
 - [ ] null
@@ -37,7 +39,7 @@ Vad har vi gått igenom hittills?
 #### Kontrollstrukturer
 - [ ] Operatorer/Uttryck/Satser
 - [ ] Kodblock
-- [ ] If-if else-else
+- [x] If-if else-else
 - [ ] While
 - [ ] For
 - [ ] Foreach
