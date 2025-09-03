@@ -9,9 +9,9 @@ Här kommer du hitta all planering för kursen, lektion för lektion, med anteck
 
 Det finns tre viktiga sektioner på denna site:
 
-1. [Moment](klassrum/moment.md) - Här finns all information om examinationen i kursen, inklusive labbar och projektarbete.
-2. [Klassrum](klassrum) - Här finns all planering för kursen, lektion för lektion, med anteckningar, länkar till material och övningar.
-3. [Docs](docs) - Här finns allmän information
+1. [Moment](moment.md) - Här kan du se vad vi gått igenom hittils.
+2. [Studiematerial](docs) - Här finns material om allt vi går igenom i kursen.
+3. Veckoplaneringen du ser till vänster, med lektioner och vad som ska göras varje vecka.
 
 
 Utöver denna site så finns några fler ställen att hålla reda på:
