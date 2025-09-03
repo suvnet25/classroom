@@ -4,7 +4,6 @@
 
 * Miljö (Environment)
 * Ramverk / Framework
-* Applikation
 * C# och .NET
 * Kompilering
 * Källkod / Bytekod / Maskinkod
@@ -22,3 +21,6 @@
 #### Anteckningar
 
 #### Länkar
+
+https://github.com/dotnet
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction

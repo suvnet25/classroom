@@ -7,8 +7,8 @@
 3. Fråga användaren efter deras namn och hälsa dem välkomna. Exempelvis med ett `"Hej, John!"`.
 4. Deklarera två heltalsvariabler, tilldela dem värden och skriv ut deras summa.
 5. Fråga användaren efter deras ålder. Konvertera den till ett heltal och skriv ut hur många dagar gammal de är.
-    1. Deklarera en flyttalsvariabel, tilldela den värdet 3.14 och skriv ut den till konsolen. 
-    2. Dela sedan användarens ålder med flyttalsvariabeln och skriv ut resultatet. Varför blir svaret inte korrekt och hur skall det fixas?
+    1. Deklarera en int, kalla den `div` och tilldela den värdet 3
+    2. Dela sedan användarens ålder med `div` och skriv ut resultatet. Prova några olika åldrar. Blir resultatet korrekt? Varför/varför inte?
 
 ## Villkorssatser
 

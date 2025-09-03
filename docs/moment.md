@@ -6,12 +6,10 @@ Vad har vi gått igenom hittills?
 - [X] Filsystem
 - [X] IDE / Editor / VSCode
 - [X] Terminal/Console
-- [ ] Miljö (Environment)
-- [ ] Ramverk / Framework
-- [ ] Applikation
-- [ ] C# och .NET
-- [ ] Kompilering
-- [ ] Källkod / Bytekod / Maskinkod
+- [x] Miljö (Environment)
+- [x] Ramverk / Framework
+- [x] C# och .NET
+- [x] Kompilering: Källkod / Bytekod / Maskinkod
 - [ ] Algoritmer
 - [ ] Objektorienterad Programmering
 
