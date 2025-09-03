@@ -1,6 +1,6 @@
 # Moment
 
-Vad har vi gått igenom hittills? 
+Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig själv frågan ibland: Bland de ikryssadeade punkterna nedan, vilka vet jag vad de betyder och hur de fungerar? Skulle jag kunna förklara för någon annan något om det?
 
 ## **Allmänna begrepp**
 - [X] Filsystem
@@ -21,7 +21,14 @@ Vad har vi gått igenom hittills?
 - [ ] Parprogrammering
 
 ## **C\#**
+
 - [x] Keywords
+- [ ] Operatorer/Uttryck/Satser
+- [ ] Enum
+- [ ] Felhantering
+- [ ] Exceptions: Try/Catch/Finally
+- [ ] Skapa egna exceptions (Att det går att skapa är det viktiga att veta)
+
 #### Variabler
 - [x] typ, namn, värde
 - [x] Deklaration och initialisering
@@ -29,7 +36,7 @@ Vad har vi gått igenom hittills?
 - [x] float, double
 - [x] string
 - [x] bool
-- [ ] array
+- [X] array
 - [ ] List<>
 - [ ] null
 - [ ] Variablers livslängd ***<- Viktigt!***
@@ -37,26 +44,21 @@ Vad har vi gått igenom hittills?
 - [ ] Garbage Collection
 
 #### Kontrollstrukturer
-- [ ] Operatorer/Uttryck/Satser
-- [ ] Kodblock
+- [x] Kodblock
 - [x] If-if else-else
-- [ ] While
-- [ ] For
-- [ ] Foreach
+- [x] While
+- [x] For
+- [x] Foreach
 
 #### Metoder
 - [ ] Metodsignatur
 - [ ] Method overloading
 - [ ] Method overriding (ex ToString())
-- [ ] Enum
-- [ ] Felhantering
-- [ ] Exceptions: Try/Catch/Finally
-- [ ] Skapa egna exceptions (Att det går att skapa är det viktiga att veta)
 
 ### **.NET-bibliotek**
 - [ ] System
 - [ ] Console
-- [ ] ReadLine / WriteLine
+- [x] ReadLine / WriteLine
 - [ ] Convert / Parse
 - [ ] DateTime
 - [ ] Random

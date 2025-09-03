@@ -1,0 +1,51 @@
+.md-content h1 {
+    color: #e2e4e9; /* Your color */
+    font-weight: 500; /* Semi-bold */
+}
+
+.md-content h2 {
+    color: #e2e4e9;
+    font-weight: 300; /* Semi-bold */
+}
+
+/* Section headers in sidebar */
+.md-sidebar .md-nav__title {
+    color: #e2e4e9;
+}
+
+.md-nav__title {
+  display: none;
+}
+
+/* .md-nav__item {
+  color: #e2e4e9;
+} */
+
+/* Footnote number in the text */
+.md-content .footnote-ref {
+  font-size: 0.85em;  /* slightly larger */
+  font-weight: 600;       /* semi-bold */
+  color: #eee60f;         /* accent color */
+}
+
+/* Hover effect for footnote number */
+.md-content .footnote-ref:hover {
+  color: #ff3333;
+  text-decoration: underline;
+}
+
+/* Footnote section at bottom */
+.md-content .footnotes {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Sidebar links */
+/* .md-sidebar .md-nav__link {
+  color: #e2e4e9;
+} */
+
+/* On hover */
+/* .md-sidebar .md-nav__link:hover {
+  color: #ff5555;
+} */

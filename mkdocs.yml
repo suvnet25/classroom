@@ -1,16 +1,18 @@
 site_name: Suvnet25
 # site_url: https://bysuvnet.github.io/edudocs BORGTTAGET FÖR ATT INTE GENERERA sitemap.xml som sökmotorer använder
+extra_css:
+  - stylesheets/extra.css
+  - assets/week_color/week_color.css
+extra_javascript:
+  - assets/week_color/week_color.js
 theme:
   features:
-    # - navigation.sections
-    # - navigation.expand
-    - navigation.instant
-    - navigation.footer
     - navigation.tracking
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.indexes
-    # - toc.integrate
-    # - navigation.path
-    # - navigation.tabs
+    # - navigation.footer
   name: material
   custom_dir: overrides
   font:
@@ -18,7 +20,9 @@ theme:
     code: Source Code Pro
   icon:
     # logo: assets/logo.png
-    logo: fontawesome/solid/code
+    # logo: fontawesome/solid/code
+    # logo: fontawesome/solid/graduation-cap
+    logo: material/food-apple
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -30,6 +34,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      # accent: red
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -87,3 +93,5 @@ extra:
 copyright: Copyright &copy; 2024 - 2025 Gustav Bodell
 plugins:
     - tags
+    - meta
+    - awesome-nav 

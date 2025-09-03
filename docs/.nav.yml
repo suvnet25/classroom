@@ -1,0 +1,8 @@
+nav:
+  - Lektioner: 
+    - index.md
+    - moment.md
+    - examination 
+    - Veckor: lektioner
+  - Material:
+    - docs/*
