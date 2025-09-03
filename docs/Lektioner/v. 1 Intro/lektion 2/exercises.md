@@ -18,17 +18,24 @@
 3. Utöka programmet så att det även kollar om användaren är exakt 18 år gammal. Om så är fallet, skriv ut "Du är exakt 18!".
 4. Modifiera koden så att "Du får ta körtkort" hamnar under en else-sats i slutet.
 
+## Arrayer
+
+1. Deklarera en array med fem namn. Tilldela dem värden och skriv ut dem med hjälp av en loop (for eller while).
+2. Skapa två arrayer, en med namn och en med åldrar. Skriv ut varje namn tillsammans med dess ålder.
+3. Låt användaren mata in tre namn, lagra dem i en array och skriv sedan ut dem så att det ser ut så här:
+```
+Person 1: [namn]
+Person 2: [namn]
+Person 3: [namn]
+```
+
 ## Loopar
 
 1. Deklarera och initialisera en variabel till 10, minska den tills den når 1 och skriv ut dess värde vid varje steg. Använd en while-loop
 2. Skriv ut siffror från 1 till 10 med hjälp av en for-loop.
 3. Skriv ett program som skriver ut multiplikationstabellen för en siffra som användaren får mata in själv.
 4. Skriv ut siffror från 1 till 10 med hjälp av en for-loop. Skriv ut "Burr" om siffran är jämn och "Birr" om den är udda, men bara om siffran är mellan 3 och 7!
-
-## Arrayer
-
-1. Deklarera en array med fem namn. Tilldela dem värden och skriv ut dem med hjälp av en loop (for eller while).
-2. Skriv ut ett mönster av stjärnor med hjälp av nästlade loopar. Alltså något i stil med:
+5. Skriv ut ett mönster av stjärnor med hjälp av nästlade loopar. Alltså något i stil med:
 ```
 *
 **
@@ -43,5 +50,6 @@
  *** ***
 **** ****
 ```
+
 
 [^1]: Tips: Använd `int.Parse(Console.ReadLine())` eller `Convert.ToInt32(Console.ReadLine())` för att konvertera en sträng till ett heltal.
