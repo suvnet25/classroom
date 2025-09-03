@@ -1,6 +1,6 @@
 ## Dagens innehåll
 
-#### Allmänna begrepp
+#### Allmänna begrepp (1h)
 
 * Miljö (Environment)
 * Ramverk / Framework
@@ -10,11 +10,10 @@
 
 #### Grundläggande C\#
 
-* Variabler/datatyper
-* Inmatning/Utmatning
-* Villkorssatser
-* Arrayer
-* Loopar
+* Variabler/datatyper och Inmatning/Utmatning (0.5h)
+* Villkorssatser (0.5h)
+* Arrayer (0.5h)
+* Loopar (1h)
 
 ---
 

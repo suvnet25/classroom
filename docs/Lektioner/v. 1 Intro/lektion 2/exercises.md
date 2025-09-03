@@ -9,6 +9,7 @@
 5. Fråga användaren efter deras ålder. Konvertera den till ett heltal[^1] och skriv ut hur många dagar gammal de är.
     1. Deklarera en int, kalla den `div` och tilldela den värdet 3
     2. Dela sedan användarens ålder med `div` och skriv ut resultatet. Prova några olika åldrar. Blir resultatet korrekt? Varför/varför inte?
+6. Skapa en int-variabel och ge den exakt värdet 2147483647. Lägg sedan till 1 i variabeln och skriv ut resultatet. Vad händer? Varför?
 
 ## Villkorssatser
 
