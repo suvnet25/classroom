@@ -6,13 +6,16 @@
 2. Deklarera en annan strängvariabel med namnet `greeting2`, tilldela den värdet `", World!"`. Slå samman `greeting` och `greeting2` och skriv ut resultatet till konsolen.
 3. Fråga användaren efter deras namn och hälsa dem välkomna. Exempelvis med ett `"Hej, John!"`.
 4. Deklarera två heltalsvariabler, tilldela dem värden och skriv ut deras summa.
-5. Fråga användaren efter deras ålder. Konvertera den till ett heltal och skriv ut hur många dagar gammal de är.
+5. Fråga användaren efter deras ålder. Konvertera den till ett heltal[^1] och skriv ut hur många dagar gammal de är.
     1. Deklarera en int, kalla den `div` och tilldela den värdet 3
     2. Dela sedan användarens ålder med `div` och skriv ut resultatet. Prova några olika åldrar. Blir resultatet korrekt? Varför/varför inte?
 
 ## Villkorssatser
 
-1. Om användarens ålder är mindre än 35, skriv ut "Du är ung!", annars skriv ut "Du är vuxen!"
+1. Om användarens ålder är mer än 18 skriv ut "Du får ta körkort!".
+2. Lägg till en else-sats som skriver ut "Du får inte ta körkort än :(" om användaren är 18 eller yngre.
+3. Utöka programmet så att det även kollar om användaren är exakt 18 år gammal. Om så är fallet, skriv ut "Du är exakt 18!".
+4. Modifiera koden så att "Du får ta körtkort" hamnar under en else-sats i slutet.
 
 ## Loopar
 
@@ -39,3 +42,5 @@
  *** ***
 **** ****
 ```
+
+[^1]: Tips: Använd `int.Parse(Console.ReadLine())` eller `Convert.ToInt32(Console.ReadLine())` för att konvertera en sträng till ett heltal.
