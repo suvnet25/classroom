@@ -1,13 +1,13 @@
 nav:
-  - lektioner: 
+  - Lektioner: 
     - index.md
     - moment.md
     - examination 
-    - veckor: lektioner
-  - material:
+    - Veckor: Lektioner
+  - Material:
     - material/index.md
-    - allmänt: material/general
-    - c#: material/cs
+    - Allmänt: material/general
+    - C#: material/cs
     - material/git
-    - testning: material/testing
-    - övrigt: material/misc
+    - Testning: material/testing
+    - Örigt: material/misc
