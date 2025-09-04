@@ -4,9 +4,9 @@
 
 * Lite repetition av föregående lektion
 * Den där for-loopen
-* Problemlösning
-* Pseudokod
-* Flödesscheman
+* Debuggern
+* Problemlösning - Hur gör man?
+* Pseudokod och flödesscheman
 * Vanliga .NET Bibliotek och några av deras funktioner
     * Random
     * File.*

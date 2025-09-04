@@ -1,13 +1,13 @@
 ## Innehåll
 
-Vi blir lite mer bekväma med liten del av standardbiblioteket som används ofta.
+Vi introducerar några fler vanliga datatyper och klasser i .Net:
 
-* Console-klassen
 * Parse/Convert
 * DateTime
 * Random
 * List<T>
-* System.IO
+
+## Första labben!
 
 ---
 
