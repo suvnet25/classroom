@@ -1,3 +1,5 @@
+# Lektion 1: Introduktion, kom igång med VS Code och .NET
+
 ## **Innehåll**
 
 * Introduktion till kursen och praktisk info (1h)

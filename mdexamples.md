@@ -43,3 +43,11 @@ flowchart TD
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
+
+    ----
+
+    Använder https://lukasgeiter.github.io/mkdocs-awesome-nav/features/nav/ 
+    För att fixa navigationen i vänsterspalten i den ordning jag vill ha
+    Det är den som bryr sig om .nav.yml-filerna som kan ligga i root men sedan också i child-mappar.
+
+    ---

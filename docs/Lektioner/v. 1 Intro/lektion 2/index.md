@@ -1,3 +1,5 @@
+# Lektion 2 - Introduktion till C\#
+
 ## Dagens innehåll
 
 #### Allmänna begrepp (1h)

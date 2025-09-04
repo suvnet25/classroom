@@ -3,22 +3,21 @@
 Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig själv frågan ibland: Bland de ikryssadeade punkterna nedan, vilka vet jag vad de betyder och hur de fungerar? Skulle jag kunna förklara för någon annan något om det?
 
 ## **Allmänna begrepp**
-- [X] Filsystem
+- [X] [Filsystem](material/general/datorkunskap/filesystem.md)
 - [X] IDE / Editor / VSCode
-- [X] Terminal/Console
+- [X] [Terminal/Console](material/general/datorkunskap/console.md)
 - [x] Miljö (Environment)
 - [x] Ramverk / Framework
-- [x] C# och .NET
-- [x] Kompilering: Källkod / Bytekod / Maskinkod
+- [x] [C# och .NET](material/general/dotnet/index.md)
+- [x] [Kompilering: Källkod / Bytekod / Maskinkod](material/general/dotnet/compilation.md)
 - [ ] Algoritmer
-- [ ] Objektorienterad Programmering
 
 ## **Metodik**
-- [ ] Pseudokod
-- [ ] Flödesscheman
-- [ ] Debugging
-- [ ] Kodstandard
-- [ ] Parprogrammering
+- [ ] [Pseudokod](material/general/methodology/pseudocode.md)
+- [ ] [Flödesscheman](material/general/methodology/flowcharts.md)
+- [ ] [Debugging](material/general/methodology/debugging.md)§
+- [ ] [Kodstandard](material/general/methodology/codeconventions.md)
+- [ ] [Parprogrammering](material/general/methodology/pairprogramming.md)
 
 ## **C\#**
 
@@ -78,6 +77,7 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [ ] GitHUB: Fork
 
 ### Objektorienterad Programmering
+- [ ] OOP som begrepp
 - [ ] Namespaces
 - [ ] Klasser
 - [ ] Object som alla klassers basklass

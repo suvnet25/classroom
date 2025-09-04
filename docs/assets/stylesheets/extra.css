@@ -17,10 +17,6 @@
   display: none;
 }
 
-/* .md-nav__item {
-  color: #e2e4e9;
-} */
-
 /* Footnote number in the text */
 .md-content .footnote-ref {
   font-size: 0.85em;  /* slightly larger */

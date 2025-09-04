@@ -6,4 +6,6 @@ description: Intro till objektorienterad programmering.
 
 # Intro
 
-Kommer snart!
+## Länkar
+
+* <https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/>

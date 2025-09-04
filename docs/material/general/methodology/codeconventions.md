@@ -66,3 +66,9 @@ Tex så här:
 Console.WriteLine("Detta är en väldigt lång rad som kanske borde " +
                   "brytas upp i flera rader för att bli mer läsbar.");
 ```
+
+## Läs mer
+
+* <https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names>
+* <https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions>
+* <https://www.geeksforgeeks.org/c-sharp/c-sharp-coding-standards/>

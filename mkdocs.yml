@@ -1,12 +1,13 @@
 site_name: Suvnet25
-# site_url: https://bysuvnet.github.io/edudocs BORGTTAGET FÖR ATT INTE GENERERA sitemap.xml som sökmotorer använder
+site_url: https://klassrum.suvnet.se/
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
   - assets/week_color/week_color.css
 extra_javascript:
   - assets/week_color/week_color.js
 theme:
   features:
+    - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.tabs
@@ -40,6 +41,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 markdown_extensions:
+  - md_in_html
   - footnotes
   - admonition
   - pymdownx.details
@@ -64,6 +66,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 extra:
+  # Visa inte Made with Material for MKDocs
   generator: false
   analytics:
     provider: google
