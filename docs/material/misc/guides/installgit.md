@@ -1,7 +1,5 @@
 # Installera GIT
 
-[Youtube](www.youtube.com/watch?v=sJ4zr0a4GAs)
-
 1. [Ladda ner GIT](https://git-scm.com/downloads)
 2. Kör programmet och följ instruktionerna.
 3. Under installationen, ändra inte på några svar om du inte vet vad du gör, förutom på dessa frågor:
@@ -27,7 +25,7 @@ git config --global user.email "din@epostadress.se"
 
 #### Hjälp för Mac: 
 * [Youtube: Installing Git for a Mac](https://www.youtube.com/watch?v=sJ4zr0a4GAs)
-* [Atlassian Git Tutorial](http://www.atlassian.com/git/tutorials/install-git)
+* [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/install-git)
 
 
 #### Hjälp för Windows:

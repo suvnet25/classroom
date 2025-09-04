@@ -12,7 +12,7 @@ Här kommer du hitta all planering för kursen, lektion för lektion, med anteck
 Det finns tre viktiga sektioner på denna site:
 
 1. [Moment](moment.md) - Här kan du se vad vi gått igenom hittils.
-2. [Studiematerial](material) - Här finns material om allt vi går igenom i kursen.
+2. [Studiematerial](material/index.md) - Här finns material om allt vi går igenom i kursen.
 3. Veckoplaneringen du ser till vänster, med lektioner och vad som 
 
 
