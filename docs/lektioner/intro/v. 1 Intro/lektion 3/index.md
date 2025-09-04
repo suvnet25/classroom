@@ -17,7 +17,7 @@
 
 #### Anteckningar
 
-??? Lösning på forloopsövning2
+??? "Lösning på forloopsövning 2 från förra lektionen"
     Låt användaren skriva in en siffra. Låt den siffran bestämma hur många rader som skall skrivas ut enligt mönstret ovan. Till skillnad från ovan skall dock mönstret bilda en pyramid enligt följande:
     ```
        * *
@@ -55,6 +55,3 @@
         Console.WriteLine();
     }
     ```
-
-#### Länkar
-

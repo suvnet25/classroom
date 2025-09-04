@@ -1,6 +1,10 @@
-# Övning #3: Random
+# Övning - Random
 
+Kika på dokumentationen om [Random](/material/cs/standardbibliotek/random).
+.
 Gör ett program som använder `Random`-klassen för att lösa något av följande problem:
+
+Skriv först pseudokod för programmet som kommentarer i koden.
 
 1. **Slå en tärning**
     * Slumpa ett tal mellan 1–6 och säg vad tärningskastet blev.

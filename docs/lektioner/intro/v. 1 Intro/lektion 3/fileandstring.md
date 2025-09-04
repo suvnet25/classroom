@@ -1,4 +1,6 @@
-# Övning #2: File.*/String
+# Övning - File
+
+Kika på dokumentationen om [File-klassen](/material/cs/standardbibliotek/file).
 
 Gör ett program som använder någon av funktionerna i `File`-klassen och/eller `String`-klassen för att lösa något av följande problem:
 
