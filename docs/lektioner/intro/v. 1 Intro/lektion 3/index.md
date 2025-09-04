@@ -11,7 +11,6 @@
     * Random
     * File.*
     * String
-    * DateTime
 
 ---
 
