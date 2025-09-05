@@ -26,3 +26,24 @@
     ```
     * Skriv pseudokod för programmet som kommentarer
     * Skriv koden för programmet i C#
+
+
+??? "Exempellösning på uppgift 1"
+    ```csharp
+    string input = "";
+
+    while (true)
+    {
+        string tmpInput = Console.ReadLine();
+
+        if (tmpInput.ToLower() == "sluta")
+        {
+            break;
+        }
+        input += tmpInput + "\n";
+
+        Console.WriteLine(input);
+    }
+    ```
+
+    På vilka andra sätt kan du lösa uppgiften?
