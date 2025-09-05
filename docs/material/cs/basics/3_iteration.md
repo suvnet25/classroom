@@ -61,6 +61,19 @@ do
 } while (count <= 5);
 ```
 
+??? "Ett till exempel"
+    ```csharp
+    string password = "";
+
+    do
+    {
+        Console.Write("Skriv lösenord: ");
+        password = Console.ReadLine();
+    } while (password != "password");
+
+    Console.WriteLine("Grattis du är inloggad!");
+    ```
+
 #### For
 
 En annan vanlig loop är *for*-loopen, som är en mer kompakt version av *while*. Den innehåller startvärde, villkor och uppdatering av räknaren på samma rad:
