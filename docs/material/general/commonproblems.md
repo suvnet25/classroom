@@ -4,7 +4,6 @@ Det finns en uppsjö olika typer av fel som kan uppstå när program skapas. Oli
 - Kompilatorfel (compile-time errors)
 - Körningsfel (run-time errors)
 - Logiska fel (logical errors)
-- 
 
 ## dotnet cli
 
