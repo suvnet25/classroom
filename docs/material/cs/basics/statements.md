@@ -1,6 +1,7 @@
 ---
     title: Statements
     description: Grundläggande om statements i C#.
+    icon: material/text-short
 ---
 
 Allt ett program utför uttrycks i sk. *statements* (satser). Exempelvis att deklarera en variabel, tilldela ett värde till en variabel, anropa en metod eller skriva ut något på skärmen. Ordningen olika statements utförs kallas för programmets *flöde*. Flödet styrs med hjälp av olika kontorllstrukturer.

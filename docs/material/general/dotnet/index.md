@@ -1,7 +1,6 @@
 ---
 title: .NET
 description: .NET är en plattform för att bygga och köra applikationer
-icon: material/dot-net
 ---
 
 # .NET

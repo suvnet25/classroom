@@ -1,19 +1,4 @@
 {% extends "base.html" %}
 {% block extrahead %}
   <meta name="robots" content="noindex, nofollow, noarchive">
-
-  <!-- <style>
-    /* Default: göm högersidans TOC överallt (även desktop) */
-    .md-sidebar--secondary { display: none !important; }
-  </style> -->
-
-  {% if page and page.meta.show_toc %}
-  <!-- <style>
-    /* Visa TOC endast på sidor som sätter show_toc: true.
-       Matcha Material's beteende: visa bara på bredare skärmar. */
-    @media (min-width: 960px) {
-      .md-sidebar--secondary { display: block !important; }
-    }
-  </style> -->
-  {% endif %}
 {% endblock %}

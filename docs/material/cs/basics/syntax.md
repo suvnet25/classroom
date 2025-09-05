@@ -1,8 +1,7 @@
 ---
 title: Syntax
 description: Grundläggande syntax i C#.
-# hide:
-#     - tags
+icon: material/code-json
 ---
 
 # Syntax

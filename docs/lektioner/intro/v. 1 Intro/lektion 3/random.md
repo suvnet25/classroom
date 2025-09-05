@@ -1,6 +1,6 @@
 # Övning - Random
 
-Kika på dokumentationen om [Random](/material/cs/standardbibliotek/random).
+Kika på dokumentationen om [Random](../../../../material/cs/standardbibliotek/random.md).
 .
 Gör ett program som använder `Random`-klassen för att lösa något av följande problem:
 

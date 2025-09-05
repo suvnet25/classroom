@@ -1,10 +1,18 @@
-TODO
-alt-d: done
-
 Material:
     ❍ Fyll på mer om dotnet cli
     ❍ Kodexempelsektion
     ❍ Datum och tid
-    ❍ Debugging
+    ✓ Debugging @done(25-09-05 21:06)
+    ❍ Mer vanliga problem
+    ❍ Parse
+    ❍ List
+    
+Lektioner:
     ❍ LAB 1
     ❍ Vecka 2
+
+Hjälp:
+    alt-s: start
+    alt-d: done
+    alt-u: undone
+    alt-enter: edit

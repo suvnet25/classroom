@@ -2,7 +2,7 @@
 
 ## Problemlösning och debugging
 
-**Datum:** 2024-09-12
+**Datum:** 2024-09-11
 
 ## Uppgift
 

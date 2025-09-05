@@ -13,9 +13,9 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [ ] Algoritmer
 
 ## **Metodik**
-- [ ] [Pseudokod](material/general/methodology/pseudocode.md)
+- [X] [Pseudokod](material/general/methodology/pseudocode.md)
 - [ ] [Flödesscheman](material/general/methodology/flowcharts.md)
-- [ ] [Debugging](material/general/methodology/debugging.md)§
+- [X] [Debugging](material/general/methodology/debugging.md)§
 - [ ] [Kodstandard](material/general/methodology/codeconventions.md)
 - [ ] [Parprogrammering](material/general/methodology/pairprogramming.md)
 
@@ -56,12 +56,12 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 
 ### **.NET-bibliotek**
 - [ ] System
-- [ ] Console
+- [X] Console
 - [x] ReadLine / WriteLine
 - [ ] Convert / Parse
 - [ ] DateTime
-- [ ] Random
-- [ ] File (ReadAllText, ReadAllLines, WriteAllText)
+- [X] Random
+- [X] File (ReadAllText, ReadAllLines, WriteAllText)
 
 ### GIT och GitHub
 - [ ] Init
@@ -80,7 +80,6 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [ ] OOP som begrepp
 - [ ] Namespaces
 - [ ] Klasser
-- [ ] Object som alla klassers basklass
 - [ ] Konstruktorer	
 - [ ] Abstrakta klasser
 - [ ] Object
@@ -88,11 +87,13 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [ ] Properties (Get/Set)
 - [ ] Inkapsling (Begreppet)
 - [ ] Polymorphism (Begreppet)
+- [ ] Object som alla klassers basklass
 - [ ] Arv (Begreppet)
 - [ ] Abstraktion (Begreppet)
 - [ ] Interface
 - [ ] SOLID
 - [ ] Struct
+- [ ] Record
 
 ## Lista på keywords som vi kommer gå igenom i kursen
 

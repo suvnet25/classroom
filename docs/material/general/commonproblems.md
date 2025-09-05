@@ -1,9 +1,10 @@
----
-    title: Vanliga problem
-    description: Det är lätt att det blir fel ibland. Här är några vanliga problem och hur du kan lösa dem.
----
-
 # Vanliga problem och felmeddelanden
+
+Det finns en uppsjö olika typer av fel som kan uppstå när program skapas. Olika kategorier är:
+- Kompilatorfel (compile-time errors)
+- Körningsfel (run-time errors)
+- Logiska fel (logical errors)
+- 
 
 ## dotnet cli
 

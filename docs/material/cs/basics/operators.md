@@ -1,7 +1,7 @@
 ---
     title: Operatorer
     description: Olika operatorer i C#.
-    icon: material/checkbox-marked-outline
+    icon: material/greater-than
 ---
 
 # Operatorer
@@ -19,7 +19,9 @@ Operatorer används för att utföra operationer på variabler och värden. Här
 | `--`     | Dekrement (minskar med 1) | `x--`         |
 
 
-## Assigneringsoperatorer
+## Tilldelningsoperatorer
+Tilldelningsoperatorer används för att ge variabler värden.  
+
 | Operator | Beskrivning               | Exempel       |
 |----------|---------------------------|---------------|
 | `=`      | Tilldelar ett värde       | `x = 5;`      |
@@ -30,7 +32,7 @@ Operatorer används för att utföra operationer på variabler och värden. Här
 
 Det finns fler. Läs mer här: [Assignment operators - C# reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/expressions#1221-assignment-operators)
 
-## Jämförelseoperatorer
+## Jämförelseoperatorer 
 Jämförelseoperatorer används för att jämföra två värden och returnerar ett booleskt resultat (true eller false). Resultatet av en jämförelse är alltså ALLTID en bool:
 
 ```csharp
@@ -59,7 +61,7 @@ if (age > 18 && isMember)
 | Operator | Beskrivning               | Exempel       |
 |----------|---------------------------|---------------|
 | `&&`     | Logiskt OCH               | `x > 5 && y < 10` |
-| `||`   | Logiskt ELLER             | `x < 5 || y > 10` |
+| `||`     | Logiskt ELLER             | `x < 5 || y > 10` |
 | `!`      | Logiskt INTE              | `!(x == y)` |
 
 ## Bitvisa operatorer

@@ -27,3 +27,11 @@ Console.WriteLine(randomNumberInCustomRange);
 ```
 
 Så lätt är det att slumpa fram heltal! Nu är frågan, vad ska du ha det till?
+
+??? tip "Några random idéer vad du kan prova att göra med Random"
+    - Skapa en aliennamsgenerator som skapar namn med hjälp av listor med strängar.
+    - Skapa en slumpmässig mening med hjälp av olika strängmetoder och listor med ord
+    - Skapa en lösenordsgenerator som skapar lösenord utifrån olika krav:
+        - Slumpad sträng med ett visst antal tecken
+        - Random x antal ord med mellanslag
+    - Gör en roulettsimulator som slumpmässigt väljer ett nummer mellan 0 och 36 samt färg

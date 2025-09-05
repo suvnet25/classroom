@@ -11,3 +11,5 @@ I VS Code finns det en sk. "Debugger". Det är ett verktyg som gör det möjligt
 I VS Code startar du debuggern genom att klicka på den lilla gröna "play"-knappen i vänstra menyn, eller genom att trycka på `F5`. Du kan också välja "Run and Debug" från menyn "Run" högst upp.
 
 När debuggern startar kommer koden att stanna där du har satt en brytpunkt (en röd prick i marginalen bredvid koden). Du kan sedan använda verktygsfältet som dyker upp högst upp för att stega igenom koden, fortsätta körningen, eller stoppa debuggern.
+
+I sidofältet till vänster kan du se variabler, kallelstacken och eventuella "watch"-uttryck du har lagt till för att övervaka specifika värden under körningen.
