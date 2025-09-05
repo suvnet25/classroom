@@ -35,7 +35,7 @@ while (true)
 }
 ```
 !!! warning "Oändliga loopar"
-    En loop som aldrig slutar kallas för en oändlig loop. Om du behöver avbryta ett program som fastnat i en oändlig loop kan du ofta göra det med ++Ctrl+C++ i terminalen.
+    En loop som aldrig slutar kallas för en oändlig loop. Om du behöver avbryta ett program som fastnat i en oändlig loop kan du ofta göra det med `Ctrl+C` i terminalen.
 
 Vanligare är att använda någon form av räknare för att hålla koll på hur många gånger loopen har körts. Här är ett exempel som skriver ut talen 1 till 5:
 
@@ -60,19 +60,6 @@ do
     count++;
 } while (count <= 5);
 ```
-
-??? "Ett till exempel"
-    ```csharp
-    string password = "";
-
-    do
-    {
-        Console.Write("Skriv lösenord: ");
-        password = Console.ReadLine();
-    } while (password != "password");
-
-    Console.WriteLine("Grattis du är inloggad!");
-    ```
 
 #### For
 
@@ -128,3 +115,36 @@ for (int i = 1; i <= 10; i++)
     Console.WriteLine(i); // Skriver ut udda tal mindre än 5
 }
 ```
+
+## Fler exempel
+
+??? "Testa lösenord med do-while"
+    ```csharp
+    string password = "";
+
+    do
+    {
+        Console.Write("Skriv lösenord: ");
+        password = Console.ReadLine();
+    } while (password != "password");
+
+    Console.WriteLine("Grattis du är inloggad!");
+    ```
+
+??? "Loopa igenom en lista eller array"
+    ```csharp
+    string[] censureradeOrd = ["fisk", "räka", "hund", "katt", "apa"];
+
+    for (int i = 0; i < censureradeOrd.Length; i++)
+    {
+        Console.WriteLine(censureradeOrd[i]);
+    }
+
+    //Identisk funktion fast med foreach:
+
+    foreach (string ord in censureradeOrd)
+    {
+        Console.WriteLine(ord);
+    }
+    ```
+

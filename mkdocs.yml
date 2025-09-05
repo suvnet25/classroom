@@ -97,4 +97,5 @@ copyright: Copyright &copy; 2024 - 2025 Gustav Bodell
 plugins:
     - tags
     - meta
-    - awesome-nav 
+    - awesome-nav
+    - search

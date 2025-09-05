@@ -31,7 +31,9 @@ Det finns flera sätt att skapa nya projekt i .NET och med VS Code! Hitta det so
 
 Detta kan man göra på en massa olika sätt! 
 
-#### Ett annat mycket snabbare men på andra sätt krångligare är detta:
+## Andra sätt:
+
+### Bara genom terminalen
 
 1. Öppna ett terminalfönster
 2. Navigera till den plats där du vill skapa ditt projekt
@@ -40,3 +42,11 @@ Detta kan man göra på en massa olika sätt!
 5. Öppna VS Code i denna katalog med `code .`
 6. Kör programmet med `dotnet run`
 7. Klart!
+
+### Inifrån VS Code och terminalen
+
+1. Öppna en terminal i VS Code
+2. Gå till den katalog där du vill skapa ditt projekt. Kanske `cd ..`
+3. Skriv `dotnet new console -o MittProjekt` och tryck ++return++.
+4. Gå in i den nya katalogen med `cd MittProjekt`
+5. Öppna denna katalog i VS Code med `code .`
