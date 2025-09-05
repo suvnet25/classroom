@@ -1,7 +1,7 @@
 ---
 title: Hem
 hide:
-  - feedback
+    - feedback
 ---
 
 # Välkommen!
@@ -27,4 +27,8 @@ Där hittar ni exakta scheman och lektionssalar, enkätundersökningar och vissa
 #### GitHub Classroom 
 Används framöver för att dela ut inlämningsuppgifter.
 Länk: [classroom.github.com](https://classroom.github.com/)
+
+<p align="center">
+  <img src="assets/humanintelligence.png" width="200" height="200">
+</p>
 

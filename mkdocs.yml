@@ -7,6 +7,8 @@ extra_javascript:
   - assets/week_color/week_color.js
 theme:
   features:
+    - content.code.copy
+    - content.code.annotate
     - navigation.instant
     - navigation.tracking
     - navigation.sections
@@ -71,24 +73,6 @@ extra:
   analytics:
     provider: google
     property: G-MWBTY9Z173
-    feedback:
-      title: Hur var den här sidan?
-      ratings:
-        - icon: material/emoticon-excited
-          name: Bra!
-          data: 2
-          note: >-
-            Tack för feedback!
-        - icon: material/emoticon-happy
-          name: Den var ok.
-          data: 1
-          note: >-
-            Tack för feedback!
-        - icon: material/emoticon-neutral
-          name: Sidan kan förbättras
-          data: 0
-          note: >- 
-            Tack för feedback! Säg gärna till om du saknar något eller har några idéer!
   consent:
     title: Cookie consent
     description: >- 

@@ -9,6 +9,9 @@ Det absolut lättaste sättet att gör det är att:
 2. Välj operativsystem bland flikarna
 3. Tryck på "Let's get started" och följ instruktionerna.
 
+Detta kommer att installera både .NET SDK, VS Code och C# DevKit-tillägget i VS Code.
+Vad detta är förklaras här lite kort:
+
 #### VSCode
 
 Visual Studio Code är en editor för att skriva kod. Det är ett program som gör det lättare att skriva och redigera kod. Det finns många tillägg som gör det ännu bättre. Det är ok att använda andra editorer också, men då får du klara dig på egen hand, då det är VS Code som används för alla demonstrationer.

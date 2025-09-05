@@ -1,4 +1,4 @@
-# String i .NET
+# String
 
 `String`-klassen i .NET är en maffig klass med massor av inbyggda funktioner för att hantera text. Här är några vanliga metoder och egenskaper som kan vara bra att känna till:
 
@@ -19,7 +19,7 @@ if (greeting.Contains("världen"))
 }
 
 // Kontrollera om strängen är tom, null eller bara mellanslag
-if (string.IsNullOrWhiteSpace(greeting))
+if (string.IsNullOrWhiteSpace(greeting)) // (1)
 {
     Console.WriteLine("Strängen innehåller ingen hälsning!");
 }
@@ -42,6 +42,8 @@ int index = greeting.IndexOf("världen"); // 5
 
 ```
 
+1. Uppmärksamma här att vi använder en metod på `string`-klassen och inte en metod på en specifik sträng!
+
 ## Stränginterpolering
 
 Stränginterpolering är ett smidigt sätt att skapa strängar som innehåller variabler eller uttryck. Det görs genom att använda `$` före strängen och sedan omsluta variabler eller uttryck inom `{}`.
@@ -58,7 +60,7 @@ Console.WriteLine(message); // "Hej, jag heter Anna och jag är 30 år gammal."
 Många datatyper i .NET har en inbyggd `ToString()`-metod som konverterar värdet till en sträng. Detta är användbart när du vill visa värden i textform.
 
 ```csharp
-float number = 3.14159f;
+float number = 3.14159f; // (1)
 string numberAsString = number.ToString("F2"); // "3.14", F2 betyder 2 decimaler
 
 double bigNumber = 1234567890.12345;
@@ -67,6 +69,8 @@ string bigNumberAsString = bigNumber.ToString("N"); // "1,234,567,890.12" N bety
 DateTime now = DateTime.Now;
 string dateAsString = now.ToString("yyyy-MM-dd"); // "2024-06-15" (beroende på dagens datum)
 ```
+
+1. `f` efter talet anger att det är just en `float`.
 
 Det där innuti `ToString()`-metoden kallas för en `formatsträng` och det finns massor av olika format att använda beroende på vilken typ av data du har. Läs mer här:
 
