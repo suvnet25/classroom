@@ -22,7 +22,7 @@
     2 *
     1 *
     0 * * * * * *
-    0 1 2 3 4 5 x
+      0 1 2 3 4 5 x
     ```
     * Skriv pseudokod för programmet som kommentarer
     * Skriv koden för programmet i C#
