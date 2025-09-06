@@ -1,3 +1,8 @@
+---
+tags:
+  - OOP1 övning
+---
+
 # Övning - Pseudokod
 
 #### Pseudokod:
@@ -47,3 +52,14 @@
     ```
 
     På vilka andra sätt kan du lösa uppgiften?
+
+4. Skriv programmet för denna pseudokod:
+    ```
+    SKAPA en tom sträng som heter input
+    LOOPA oändligt
+        LÄS in en rad från användaren och spara i tmpInput
+        OM tmpInput är lika med "sluta" (case insensitive)
+            AVSLUTA loopen
+        ANNARS
+            LÄGG TILL tmpInput + ny rad i input
+            SK

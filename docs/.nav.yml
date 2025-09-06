@@ -2,6 +2,7 @@ nav:
   - Lektioner: 
     - index.md
     - moment.md
+    - Kategorier: categories.md
     - examination 
     - Veckor: lektioner
   - Material:

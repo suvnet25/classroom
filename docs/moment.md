@@ -15,7 +15,7 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 ## **Metodik**
 - [X] [Pseudokod](material/general/methodology/pseudocode.md)
 - [ ] [Flödesscheman](material/general/methodology/flowcharts.md)
-- [X] [Debugging](material/general/methodology/debugging.md)§
+- [X] [Debugging](material/general/methodology/debugging.md)
 - [ ] [Kodstandard](material/general/methodology/codeconventions.md)
 - [ ] [Parprogrammering](material/general/methodology/pairprogramming.md)
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - OOP1 övning
+---
+
 # Övning - File
 
 Kika på dokumentationen om [File-klassen](../../../../material/cs/standardbibliotek/file.md).

@@ -1,4 +1,9 @@
-# Övningar
+---
+tags:
+  - OOP1 övning
+---
+
+# Övning - Grunder
 
 ## Variabler
 
@@ -43,7 +48,23 @@ Person 3: [namn]
 ****
 ```
 
-3. Låt användaren skriva in en siffra. Låt den siffran bestämma hur många rader som skall skrivas ut enligt mönstret ovan. Till skillnad från ovan skall dock mönstret bilda en pyramid enligt följande:
+??? Tip "Ett flödesschema som kanske hjälper lite"
+    ```mermaid
+    flowchart TB
+    B[mata in RADER] --> C[i = 0] --> D{i < RADER?}
+    D -- JA --> R[j = 0]
+    R --> E{j < i?}
+    E -- JA--> F[Skriv ut stjärna] --> T[j++]
+    T --> E
+    E -- NEJ--> J[Ny Rad!]
+    J --> L[i++]
+    L --> D
+    D -- NEJ --> M[Slut]
+    ```
+
+#### En lite klurigare variant:
+
+Låt användaren skriva in en siffra. Låt den siffran bestämma hur många rader som skall skrivas ut enligt mönstret ovan. Till skillnad från ovan skall dock mönstret bilda en pyramid enligt följande:
 ```
    * *
   ** **
