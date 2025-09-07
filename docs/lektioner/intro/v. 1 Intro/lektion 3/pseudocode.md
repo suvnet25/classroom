@@ -1,6 +1,6 @@
 ---
 tags:
-  - OOP1 övning
+  - OOP1-Övning
 ---
 
 # Övning - Pseudokod
@@ -56,10 +56,16 @@ tags:
 4. Skriv programmet för denna pseudokod:
     ```
     SKAPA en tom sträng som heter input
+    SKAPA en variabel som heter SUMMA och sätt den till 0
     LOOPA oändligt
         LÄS in en rad från användaren och spara i tmpInput
         OM tmpInput är lika med "sluta" (case insensitive)
-            AVSLUTA loopen
+            AVBRYT loopen
+        ANNARS OM tmpInput är tom
+            SKRIV UT "Du måste mata in något!"
+        ANNARS OM tmpInput går att tolka som ett heltal
+            ADDERA heltalet till SUMMA
         ANNARS
-            LÄGG TILL tmpInput + ny rad i input
-            SK
+            SKRIV UT "Det där var inte ett giltigt tal!"
+    SKRIV UT "Summan av talen är: " + SUMMA
+    ```

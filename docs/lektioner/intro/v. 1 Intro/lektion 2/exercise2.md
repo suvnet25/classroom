@@ -1,6 +1,6 @@
 ---
 tags:
-  - OOP1 övning (svår)
+  - OOP1-Övning (svår)
 ---
 
 # Övning: Todo CLI

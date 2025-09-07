@@ -1,3 +1,8 @@
+---
+tags:
+  - OOP1-Övning
+---
+
 # Övning - String
 
 Kika på dokumentationen om [string-metoder i .Net](../../../../material/cs/standardbibliotek/string.md).

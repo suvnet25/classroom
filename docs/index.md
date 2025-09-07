@@ -6,14 +6,14 @@ hide:
 
 # Välkommen!
 
-Välkommen till suvnets site för objektorienterad programmering i C# och .NET!
-Här kommer du hitta all planering för kursen, lektion för lektion, med anteckningar, länkar till material och övningar. Har ni egna idéer på vad som kan vara bra att ha med så är det bara att säga till. 
+Välkommen till **suvnets** site för objektorienterad programmering i C# och .NET!
+Här hittar du all planering för kursen, lektion för lektion, med anteckningar, länkar till material och övningar. Har ni egna idéer på vad som kan vara bra att ha med så är det bara att säga till. 
 
-Det finns tre viktiga sektioner på denna site:
+Det finns *tre viktiga sektioner* här:
 
 1. [Moment](moment.md) - Här kan du se vad vi gått igenom hittils.
 2. [Studiematerial](material/index.md) - Här finns material om allt vi går igenom i kursen.
-3. Veckoplaneringen du ser till vänster, med lektioner och vad som 
+3. Veckoplaneringen du ser till vänster, med lektioner och tillhörande övningar.
 
 
 Utöver denna site så finns några fler ställen att hålla reda på:

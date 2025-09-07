@@ -1,6 +1,6 @@
 ---
 tags:
-  - OOP1 övning
+  - OOP1-Övning
 ---
 
 # Övning - File

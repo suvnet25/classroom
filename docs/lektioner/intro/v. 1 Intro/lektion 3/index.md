@@ -3,20 +3,22 @@
 ## Innehåll
 
 * Lite repetition av föregående lektion
-* Den där for-loopen
-* Debuggern
+* Den där for-loopen (1h)
+* Debuggern (1h)
 * Problemlösning - Hur gör man?
 * Pseudokod och flödesscheman
+* Övningar i pseudokod och C# (1h)
 * Vanliga .NET Bibliotek och några av deras funktioner
     * Random
     * File.*
     * String
+* Övningar (3h)
 
 ---
 
 #### Anteckningar
 
-??? "Lösning på forloopsövning 2 från förra lektionen"
+??? tip "Lösning på forloopsövning 2 från förra lektionen"
     Låt användaren skriva in en siffra. Låt den siffran bestämma hur många rader som skall skrivas ut enligt mönstret ovan. Till skillnad från ovan skall dock mönstret bilda en pyramid enligt följande:
     ```
        * *

@@ -1,3 +1,8 @@
+---
+tags:
+  - OOP1-Övning
+---
+
 # Övning - Random
 
 Kika på dokumentationen om [Random](../../../../material/cs/standardbibliotek/random.md).

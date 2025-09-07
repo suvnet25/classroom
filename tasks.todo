@@ -1,15 +1,19 @@
 Material:
     ❍ Fyll på mer om dotnet cli
     ❍ Kodexempelsektion
-    ❍ Datum och tid
+    ✓ Datum och tid @done(25-09-07 01:56)
     ✓ Debugging @done(25-09-05 21:06)
     ❍ Mer vanliga problem
-    ❍ Parse
-    ❍ List
+    ✓ Parse @done(25-09-07 01:55)
+    ✓ List @done(25-09-07 01:55)
+    ❍ Sektionen om metoder
+    ❍ GIT
+
     
 Lektioner:
     ❍ LAB 1
     ❍ Vecka 2
+    ❍ Övningar vecka 2
 
 Hjälp:
     alt-s: start

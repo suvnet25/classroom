@@ -2,6 +2,6 @@
 
 ## Arv och gränssnitt
 
-Mer info kommer!
+Den här labben kan bli lite klurig, så kom väl förberedd! Vi går djupare in i SOLID-principerna och fokuserar på gränssnitt, separation of concerns och dependency inversion.
 
-(Den här labben kan bli lite klurig, så kom väl förberedd!)
+Mer info kommer!
