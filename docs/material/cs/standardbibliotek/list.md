@@ -1,6 +1,6 @@
 # List<T\>
 
-Arrayer är bra och grunden till att kunna hantera flera värden i en och samma variabel. Men, de är ganska otympliga att använda i många olika situationer. Därför finns det en mer flexibel datastruktur som heter **List** i .NET:s standardbibliotek.
+Arrayer är ju bra och grunden till att kunna hantera flera värden i en och samma variabel. Men, de är ganska otympliga att använda i många olika situationer. Därför finns det en mer flexibel datastruktur som heter **List** i .NET:s standardbibliotek.
 
 ```csharp title="Exempel på List"
 List<int> numbers = new List<int>(); //Skapar en tom lista av heltal

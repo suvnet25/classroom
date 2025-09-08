@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning - Lektion 04
+# Övning - Lektion 05
 
 Kika på dokumentationen om [String](../../../../material/cs/standardbibliotek/string.md) och 
 [File](../../../../material/cs/standardbibliotek/file.md) om du behöver hjälp med strängar och filhantering.
@@ -51,3 +51,12 @@ Om användaren skriver in något annat ska programmet skriva ut "Felaktigt val" 
     * Hur kan du göra så att menyn alltid visas på samma ställe i konsolfönstret?
     * Hur kan du göra så att menyn ser snyggare ut? Kanske med färger eller ramar?
     * Hur kan du göra så att menyn fungerar även om användaren skriver in små fel, t.ex. "  1 " eller "2 "?
+
+#### 3. Metodifiera övning
+Utgå från övningen "1. Hoppa över tomma rader". Du ska nu skriva två metoder som gör delar av vad det programmet gör.
+
+1. Skriv en metod som tar en filsökväg som parameter och returnerar en array med alla rader i filen. Metoden skall kolla så att filen finns, och om den inte gör det skall den returnera en tom array.
+2. Skriv en metod som tar en sträng som parameter och skriver ut den om den inte är tom. Anropa sedan metoden för varje rad i filen.
+3. Använd dessa två metoder i ditt program för att läsa in filen och skriva ut raderna. Det ska funka precis som innan alltså.[^1]
+
+[^1]: Vad du gjort nu kallas för att **"refaktorera"** koden, alltså att ändra dess struktur utan att ändra dess funktionalitet. Det är en viktig del av programmering att kunna göra koden mer läsbar och återanvändbar genom att bryta ut delar i metoder.

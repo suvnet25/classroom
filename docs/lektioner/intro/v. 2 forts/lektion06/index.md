@@ -2,9 +2,8 @@
 
 ## Innehåll
 
-* Veckans enkät!
-*
+* Vi går igenom den första labben tillsammans!
+* Parprogrammering
 
 ---
 
-## Relevanta länkar

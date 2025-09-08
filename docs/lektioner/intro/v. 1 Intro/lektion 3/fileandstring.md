@@ -20,6 +20,49 @@ Gör ett program som använder någon av funktionerna i `File`-klassen och/eller
     * Utveckling 2: Gör sökningen okänslig för versaler/gemener (case insensitive).
     * Utveckling 3: Visa raderna där ordet förekommer, med ordet markerat (t.ex. med asterisker `*ord*`).
 
-3. **Skapa en sammanfattning av en textfil**
+3. **Skapa en "sammanfattning" av en textfil**
     * Läs in en textfil och skapa en ny fil som innehåller de första 5 raderna  från den ursprungliga filen.
     * Spara den nya filen med samma namn som den ursprungliga med tillägget "_summary".
+
+??? tip "Exempellösning på **Sök efter ett ord i en textfil**"
+    ```csharp
+    string[] lines = File.ReadAllLines("example.txt");
+
+    while (true)
+    {
+        int wordCount = 0;
+        int lineCount = 0;
+        string foundOnRows = "";
+
+        Console.Write("Sök: ");
+        string searchWord = Console.ReadLine();
+        if (string.IsNullOrEmpty(searchWord)) break;
+
+        for (int i = 0; i < lines.Length; i++)
+        {
+            string line = lines[i];
+            string[] words = line.Split(" ");
+
+            bool isFound = false;
+
+            foreach (string word in words)
+            {
+                if (word.Contains(searchWord, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    wordCount++;
+                    isFound = true;
+                }
+            }
+
+            if (isFound)
+            {
+                lineCount++;
+                foundOnRows += i + ", ";
+            }
+        }
+
+        Console.WriteLine("Antal ord: " + wordCount);
+        Console.WriteLine("Hittade på " + lineCount + "rader.");
+        Console.WriteLine("Hittades på raderna: " + foundOnRows);
+    }
+    ```

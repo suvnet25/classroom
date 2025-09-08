@@ -30,7 +30,7 @@ y
 2 *
 1 *
 0 * * * * * *
-    0 1 2 3 4 5 x
+  0 1 2 3 4 5 x
 ```
 
 * Skriv pseudokod för programmet som kommentarer
@@ -40,15 +40,15 @@ y
 Skriv programmet för denna pseudokod:
 
 ```
-SKAPA en tom sträng som heter input
 SKAPA en variabel som heter SUMMA och sätt den till 0
 LOOPA oändligt
-    LÄS in en rad från användaren och spara i tmpInput
-    OM tmpInput är lika med "sluta" (case insensitive)
+    SKAPA en tom sträng som heter INPUT
+    LÄS in en rad från användaren och spara i INPUT
+    OM INPUT är lika med "sluta" (case insensitive)
         AVBRYT loopen
-    ANNARS OM tmpInput är tom
+    ANNARS OM INPUT är tom
         SKRIV UT "Du måste mata in något!"
-    ANNARS OM tmpInput går att tolka som ett heltal
+    ANNARS OM INPUT går att tolka som ett heltal
         ADDERA heltalet till SUMMA
     ANNARS
         SKRIV UT "Det där var inte ett giltigt tal!"

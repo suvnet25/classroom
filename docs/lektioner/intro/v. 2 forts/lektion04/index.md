@@ -3,9 +3,8 @@
 ## Innehåll
 
 * Veckans enkät!
-* Vi tittar på övningar från förra veckan
-* Lite repetition med förberedande övningar innan vi börjar med metoder
-* Häng med **Suvnet24**!
+* Vad ska ni göra hemma?
+* Ledningsgruppen stormar in!
 * Introduktion till metoder
 * Övningar på metoder
 

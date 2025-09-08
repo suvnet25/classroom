@@ -1,10 +1,11 @@
 nav:
   - Syntax: syntax.md
-  - Variabler: variables.md
-  - Selektion: selection.md
-  - Kodblock: codeblocks.md
-  - Iteration: iteration.md
   - Operatorer: operators.md
   - Uttryck: expressions.md
   - Statements: statements.md
+  - Variabler: variables.md
+  - Selektion: selection.md
+  - Array: array.md
+  - Kodblock: codeblocks.md
+  - Iteration: iteration.md
   - Metoder: methods.md

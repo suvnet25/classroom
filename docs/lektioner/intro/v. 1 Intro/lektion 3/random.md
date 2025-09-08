@@ -17,7 +17,7 @@ Skriv först pseudokod för programmet som kommentarer i koden.
 
 2. **Slumpa sten, sax, påse**
     * Tre utfall i stället för två.
-    * Eleven kan göra en meny där användaren väljer sitt drag, och datorn slumpas fram.
+    * Gör en liten meny där användaren väljer sitt drag, och datorns drag slumpas fram.
     * Jämför och avgör vinnare.
 
 3. **Dagens lyckokaka-meddelande**
