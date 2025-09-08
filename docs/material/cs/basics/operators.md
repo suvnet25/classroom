@@ -33,7 +33,7 @@ Tilldelningsoperatorer används för att ge variabler värden.
 Det finns fler. Läs mer här: [Assignment operators - C# reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/expressions#1221-assignment-operators)
 
 ## Jämförelseoperatorer 
-Jämförelseoperatorer används för att jämföra två värden och returnerar ett booleskt resultat (true eller false). Resultatet av en jämförelse är alltså ALLTID en bool:
+Jämförelseoperatorer används för att jämföra två värden och returnerar en bool (true eller false). Resultatet av en jämförelse är alltså ALLTID en bool:
 
 ```csharp
 bool isEqual = x > y; // true om x är större än y, annars false

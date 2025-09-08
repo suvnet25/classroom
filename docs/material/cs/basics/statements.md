@@ -13,11 +13,11 @@ Det finns många olika typer av *statements*:
 | Typ | Beskrivning |
 |------|-------------|
 | Deklaration/Declaration | Skapar en variabel eller konstant. Exempel: `int age;` |
-| Tilldelning/Assignment | Tilldelar ett värde till en variabel eller konstant. Exempel: `age = 25;` |
 | Uttryck/Expression | En kombination av variabler, operatorer och värden som beräknas till ett värde. Exempel: `age + 5;` |
-| Iteration | Loopar som upprepar en sektion av kod flera gånger. Exempel: `for`, `while` |
 | Villkor/Selection | Utför olika sektioner av kod baserat på ett villkor. Exempel: `if`, `switch` |
+| Iteration | Loopar som upprepar en sektion av kod flera gånger. Exempel: `for`, `while` |
 | Jump | Hoppar till en annan del av koden. Exempel: `break`, `continue`, `return` |
+| Exception Handling | Hanterar fel och undantag i koden. Exempel: `try`, `catch`, `finally` |
 
 Det finns fler! Läs mer [här](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/statements).
 

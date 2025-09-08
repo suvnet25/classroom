@@ -12,7 +12,7 @@ Du ska skapa ett enkelt kommandoradsprogram[^1] som hanterar en todo-lista.
 Så här ska det funka:
 
 * `todo` visar en numrerad lista med saker att göra, om de är gjorda eller inte, och eventuellt en deadline
-* `todo -h` visar hjälp en hjälptext
+* `todo -h` visar en hjälptext om programmets andra kommandon
 * `todo add "Gå ut med soporna"` lägger till en ny sak att göra utan deadline
 * (valfri) `todo add "Betala räkningar" --due 2024-12-01` lägger till en ny sak att göra med deadline
 * `todo done 2` markerar sak nummer 2 som gjord

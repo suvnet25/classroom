@@ -6,11 +6,9 @@ icon: material/calculator
 
 # Uttryck
 
-Även kallat Expressions på engelska.
+Även kallat Expressions på engelska. Kort: Något som kan beräknas till ett värde. Det spelar inte nån roll hur värdet tas fram. Det kan vara en sekvens av operatorer och operander som tillsammans bildar ett värde. Det kan vara ett metodanrop. Resultatet av ett uttryck är alltid ett värde. Värden har alltid en typ (t.ex. int, string, bool etc).
 
-Uttryck är grundläggande byggstenar i programmering och används för att manipulera data och styra programmets logik.
-
-Ett uttryck är en kombination av variabler, operatorer och värden som beräknas till ett värde. Uttryck kan vara så enkla som en enda variabel eller ett konstant värde, eller så komplexa som en kombination av flera variabler och operatorer.
+Uttryck kan vara så enkla som en enda variabel eller ett konstant värde, eller så komplexa som en kombination av flera variabler och operatorer.
 
 ```csharp
 int x = 5; // Ett enkelt uttryck som bara är en konstant
@@ -45,3 +43,7 @@ string message = "Hello, " + name; // Uttrycket '"Hello, " + name' skapar en ny 
 
 double area = Math.PI * radius * radius; // Uttrycket beräknar arean av en cirkel
 ```
+
+## Läs mer 
+
+Här är en väldigt lång och detaljerad artikel om expressions i C#: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/expressions>

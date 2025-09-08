@@ -49,10 +49,21 @@ if (price > 100)
 Ett kodblocks "scope" (omfång) definierar var variabler och andra element som deklareras inom blocket är tillgängliga. Variabler som deklareras inom ett kodblock är endast tillgängliga inom det blocket och eventuella inre block.
 
 ```csharp
-{ // Här börjar kodblocket
-    
-    int x = 10; // 'x' är tillgänglig inom detta kodblock
+{
+    { // Här börjar ett inre kodblock
+        
+        int x = 10; // 'x' är tillgänglig inom detta inre kodblock
 
-    Console.WriteLine(x); // Detta fungerar
+        Console.WriteLine(x); // Detta fungerar
 
-} // Här slutar kodblocket
+        {
+            Console.WriteLine(x); // Detta fungerar också, 'x' är tillgänglig här
+        }
+
+    } // Här slutar kodblocket
+
+Console.WriteLine(x); // Detta fungerar inte, 'x' är inte tillgänglig här
+}
+```
+
+I detta exempel visas endast rena kodblock, men det fungerar på samma sätt inom metoder, loopar, if-satser och andra strukturer som använder sig av kodblock.

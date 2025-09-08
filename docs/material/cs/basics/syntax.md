@@ -12,7 +12,7 @@ Lite grundläggande saker om C# som kan vara bra att veta.
 C# är "case-sensitive", vilket betyder att det skiljer på stora och små bokstäver. Till exempel är `myVariable` och `MyVariable` två olika saker.
 
 ## Kodblock
-Kod grupperas ihop med hjälp av klammerparenteser: `{ }`. Ett kodblock är en samling av en eller flera rader kod som behandlas som en enhet. Kodblock används för att gruppera relaterade instruktioner tillsammans, till exempel inom metoder, loopar och if-satser. Läs mer om kodblock här: 
+Kod grupperas ihop med hjälp av klammerparenteser: `{ }`. Ett kodblock är en samling av en eller flera rader kod som behandlas som en enhet. Kodblock används för att gruppera relaterade instruktioner tillsammans, till exempel inom metoder, loopar och if-satser. Läs mer om kodblock här.
 
 ## Semikolon
 I C# avslutas de flesta rader (instruktioner) med ett semikolon (`;`). Detta markerar slutet på en instruktion och gör det möjligt för kompilatorn att förstå var en instruktion slutar och nästa börjar.
@@ -41,3 +41,11 @@ Console.WriteLine("Trevligt att träffas, " + name + "!");
 ## Nyckelord
 Nyckelord är reserverade ord i C# som har en speciell betydelse och funktion. Exempel på nyckelord inkluderar `if`, `else`, `for`, `while`, `class`, `public`, `private`, `void`, `int`, `string`, och många fler. Dessa ord kan inte användas som namn på variabler och metoder osv.
 
+## Språkets uppbyggnad
+
+C#-kod består till stor del av följande byggstenar:
+
+* Operatorer (Operators)
+* Uttryck (Expressions)
+* Satser (Statements)
+* Deklarationer (Variabler, metoder, klasser, klassmedlemmar, gränssnitt, namespaces etc)

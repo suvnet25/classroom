@@ -120,13 +120,10 @@ for (int i = 1; i <= 10; i++)
 
 ??? "Testa lösenord med do-while"
     ```csharp
-    string password = "";
-
     do
     {
-        Console.Write("Skriv lösenord: ");
-        password = Console.ReadLine();
-    } while (password != "password");
+        Console.Write("Skriv lösenord: ");;
+    } while (Console.ReadLine() != "password");
 
     Console.WriteLine("Grattis du är inloggad!");
     ```

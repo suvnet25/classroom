@@ -1,13 +1,16 @@
+# Lektion 04
+
 ## Innehåll
 
 * Veckans enkät!
 * Vi tittar på övningar från förra veckan
 * Lite repetition med förberedande övningar innan vi börjar med metoder
-* Intorduktion till metoder
+* Häng med **Suvnet24**!
+* Introduktion till metoder
 * Övningar på metoder
 
 ---
 
-#### Anteckningar
+## Relevanta länkar
 
-#### Länkar
+* [Metoder](../../../../material/cs/basics/methods.md)
