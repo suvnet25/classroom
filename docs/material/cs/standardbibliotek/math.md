@@ -50,4 +50,6 @@ for (int y = 0; y < 20; y++)
 }
 ```
 
+Hur skulle du göra för att skriva ett program som låter användaren använda piltangenterna för att justera vågens frekvens och amplitud?
+
 ## Vad mer kan du hitta på med denna matteklass?

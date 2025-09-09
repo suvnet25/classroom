@@ -1,0 +1,7 @@
+nav:
+  - index.md
+  - Operatorer: operators.md
+  - Uttryck: expressions.md
+  - Statements: statements.md
+  - Kodblock: codeblocks.md
+  - Struktur: structure.md

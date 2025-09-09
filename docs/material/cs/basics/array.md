@@ -1,3 +1,10 @@
+---
+    title: Array
+    description: Arrayer är en grundläggande datastruktur i C# som används för att lagra flera värden av samma typ i en enda variabel.
+    icon: material/code-brackets
+---
+
+
 # Array
 
 Arrayer är en grundläggande datastruktur i C# som används för att lagra flera värden av samma typ i en enda variabel. Det går att tänka på arrayer som en lista med värden. Några viktiga detaljer angående arrayer:

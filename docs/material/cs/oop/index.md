@@ -8,4 +8,5 @@ description: Intro till objektorienterad programmering.
 
 ## Länkar
 
-* <https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/>
+* [Microsoft Learn Object Oriented Fundamentals](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/)
+* [Christopher Okhravi](https://www.youtube.com/watch?v=AEnePs2Evg0&list=PLrhzvIcii6GMNEfebXDXuphcdlZE1-qHG)

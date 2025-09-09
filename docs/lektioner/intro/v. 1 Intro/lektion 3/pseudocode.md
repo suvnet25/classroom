@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning - Pseudokod
+# Övning 03 Pseudokod
 
 #### Övning 1
 Tänk dig ett program som ber användaren mata in två tal, adderar dem och skriver ut resultatet:
@@ -74,3 +74,23 @@ SKRIV UT "Summan av talen är: " + SUMMA
     ```
 
     På vilka andra sätt kan du lösa uppgiften?
+
+
+??? "Exempellösning på övning 3"
+
+??? "Mer extrem lösning på övning 3"
+    ```csharp
+    Console.Write("Ange en X-koordinat (1-5): ");
+    int x = int.Parse(Console.ReadLine());
+    Console.Write("Ange en Y-koordinat (1-5): ");
+    int y = int.Parse(Console.ReadLine());
+    Console.WriteLine("\ny");
+    for (int r = 5; r >= 0; r--, Console.WriteLine())
+        for (int c = -1; c <= 5; c++)
+            Console.Write(c < 0 ? r + " " : (r == y && c == x ? "X" : (r == 0 || c == 0) ? "*" : " ") + " ");
+    Console.Write("  ");
+    for (int c = 0; c <= 5; c++) Console.Write(c + " ");
+    Console.WriteLine("x");
+    ```
+    Obs, detta är inget exempel på bra kod, utan bara en kul grej. Den är alldeleses för kompakt och svår att läsa! Exemplet ovan resulterar i exakt samma maskinkod som den enklare exemplet, men är mycket svårare att förstå.
+    

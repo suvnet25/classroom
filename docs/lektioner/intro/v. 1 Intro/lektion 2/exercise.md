@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning - Grunder
+# Övning 02 Grunder
 
 ## Variabler
 

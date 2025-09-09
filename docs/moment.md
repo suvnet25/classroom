@@ -22,7 +22,7 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 ## **C\#**
 
 - [x] Keywords
-- [ ] Operatorer/Uttryck/Satser
+- [x] Operatorer/Uttryck/Satser
 - [ ] Enum
 - [ ] Felhantering
 - [ ] Exceptions: Try/Catch/Finally
@@ -37,7 +37,7 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [x] bool
 - [X] array
 - [ ] List<>
-- [ ] null
+- [x] null
 - [ ] Variablers livslängd ***<- Viktigt!***
 - [ ] Reference type / Value type ***<- Viktigt!***
 - [ ] Garbage Collection
@@ -50,18 +50,19 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [x] Foreach
 
 #### Metoder
-- [ ] Metodsignatur
+- [x] Metoddeklaration
+- [ ] "Rena" metoder och single responsibility principle
+- [x] Metodsignatur
 - [ ] Method overloading
 - [ ] Method overriding (ex ToString())
 
 ### **.NET-bibliotek**
-- [ ] System
 - [X] Console
 - [x] ReadLine / WriteLine
-- [ ] Convert / Parse
-- [ ] DateTime
+- [x] Convert / Parse
 - [X] Random
 - [X] File (ReadAllText, ReadAllLines, WriteAllText)
+- [ ] DateTime
 
 ### GIT och GitHub
 - [ ] Init
@@ -79,12 +80,11 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 ### Objektorienterad Programmering
 - [ ] OOP som begrepp
 - [ ] Namespaces
-- [ ] Klasser
-- [ ] Konstruktorer	
-- [ ] Abstrakta klasser
-- [ ] Object
+- [ ] Klasser och objekt
 - [ ] Keywordet new
+- [ ] Konstruktorer	
 - [ ] Properties (Get/Set)
+- [ ] Abstrakta klasser
 - [ ] Inkapsling (Begreppet)
 - [ ] Polymorphism (Begreppet)
 - [ ] Object som alla klassers basklass

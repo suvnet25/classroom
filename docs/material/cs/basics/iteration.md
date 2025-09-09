@@ -1,7 +1,7 @@
 ---
     title: Iteration
     description: Sk. loopar används för att upprepa kodblock flera gånger.
-    icon: fontawesome/solid/infinity
+    icon: octicons/iterations-16
 ---
 
 # Iteration

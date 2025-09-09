@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning - Metoder 01
+# Övning 04 Metoder
 
 Relevant dokumentation: [metoder](../../../../material/cs/basics/methods.md).
 

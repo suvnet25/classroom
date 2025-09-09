@@ -7,30 +7,35 @@
 # Metoder
 Metoder (eller ibland kallat funktioner) är ett namngivet kodblock som kan kallas på från vår kod genom att vi skriver namnet på metoden och skickar med eventuell data till den. För att inte program ska bli allt för långa och svårlästa är det ett måste att dela upp koden i mindre delar. Det är här metoder kommer in i bilden.
 
-```csharp title="Exempel på metoddeklaration och anrop"
-void SayHello() // Metoddeklaration
+```csharp title="En metods allmänna struktur"
+ÅTKOMSTMODIFIERARE TYP METODNAMN(PARAMETRAR)
 {
-    Console.WriteLine("Hello, World!");
+    //Kod som körs när metoden anropas
 }
-
-SayHello(); // Metodanrop
 ```
 
 Metoder deklareras i turordning med:
 
 * **Åtkomstmodifierare**. T.ex. `public`, `private`, `protected` etc. Default är `private` om inget anges.
-* **Returtyp**. T.ex. `void`, `int`, `string` etc. Måste alltid anges.
+* **Returtyp**. T.ex. `void`, `int`, `string` etc. Måste alltid anges. `void` betyder att metoden inte returnerar något värde.
 * **Metodnamn**. T.ex. `WriteMessage`, `CalculateSum` etc. Bör beskriva vad metoden gör, ofta med verb i början.
 * **Parametrar** inom parentes. T.ex. `int tal1, int tal2`. Om metoden inte tar några parametrar, skrivs tomma parenteser `()`.
 * **Metodkropp** inom klamrar `{ }` som innehåller koden som ska köras när metoden anropas.
 
-En metods kombination av namn och parametrar kallas för **metodsignatur**.
+En metods kombination av returtyp, namn och parametrar kallas för **metodsignatur**.
+
+En metod ligger vanligtvis deklarerad inom en klass eller en struct.[^1]
+
+[^1]: Läs mer om klasser och structs i kapitlet OOP
 
 ```csharp title="Enklaste metoden, utan parametrar och utan returvärde"
 void WriteMessage()
 {
     Console.WriteLine("Hej från metoden!");
 }
+
+//För att kalla på (använda) metoden, skrivs metodens namn följt av parenteser
+WriteMessage();
 ```
 
 ## Parametrar

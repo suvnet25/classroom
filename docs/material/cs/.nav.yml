@@ -1,5 +1,6 @@
 nav:
   - index.md
+  - Syntax: syntax
   - Grunder: basics
   - OOP: oop
   - .NET-bibliotek: standardbibliotek

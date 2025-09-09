@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning (svår)
 ---
 
-# Övning: Todo CLI
+# Övning 02 Todo CLI
 
 !!! warning ""
     Detta är en längre övning som kan ta flera timmar att lösa. Den kan vara ganska klurig då det kanske är många saker som är nya för dig hur det funkar med kommandoradsprogram, filhantering och så vidare. Ta det lugnt, jobba i din egen takt, fråga om hjälp när du kör fast och försök lösa så mycket som möjligt på egen hand.
