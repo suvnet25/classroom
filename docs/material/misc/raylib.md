@@ -54,3 +54,10 @@ while (!Window.ShouldClose())
 Kör programmet med `dotnet run` i terminalen. Du bör nu se ett fönster med en cirkel som du kan styra med piltangenterna.
 
 Detta är bara början! Läs mer om alla funktioner [här](https://github.com/MrScautHD/Raylib-CSharp/wiki)
+
+# Enklare saker att testa på egen hand:
+
+* Skapa en rektangel som kan styras med tangenterna W, A, S, och D.
+* Skapa en for-loop som ritar 10 cirklar på rad med olika färger.
+* Skapa ett program där användaren kan klicka med musen för att placera ut cirklar på skärmen.
+* Skapa ett enkelt spel där en cirkel ska undvika att bli träffad av fallande rektanglar.
