@@ -6,6 +6,7 @@ För att komma igång snabbt, gör så här:
 
 1. Skapa ett nytt konsolprojekt.
 2. I terminalen, skriv följande kommando för att installera Raylib via NuGet:
+(Obs, du måste stå i projektmappen i terminalen när du kör detta kommando)
 
 ```bash
 dotnet add package Raylib-CSharp --version 5.0.0
