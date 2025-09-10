@@ -24,3 +24,13 @@ Vanliga operationer med List:
 | Returnera antalet element i listan | `int count = names.Count;` |
 | Ta bort alla element från listan | `names.Clear();` |
 | Kolla om ett element finns i listan | `bool exists = names.Contains("Alice");` |
+
+```csharp title="Exempel på List"
+List<string> people = ["Kim", "Sam", "Bob", "Tom"]; //Count = 3 (varierar)
+List<int> age = [23, 99, 2];
+
+for (int i = 0; i < people.Count; i++)
+{
+    Console.WriteLine($"{people[i]} är {age[i]} gammal.");
+}
+```
