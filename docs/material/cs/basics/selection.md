@@ -73,4 +73,37 @@ Det går att endast ha ett *if*-statement, utan *else if* eller *else*. Det går
         Console.WriteLine("Numret är noll.");
     }
     ```
+## Switch
+
+En annan användbar selektionsstruktur är *switch*, som är särskilt användbar när du har många olika möjliga värden att kontrollera. Här är ett exempel:
+
+```csharp
+char grade = 'B'; //Det troliga är att denna kommer nånstans ifrån, en databas eller liknande.
+
+switch (grade)
+{
+    case 'A':
+        Console.WriteLine("Utmärkt!");
+        break;
+    case 'B':
+        Console.WriteLine("Bra jobbat!");
+        break;
+    case 'C':
+        Console.WriteLine("Du klarade det.");
+        break;
+    case 'D':
+        Console.WriteLine("Du behöver förbättra dig.");
+        break;
+    case 'F':
+        Console.WriteLine("Du misslyckades.");
+        break;
+    default:
+        Console.WriteLine("Ogiltigt betyg.");
+        break;
+}
+```
+Observera behovet av *break* i varje case. Utan dem skulle programmet fortsätta köra koden i de efterföljande casen, vilket oftast inte är önskvärt.
+
+Observera också att typen på det som kommer efter switch måste vara samma som typen på case-värdena. I detta exempel är både *grade* och case-värdena av typen *char*.
+
 
