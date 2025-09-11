@@ -8,7 +8,7 @@ Första labben! När dagen är över, skicka in er Program.cs via Google Classro
 
 Ni hoppar in och jobbar lite extra på Skatteverket. En junior utvecklare har lämnat lite halvfärdig kod som ni kommer att få ta över.
 
-**Ert jobb:**
+**Ert jobb i stora drag:**
 
 1. Fixa först buggarna i den befintliga koden.
 2. Lägg till funktioner för att beräkna skatt för en person.
@@ -25,14 +25,8 @@ Ni hoppar in och jobbar lite extra på Skatteverket. En junior utvecklare har l�
 
 1. Skapa ett nytt konsolprojekt med `dotnet new console`
 2. Kopiera in nedanstående kod in i `Program.cs`
-3. Följ instruktionerna som står under startkoden.
-
-!!! Tip "Tips!"
-    * Angrip små problem i taget. Inte allt på en gång.
-    * Börja med att få programmet att kompilera.
-    * Gör en del i taget. Börja med att samla in data från användaren tex.
-    * Om du inte får till matten, gör en ungefärlig beräkning till att börja med. Om det ligger in en metod kan du enkelt komma tillbaka och förbättra den senare. Samma sak gäller andra metoder.
-    * Använd debuggern för att förstå hur koden fungerar.
+3. Fixa buggarna så att programmet kan köras.
+4. Följ instruktionerna som står under startkoden.
 
 ```csharp
 class Program
@@ -89,7 +83,7 @@ Exempel på resultat:
 SKATTEKVITTERING
 -----------------------------
 Namn: Pelle Programmerare
-Personnummer: 19650101-1234
+Födelseår: 1965
 Inkomst: 600000 kr
 Kyrkotillhörighet: Ja
 
@@ -100,7 +94,14 @@ Kyrkoavgift:       6000 kr
 Totalt att betala: 141020 kr
 ```
 
-!!! Tip "Hur lägger jag till nya metoder när det finns en Main-metod redan?"
+!!! Tip "Tips!"
+    * Angrip små problem i taget. Inte allt på en gång.
+    * Börja med att få programmet att kompilera.
+    * Gör en del i taget. Börja med att samla in data från användaren tex.
+    * Om du inte får till matten, gör en ungefärlig beräkning till att börja med. Om det ligger in en metod kan du enkelt komma tillbaka och förbättra den senare. Samma sak gäller andra metoder.
+    * Använd debuggern för att förstå hur koden fungerar.
+
+!!! Info "Hur lägger jag till nya metoder när det finns en Main-metod redan?"
 
     Du måste sätta dina metoder utanför Main-metodens måsvingar, men innanför klassens måsvingar. Du måste också sätta metoden till att vara `static`. Exempel:
 
@@ -125,9 +126,11 @@ Totalt att betala: 141020 kr
 
 1. Du matar också in personens hem-kommun (skattesatsen varierar ju mellan kommuner)
     - Läs in alla skattesatser från en fil ([finns att ladda ner här](skattesatser.csv)) och använd korrekt skattesats beroende på vilken kommun personen bor i.
-    - Gör klart menyval 2, som läser in den fil användaren skriver in namnet på och beräknar skatt för alla personer i filen. Exempel på fil finns att [ladda ner här](personer.csv).
+2. Gör klart menyval 2, som läser in den fil användaren skriver in namnet på och beräknar skatt för alla personer i filen. Exempel på fil finns att [ladda ner här](personer.csv).
     - Skriv ut skattekvittona till en fil istället för på skärmen. Tex till `skattekvitton.txt`. (Tips: Metoden `File.AppendText()` kan vara bra här).
-2. Hur skrivs siffror i kvittot ut på ett snyggt sätt utan allt för många decimaler? -> Undersök "format strings" i C#.
-3. Använder du någon *felhantering*? Dvs, vad händer om användaren skriver in text när du förväntar dig en siffra? Eller en siffra där det ska vara text?
+3. Hur skrivs siffror i kvittot ut på ett snyggt sätt utan allt för många decimaler? -> Undersök "format strings" i C#.
+4. Använder du någon *felhantering*? Dvs, vad händer om användaren skriver in text när du förväntar dig en siffra? Eller en siffra där det ska vara text?
+5. Istället för födelseår, skriv in personnummer och räkna ut åldern från det. 
+    - Hur kan du validera att personnumret som skrivits in är ett korrekt skrivet personnummer?
 
 
