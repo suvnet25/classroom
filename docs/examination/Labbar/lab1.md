@@ -100,6 +100,25 @@ Kyrkoavgift:       6000 kr
 Totalt att betala: 141020 kr
 ```
 
+!!! Tip "Hur lägger jag till nya metoder när det finns en Main-metod redan?"
+
+    Du måste sätta dina metoder utanför Main-metodens måsvingar, men innanför klassens måsvingar. Du måste också sätta metoden till att vara `static`. Exempel:
+
+    ```cs
+    class Program
+    {
+        static void Main()
+        {
+            PrintMessage("Hej");
+        }
+
+        static void PrintManyTimes(string value)
+        {
+            Console.WriteLine(value);
+        }
+    }
+    ```
+
 ## Strechgoals om det finns tid
 
 (Eller om du vill jobba vidare hemma)  
