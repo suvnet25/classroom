@@ -9,6 +9,4 @@ nav:
     - material/index.md
     - Allmänt: material/general
     - C#: material/cs
-    - material/git
-    - Testning: material/testing
     - Övrigt: material/misc

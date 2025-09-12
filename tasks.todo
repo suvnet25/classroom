@@ -1,14 +1,13 @@
 Material:
-    ❍ Fyll på mer om dotnet cli: https://csharp.progdocs.se/grundlaggande/dotnet-i-terminalen
+    ✓ Fyll på mer om dotnet cli: https://csharp.progdocs.se/grundlaggande/dotnet-i-terminalen @done(25-09-11 23:38)
     ❍ Kodexempelsektion
     ✓ Datum och tid @done(25-09-07 01:56)
     ✓ Debugging @done(25-09-05 21:06)
-    ❍ Mer vanliga problem
+    ❍ Mer vanliga problem. https://csharp.progdocs.se/grundlaggande/fel
     ✓ Parse @done(25-09-07 01:55)
     ✓ List @done(25-09-07 01:55)
-    ❍ Sektionen om metoder
+    ✓ Sektionen om metoder @done(25-09-11 17:20)
     ❍ GIT
-    ❍ https://csharp.progdocs.se/grundlaggande/fel
     ❍ https://csharp.progdocs.se/grundlaggande/typkonvertering
     ❍ Förtydliga några operatorer: https://csharp.progdocs.se/grundlaggande/operatorer
     ❍ Snygga till om strängar: https://csharp.progdocs.se/grundlaggande/string-manipulering
@@ -16,12 +15,13 @@ Material:
     ❍ Try catch: https://csharp.progdocs.se/grundlaggande/try-catch
     ❍ Fler begrepp och uppdelat i kategorier: https://csharp.progdocs.se/grundlaggande/begrepp
     ❍ https://csharp.progdocs.se/grundlaggande/reference-vs-value-types
-    ❍ https://github.com/MrScautHD/Raylib-CSharp
+    ✓ https://github.com/MrScautHD/Raylib-CSharp @done(25-09-11 17:20)
+    ❍ Klasser och objekt
 
 Lektioner:
-    ❍ LAB 1
-    ❍ Vecka 2
-    ❍ Övningar vecka 2
+    ✓ LAB 1 @done(25-09-11 17:20)
+    ✓ Vecka 2 @done(25-09-11 17:20)
+    ✓ Övningar vecka 2 @done(25-09-11 17:20)
 
 OOP2:
     ❍ delegater och lambda

@@ -4,3 +4,4 @@ nav:
   - Array: array.md
   - Iteration: iteration.md
   - Metoder: methods.md
+  - Felhantering: errorhandling.md
