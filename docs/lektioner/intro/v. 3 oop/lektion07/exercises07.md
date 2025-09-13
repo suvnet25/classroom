@@ -3,9 +3,10 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning - Lektion 07
+# Övning 07 Förberedelse
 
-## Förberedande övning
+!!! Tip ""
+    Detta är en förberedande övning inför att vi börjar med objektorienterad programmering. Gör så mycket du kan och har tid för med denan övning. Om du inte hinner klart eller det känns svårt så är ett alternativ att du noggrant studerar exempellösningen, och försöker förstå hur den koden fungerar. Fortsättningsövningen kommer att utgå från denna uppgift för att visa på fördelarna med OOP, så det blir lättare att hänga med om du har gjort denna övning, eller satt dig in i exempellösningen.
 
 **Mål**: Skapa ett konsolprogram som låter användaren hantera en adressbok. Programmet ska fungera ungefär så här:
 

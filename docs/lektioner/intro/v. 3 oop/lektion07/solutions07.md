@@ -1,4 +1,4 @@
-## Förberedande övning
+# Exempellösningar
 
 ??? Tip "Förberedande övning"
     ```csharp
@@ -6,6 +6,9 @@
         {
             private static void Main()
             {
+                // Det här är ett program som ska fungera som en adressbok. Till en början ska vi bara lagra folks namn och telefonnummer.
+                // Vi behöver två listor för att kunna lagra namnen och telefonnumren. Listor för att vi enkelt ska kunna lägga till nya kontakter.
+                
                 List<string> names = [];
                 List<string> phones = [];
 

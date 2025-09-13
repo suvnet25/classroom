@@ -2,8 +2,8 @@
 
 ## Innehåll
 
-* Veckans enkät!
-*
+* Git och GitHub
+* Veckans slutenkät!
 
 ---
 

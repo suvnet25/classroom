@@ -2,8 +2,8 @@
 
 ## Innehåll
 
-* Veckans enkät!
-*
+* Göra klart övningar
+* Arv
 
 ---
 
