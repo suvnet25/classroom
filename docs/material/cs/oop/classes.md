@@ -17,10 +17,10 @@ Klasser används för att strukturera kod på ett sätt som gör det lättare at
 Säg att vi vill hantera data om saker som ska göras, låt oss kalla det för **en Todo**. För att gruppera all information på ett bra sätt kan vi tänka på en **todo* som en sak som har vissa egenskaper och som kan utföra vissa handlingar:
 
 * En **Todo** kan exempelvis tänkas ha den här informationen:
-    * Ett namn (ex. "Handla mat")
-    * En beskrivning (ex. "Mjölk, ägg, bröd")
-    * Ett datum när den ska vara klar
-    * En status som visar om den är klar eller inte
+    * Ett **namn** (ex. "Handla mat")
+    * En **beskrivning** (ex. "Mjölk, ägg, bröd")
+    * Ett **datum** när den ska vara klar
+    * En **status** som visar om den är klar eller inte
 
 Vi kan "modellera" detta i C# genom att skapa en klass som heter `Todo`:
 
@@ -49,6 +49,32 @@ Detta *objekt* `myTodo` är en instans av klassen `Todo`, och vi kan skapa så m
 * En **Todo** kan också tänkas kunna göra vissa saker:
     * Markeras som klar eller inte klar
     * Visa sin information på ett sammanhållet och snyggt sätt
+
+Vi kan lägga till dessa beteenden som metoder i vår `Todo`-klass:
+
+```csharp
+public class Todo
+{
+    public string Name;
+    public string Description;
+    public DateTime DueDate;
+    public bool IsCompleted;
+
+    public void MarkAsCompleted()
+    {
+        IsCompleted = true;
+    }
+
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"Todo: {Name}");
+        Console.WriteLine($"Description: {Description}");
+        Console.WriteLine($"Due Date: {DueDate.ToShortDateString()}");
+        Console.WriteLine($"Completed: {IsCompleted}");
+    }
+}
+```
+
 
 ## Länkar
 

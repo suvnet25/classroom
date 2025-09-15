@@ -2,8 +2,9 @@
 
 ## Innehåll
 
+* [Parprogrammering](../../../../material/general/methodology/pairprogramming.md), vad är det?
 * Vi går igenom den första labben tillsammans!
-* Parprogrammering
+* Jobba med labben hela dagen!
 
 ---
 

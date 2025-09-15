@@ -1,9 +1,8 @@
-# Lektion 07
+# Lektion 08
 
 ## Innehåll
 
 * Göra klart övningar
-* Arv
 
 ---
 

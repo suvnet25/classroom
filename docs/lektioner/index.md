@@ -13,10 +13,60 @@ Så här funkar lektionerna på Suvnet:
 
 ## Schema
 
-| V   | 36  | 37  | 38  | 39   | 40       | 41  | 42  | 43  | 44  | 45    | 46  | 47  | 48  | 49  | 50  | 51  |
-|-----|-----|-----|-----|-----|------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| mån |     | **oop** |     |      |       |     |     |     |     |       |     |     |     |     |     |     |
-| tis | **oop** | **oop** | **oop** | **oop**  | **oop**   | **oop** | **oop** | **oop** | DB  | DB    | **oop** | DB  | **oop** | DB  | **oop** | DB  |
-| ons | **oop** | **oop** | **oop** | **oop**  | tenta | DB  | **oop** | DB  | DB  | tenta db | **oop** | DB  | **oop** | DB  |     | DB  |
-| tor |     | **oop** | **oop** | **oop**  | DB    | DB  | DB  | DB  | **oop** | **oop**   | **oop** | DB  | DB  | **oop** | DB  | **oop** |
-| fre | **oop** |     |     |      |       |     |     |     |     |       |     |     |     |     |     |     |
+| V   |   36  |   37  |   38  |  39   | 40    |   41  |   42  |   43  |   44  |  45    | 46 |   47  |   48  | 49    |  50   | 51    |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|----|-------|-------|-------|-------|-------|
+| mån |       |**oop**|       |       |       |       |       |       |       |        |    |       |       |       |       |       |
+| tis |**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|DB     |DB      | DB |**oop**|**oop**|DB     |**oop**|DB     |
+| ons |**oop**|**oop**|**oop**|**oop**|tenta  |DB     |**oop**|DB     |DB     |tenta db| DB |**oop**|**oop**|DB     |       |DB     |
+| tor |       |**oop**|**oop**|**oop**|DB     |DB     |DB     |DB     |**oop**|**oop** | DB |**oop**|DB     |**oop**|DB     |**oop**|
+| fre |**oop**|       |       |       |       |       |       |       |       |        |    |       |       |       |       |       |
+
+## Lektionsöversikt
+
+**Lektion**  
+
+01 intro
+02 variabler if-sats array loop
+03 pseudokod problemlösning random file string debugger
+
+04 metoder titta på fullt program meny-övning
+05 list tryparse 
+06 Lab #1 (grundläggande C#) 
+
+07 oop intro
+08 oop forts
+09 git och github
+
+10 oop arv 
+11 oop projektstruktur, namespaces
+12 Lab #2 (oop)
+
+13
+
+14
+
+15
+16
+
+17 Interfaces
+
+18
+
+19
+
+x
+x
+x
+
+20 testning
+21 testning
+22 testning
+
+23 projektarbete uppstart
+24 ddd + workshop
+ 
+25 workshop
+
+26 workshop
+
+27 workshop

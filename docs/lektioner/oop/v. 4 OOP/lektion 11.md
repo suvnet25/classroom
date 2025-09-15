@@ -1,7 +1,7 @@
 #### Dagens innehåll
 
-* TBA
-* TBA
-* TBA
+* Projektstruktur
+* Flera projekt i ett?!
+* Namespaces
 
 #### Länkar

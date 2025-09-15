@@ -4,7 +4,7 @@ nav:
     - moment.md
     - Kategorier: categories.md
     - examination 
-    - Veckor: lektioner
+    - Lektioner: lektioner
   - Material:
     - material/index.md
     - Allmänt: material/general

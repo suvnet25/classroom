@@ -1,7 +1,5 @@
 #### Dagens innehåll
 
-* TBA
-* TBA
-* TBA
+* Lab #2
 
 #### Länkar

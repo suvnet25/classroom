@@ -1,7 +1,6 @@
 #### Dagens innehåll
 
-* TBA
-* TBA
-* TBA
+* Repetition och påminnelse om GIT
+* Arv, object och overrides
 
 #### Länkar
