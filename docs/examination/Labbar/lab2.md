@@ -1,7 +1,7 @@
 # &#9733; Lab #2
 
-## GIT och GitHub
+## Klasser och objekt
 
-Detta kommer delvis bli en grupplabb där ni får samarbeta i grupper om 2-3 personer. 
+Första labben där vi jobbar med klasser och objekt i en struktur som påminner mer om hur verkliga projekt är uppbyggda, även om det är i en väldigt liten skala än så länge.
 
 Mer info kommer!

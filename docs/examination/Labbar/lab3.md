@@ -1,7 +1,7 @@
 # &#9733; Lab #3
 
-## Klasser och objekt
+## GIT och GitHub
 
-Första labben där vi jobbar med klasser och objekt i en struktur som påminner mer om hur verkliga projekt är uppbyggda, även om det är i en väldigt liten skala än så länge.
+Detta kommer delvis bli en grupplabb där ni får samarbeta i grupper om 2-3 personer. 
 
 Mer info kommer!

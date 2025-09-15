@@ -37,22 +37,22 @@ Så här funkar lektionerna på Suvnet:
 08 oop forts
 09 git och github
 
-10 oop arv 
-11 oop projektstruktur, namespaces
-12 Lab #2 (oop)
+10 oop arv och polymorfism
+11 oop projektstruktur, namespaces, paket
+12 Lab #2 via github classroom (oop)
 
-13
+13 Exceptions
 
-14
+14 Enums
 
-15
-16
+16 Lab #3 Github Workflows
+15 SOLID
 
 17 Interfaces
 
-18
+18 Bufferdag
 
-19
+19 Lab #4 SOLID
 
 x
 x
@@ -60,10 +60,10 @@ x
 
 20 testning
 21 testning
-22 testning
+22 Lab #5 testning
 
 23 projektarbete uppstart
-24 ddd + workshop
+24 workshop
  
 25 workshop
 
