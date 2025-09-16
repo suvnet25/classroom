@@ -1,0 +1,5 @@
+nav:
+  - index.md
+  - Redigera/skapa: edit_create
+  - Datamanipulation: dml
+  - SQL-funktioner: functions
