@@ -90,8 +90,8 @@ Inkomst: 600000 kr
 Kyrkotillhörighet: Ja
 
 Kommunalskatt:     105020 kr
-Statlig skatt:     30000 kr
-Kyrkoavgift:       6000 kr
+Statlig skatt:          0 kr
+Kyrkoavgift:         6000 kr
 -----------------------------
 Totalt att betala: 141020 kr
 ```

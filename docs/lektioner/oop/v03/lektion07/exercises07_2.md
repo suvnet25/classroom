@@ -15,7 +15,7 @@ tags:
 ## Steg 1
 #### Klass, objekt och fält
 
-Denna uppgift utgår från koden i [Övning 07 Förbered](./exercises07.md).
+Denna uppgift utgår från koden i [Övning 07 Förbered](./solutions07.md).
 
 1. Tänk igenom varför det är problematiskt att, som i den förberedande övningen, lagra namn och telefonnummer i två separata listor. Hur blir det om vi lägger till en massa andra fält, så som adress, e-post, födelsedag osv? 
 
