@@ -3,3 +3,4 @@ nav:
   - Redigera/skapa: edit_create
   - Datamanipulation: dml
   - SQL-funktioner: functions
+  - Dapper: dapper
