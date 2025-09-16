@@ -2,8 +2,8 @@
 
 # Grundprinciper inom OOP
 
-* Inkapsling (Encapsulation) - Att hålla ihop data och beteende i objekt
-* Abstraktion (Abstraction) - Att dölja komplexitet och visa bara det nödvändiga
+* Abstraktion (Abstraction) - Abstrahera för att bara fokusera på det väsentliga
+* Inkapsling (Encapsulation) - Dölj interna detaljer och exponera endast det som är nödvändigt
 * Arv (Inheritance) - Klasser kan ärva egenskaper och beteenden från andra klasser
 * Polymorfism (Polymorphism) - Att objekt kan ta många former, t.ex. genom metoder som kan användas på olika sätt beroende på objektets typ
 

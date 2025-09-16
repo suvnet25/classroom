@@ -14,3 +14,4 @@
 ## Relevanta länkar
 
 * [C#-skolan](https://csharpskolan.se/article/klasser-en-introduktion/)
+* [Microsoft OOP](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop)
