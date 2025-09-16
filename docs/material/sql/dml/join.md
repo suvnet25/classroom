@@ -35,6 +35,7 @@ Tänk dig att vi har följande två tabeller:
 | 5  | Apputveckling | 10      | 3      |
 | 8  | Webbdesign    | 10      | 3     |
 | 9  | AI-utveckling | 10      | NULL     |
+| 10 | Historia      | 10      | 333    |
 
 ### INNER JOIN
 ```sql
@@ -71,6 +72,7 @@ Ger följande result set:
 | Apputveckling  | David       |
 | Webbdesign     | David       |
 | AI-utveckling  | NULL        |
+| Historia       | NULL        |
 
 ### RIGHT JOIN
 ```sql
@@ -153,3 +155,7 @@ Resultat:
 | Björn Berg      | Databaser      | 0     |
 | Carla Carlsson  | Webbdesign     | 1     |
 | David Dahl      | Apputveckling  | 1     |
+
+## Illustration
+Som relationsschema illustreras databasen såhär:
+![Relationsschema](../img/leftrightjoin.png)
