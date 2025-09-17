@@ -14,10 +14,10 @@ Objektorienterad programmering är ett programmeringsparadigm som använder "obj
 
 ### Fyra grundläggande principer
 
-1. **Abstraktion**: Fokusera på det väsentliga och ignorera det oväsentliga.
-2. **Inkapsling**: Dölj intern komplexitet och exponera endast nödvändig information.
-3. **Arv**: Skapa nya klasser baserade på befintliga klasser.
-4. **Polymorfism**: Objekt kan ta många former, och ses som en instans av sin egen klass eller av en basklass.
+1. [**Abstraktion**](abstraction.md): Fokusera på det väsentliga och ignorera det oväsentliga.
+2. [**Inkapsling**](encapsulation.md): Dölj intern komplexitet och exponera endast nödvändig information.
+3. [**Arv**](inheritance.md): Skapa nya klasser baserade på befintliga klasser.
+4. [**Polymorfism**](polymorphism.md): Objekt kan ta många former, och ses som en instans av sin egen klass eller av en basklass.
 
 
 ## Länkar

@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning 08 Konstruktor
+# Övning 10 Konstruktor
 
 ## Steg 4 : Konstruktorer
 

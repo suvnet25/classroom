@@ -13,4 +13,8 @@ En stor fördel med Git är att det också går att "förgrena" arbetet, vilket 
 
 ## Länkar
 
+* [Git-avsnittet i Material](../../../material/misc/git/index.md)
+* [Sammanfattning på en sida](https://training.github.com/downloads/github-git-cheat-sheet/)
 * [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
+* [Gits officiella dokumentation](https://git-scm.com/book/en/v2)
+* [Git Branching](https://learngitbranching.js.org/)

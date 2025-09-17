@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning 08 Properties
+# Övning 10 Properties
 
 ## Steg 3: *Properties* istället för get/set metoder
 

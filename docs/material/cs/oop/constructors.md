@@ -64,3 +64,15 @@ TodoItem myTodo2 = new TodoItem("Lär dig om överlagrade konstruktorer", true);
 ```
 
 Detta är väldigt likt "method overloading".
+
+## Primary Constructors
+
+I .NET 8 introducerades "primary constructors" som ett sätt att förenkla syntaxen för klasser som huvudsakligen används för att hålla data. En primary constructor definieras direkt i klassens deklaration och kan användas för att initiera egenskaper.
+
+```csharp
+public class TodoItem(string title, bool isDone = false) // Primary constructor
+{
+    public string Title { get; set; } = title;
+    public bool IsDone { get; set; } = isDone;
+}
+```

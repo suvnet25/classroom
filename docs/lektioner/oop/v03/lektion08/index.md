@@ -1,4 +1,4 @@
-# Lektion 08
+# Lektion 08 - OOP Grunder
 
 ## Innehåll
 
@@ -8,13 +8,10 @@
     * Exempel: Hockeymatch
 * Övning: OOP-design del 1(1h)
 * Övning: OOP-design del 2(1h)
-
----
-
-* Inkapsling: get/set-metoder och accessmodifierare (1h)
-* Properties (1h)
-* Konstruktorer (1h) (Om vi hinner)
+* Inkapsling: get/set-metoder och accessmodifierare (3h)
 
 ---
 
 ## Relevanta länkar
+
+
