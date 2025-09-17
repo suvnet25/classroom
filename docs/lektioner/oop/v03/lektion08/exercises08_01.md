@@ -96,31 +96,49 @@ Här är ett förslag på olika digitala system. Välj ett av dem, eller hitta p
     I en butik använder personalen ett kassasystem för att registrera varor som en kund köper.
     
     * Varje vara har ett pris och en produktkod.  
-    Kunden gör en beställning, systemet beräknar en totalsumma och betalningen sker med ett betalmedel, till exempel kort, kontanter eller swish.  
-    Ett kvitto skrivs ut i slutet.
+    * Kunden gör en beställning, systemet beräknar en totalsumma och betalningen sker med ett betalmedel, till exempel kort, kontanter eller swish.  
+    * Ett kvitto skrivs ut i slutet.
 
 ??? Info "Ett bibliotekssystem"
     I ett bibliotek finns många böcker som kan lånas ut till en låntagare.  
-    För att låna behövs ett lånekort, och varje lån registreras med datum för utlån och datum för återlämning.  
+    För att låna behövs 
+    
+    * ett lånekort
+    * varje lån registreras med datum för utlån och datum för återlämning.  
+
     En bibliotekarie ansvarar för att registrera lån och återlämning.  
     Systemet kan också hålla reda på om en bok är ledig eller utlånad.
 
 ??? Info "Ett system för att hantera anställda"
-    Ett företag har många anställda, och varje anställd har ett namn, en anställningsform, en lön och ett anställningsdatum.  
-    Systemet kan också lagra information om avdelningar, projekt som de jobbar i, och vem som är deras chef.  
+    * Ett företag har många anställda
+    * Varje anställd har ett namn, en anställningsform, en lön och ett anställningsdatum.  
+    
+    Systemet kan också lagra information om 
+    
+    * avdelningar
+    * projekt som de jobbar i
+    * vem som är deras chef.  
+    
     När någon slutar behöver systemet uppdateras.
 
 ??? Info "Ett system för närvaro, ledighet och sjukfrånvaro"
     I en kommunorganisation behöver man hålla koll på närvaro och frånvaro.  
-    Varje person har ett schema med dagar och tider.  
-    I systemet kan man markera närvarande, sjukfrånvaro eller semester.
-    Frånvara kan ha olika orsaker, t.ex. sjukdom, semester, föräldraledighet eller annan ledighet.
-    Det kan läggas in anteckningar för varje dag.
-    En administratör eller lärare kan skapa rapporter över närvaron.
+   
+    * Varje person har ett schema med dagar och tider.  
+    * I systemet kan man markera närvarande, sjukfrånvaro eller semester.
+    * Frånvara kan ha olika orsaker, t.ex. sjukdom, semester, föräldraledighet eller annan ledighet.
+    * Det kan läggas in anteckningar för varje dag.
+    * En administratör eller lärare kan skapa rapporter över närvaron.
 
 ??? Info "En journaling-app"
     En journaling-app låter användare skriva inlägg som sparas dag för dag.  
-    Varje inlägg kan ha datum, text, humör och eventuellt en tagg för att beskriva känslor eller aktiviteter.  
+    Varje inlägg kan ha 
+    
+    * datum
+    * text
+    * humör
+    * eventuellt en tagg för att beskriva känslor eller aktiviteter.  
+    
     Appen kan också visa en översikt eller statistik över användarens humör och vanor över tid.
 
 ??? Info "Hogwarts School of Witchcraft and Wizardry"
