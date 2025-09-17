@@ -75,15 +75,65 @@ Rita ett enkelt "klassdiagram" över de objekt ni identifierat. Papper och penna
 
 Vill du se ett exempel på hur klassdiagram kan se ut? Kolla in [denna sida om UML](../../../../material/general/methodology/uml.md).
 
+---
+
 ## Uppgift 2 - Digitalt system
 
 Nu ska vi titta på ett digital system utan en direkt fysisk motsvarighet. Det kan vara lite svårare att identifiera objekt i ett sådant, eftersom det inte alltid finns en motsvarighet i verkligeheten för allt vi behöver i ett sånt system.
 
 Här är ett förslag på olika digitala system. Välj ett av dem, eller hitta på ett eget. Använd sedan samma process som i uppgift 1 för att identifiera objekt, relationer, egenskaper och metoder.
 
-* En app för att skapa och dela recept
-* Ett kassasystem i en butik
-* Ett bibliotekssystem för att låna och återlämna böcker
-* Ett system för att hantera anställda i ett företag
-* Ett system för att hantera närvaro, ledighet och sjukfrånvaro
-* En journaling-app för att skriva dagbok, hålla koll på humör och vanor
+??? Info "En app för att skapa och dela recept"
+    Tänk dig en app där användare kan skriva in sina egna recept.  
+
+    * Det ska gå att lägga till ingredienser till recepten, och hur mycket av de olika sakerna. 
+    * Det ska gå att skriva en instruktion för hur receptet tillagas. 
+    * Recepten kan delas med andra användare, som i sin tur kan lämna kommentarer eller sätta ett betyg. 
+    * Kanske kan det gå att skapa en inköpslista baserat på ett recept också? 
+    * Kanske går det att skriva in kostnader för recepten och få en uppskattning av hur mycket det kostar att laga dem beroende på antalet portioner?
+
+??? Info "Ett kassasystem i en butik"
+    I en butik använder personalen ett kassasystem för att registrera varor som en kund köper.
+    
+    * Varje vara har ett pris och en produktkod.  
+    Kunden gör en beställning, systemet beräknar en totalsumma och betalningen sker med ett betalmedel, till exempel kort, kontanter eller swish.  
+    Ett kvitto skrivs ut i slutet.
+
+??? Info "Ett bibliotekssystem"
+    I ett bibliotek finns många böcker som kan lånas ut till en låntagare.  
+    För att låna behövs ett lånekort, och varje lån registreras med datum för utlån och datum för återlämning.  
+    En bibliotekarie ansvarar för att registrera lån och återlämning.  
+    Systemet kan också hålla reda på om en bok är ledig eller utlånad.
+
+??? Info "Ett system för att hantera anställda"
+    Ett företag har många anställda, och varje anställd har ett namn, en anställningsform, en lön och ett anställningsdatum.  
+    Systemet kan också lagra information om avdelningar, projekt som de jobbar i, och vem som är deras chef.  
+    När någon slutar behöver systemet uppdateras.
+
+??? Info "Ett system för närvaro, ledighet och sjukfrånvaro"
+    I en kommunorganisation behöver man hålla koll på närvaro och frånvaro.  
+    Varje person har ett schema med dagar och tider.  
+    I systemet kan man markera närvarande, sjukfrånvaro eller semester.
+    Frånvara kan ha olika orsaker, t.ex. sjukdom, semester, föräldraledighet eller annan ledighet.
+    Det kan läggas in anteckningar för varje dag.
+    En administratör eller lärare kan skapa rapporter över närvaron.
+
+??? Info "En journaling-app"
+    En journaling-app låter användare skriva inlägg som sparas dag för dag.  
+    Varje inlägg kan ha datum, text, humör och eventuellt en tagg för att beskriva känslor eller aktiviteter.  
+    Appen kan också visa en översikt eller statistik över användarens humör och vanor över tid.
+
+??? Info "Hogwarts School of Witchcraft and Wizardry"
+    Tänk dig att du ska skapa ett system för att hantera elever, lärare, kurser och betyg på Hogwarts.  
+    Elever kan vara med i olika elevhem (Gryffindor, Hufflepuff, Ravenclaw, Slytherin) och delta i olika aktiviteter som Quidditch.  
+    Lärare undervisar i olika ämnen och sätter betyg på elevernas prestationer.
+    Betygen i kurserna graderas med Outstanding, Exceeds Expectations, Acceptable, Poor och Dreadful.
+    Systemet kan också hålla reda på magiska varelser och artefakter som finns på skolan.
+
+??? Info "Saurons HR system"
+    Sauron behöver ett system för att hantera sina orcher och andra tjänare.  
+    Varje tjänare har en roll (t.ex. krigare, spion, byggare), en styrka, en lojalitetsnivå och en uppdragsstatus.  
+    Systemet kan också hålla reda på vilka uppdrag som är pågående, vilka som är slutförda och vilka som misslyckats.
+    Det är viktigt att hålla koll på utrustning också, orcher är inte kända för att hålla reda på sina saker.
+    Systemet kan också hantera rekrytering av nya tjänare och avskedande av de som inte längre är lojala.
+
