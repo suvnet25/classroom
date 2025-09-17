@@ -9,4 +9,5 @@ nav:
     - material/index.md
     - Allmänt: material/general
     - C#: material/cs
+    - SQL: material/sql
     - Övrigt: material/misc
