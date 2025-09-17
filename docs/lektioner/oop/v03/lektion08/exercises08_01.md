@@ -17,7 +17,7 @@ För att kunna bygga ett system med en objektorienterad approach behöver vi kun
 
 ## Uppgift 1 - Fysiskt system
 
-Tänk dig att vi ska skapa ett digitalt spel baserat på det riktiga spelet [Fia med Knuff](https://sv.wikipedia.org/wiki/Fia_(br%C3%A4dspel)). Vad för faktiska saker finns med i det spelet?
+Tänk dig att vi ska skapa ett digitalt spel baserat på det riktiga spelet [Fia med Knuff](https://sv.wikipedia.org/wiki/Fia_(br%C3%A4dspel)). Vad för faktiska saker finns med i det spelet? Vad är relevant för spelet i sig, och vad är inte relevant? Försök hitta en gränsdragning mellan vad som är med i spelet och vad som inte är det.
 
 ??? Info "Vad är Fia med Knuff?"
     # Fia med knuff – spelregler i korthet
