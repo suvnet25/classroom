@@ -20,7 +20,27 @@ För att kunna bygga ett system med en objektorienterad approach behöver vi kun
 Tänk dig att vi ska skapa ett digitalt spel baserat på det riktiga spelet [Fia med Knuff](https://sv.wikipedia.org/wiki/Fia_(br%C3%A4dspel)). Vad för faktiska saker finns med i det spelet?
 
 ??? Info "Vad är Fia med Knuff?"
-    Fia med knuff, är ett brädspel för 2–4 spelare. Varje spelare har fyra spelpjäser i varsitt bo och målet är att med utgång från tärningskast flytta sina pjäser från boet, ett varv medsols runt spelplanen och slutligen in i mitten, med utgång från tärningskast. Den som först når mitten med samtliga pjäser vinner. För att få kliva ur boet krävs en sexa, ibland går det även bra med en etta.[4] Det är tillåtet att ha flera pjäser i spel utanför sitt bo, däremot får man bara flytta en pjäs per tärningskast. Pjäsernas färger är röd, blå, gul och grön. Fia med knuff innebär att om man hamnar på samma spelruta som en motspelare, "knuffar" man ut motståndarens spelpjäs. Det betyder att motspelaren får börja om från sitt bo med spelpjäsen. Spelrutorna som leder in i mitten av spelplanen är "säker mark" och man kan därför inte bli utknuffad där.
+    # Fia med knuff – spelregler i korthet
+
+    **Fia med knuff** är ett brädspel för **2–4 spelare**.  
+
+    - Varje spelare har **fyra pjäser** i sitt bo.  
+    - Målet är att med hjälp av tärningskast flytta sina pjäser:  
+    1. Ut från boet  
+    2. Ett varv medsols runt spelplanen  
+    3. In i mitten  
+
+    Den som först får in **alla sina pjäser i mitten** vinner spelet.
+
+    ## Regler
+    - För att lämna boet krävs en **sexa** (ibland även en etta).  
+    - Man får bara flytta **en pjäs per tärningskast**.  
+    - Det är tillåtet att ha flera pjäser ute på spelplanen.  
+    - Pjäsernas färger är **röd, blå, gul och grön**.  
+
+    ## “Knuffa” motståndaren
+    - Om du hamnar på samma ruta som en motspelare, **knuffas motståndarens pjäs tillbaka till sitt bo**.  
+    - Rutor som leder in i mitten är **säker mark** – där kan man inte bli utknuffad.
 
     ![Vad är Fia med Knuff?](fiamedknuff.png)
 
