@@ -4,11 +4,8 @@
 
 * Veckans enkät!
 * Introduktion till OOP, klasser och objekt (1h)
-* Steg 1 (2h)
-    * Livekodning Todo - Klasser, objekt, fält 
-    * Övningar 
-* Objektorienterad design
-
+* Livekodning Todo - Klasser, objekt, fält 
+* [Övning 07 Adressboken](./exercises07_2.md) (Resten av dagen)
 ---
 
 ## Relevanta länkar

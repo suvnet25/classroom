@@ -1,7 +1,28 @@
 # Slide 2
 
-# Varför används Objektorienterad Programmering?
+# Properties
 
-* Ge komplexitet en struktur och läsbarhet
-* Ett sätt att tänka kring kod - håller ihop data och beteende
-* Rätt använt gör det koden mer flexibel och lättare att underhålla
+* Ett modernt sätt att skapa get- och set-metoder
+* Ser ut som fält men **är egentligen metoder**
+* Används i all professionell kod
+* Kan ha olika accesslevel för get och set
+
+```csharp
+class TodoItem
+{
+    private string description;
+    public string Description
+    {
+        get { return description; }
+        set { description = value; }
+    }
+
+    private bool isDone;
+
+    public bool IsDone
+    {
+        get { return isDone; }
+        private set { isDone = value; } // Privat set-metod
+    }
+}
+```

@@ -75,6 +75,15 @@ public class Todo
 }
 ```
 
+Nu kan vi använda dessa metoder på våra **Todo**-objekt:
+
+```csharp
+myTodo.MarkAsCompleted();
+myTodo.DisplayInfo();
+```
+
+Detta är grunderna i hur klasser fungerar i C#. Genom att använda klasser kan vi organisera vår kod på ett sätt som gör det lättare att förstå, underhålla och återanvända. Läs nu på mer om de olika principerna för objektorienterad programmering (OOP) som [inkapsling](./encapsulation.md), arv och polymorfism för att få en djupare förståelse av hur klasser kan användas effektivt.
+
 
 ## Länkar
 

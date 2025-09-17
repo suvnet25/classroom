@@ -1,10 +1,24 @@
 # Slide 3
 
-# Hur används Objektorienterad Programmering?
+# Konstruktorer
 
-* Vi identifierar "saker" i vår applikation som kan representeras som objekt.
-* Ofta utifrån en viss "domän" eller ett visst problem.
-* Vi skapar klasser som beskriver dessa objekt.
-* Vi skapar objekt från dessa klasser. Detta kallas att instansiera en klass.
-* Vi använder objektens data och beteende för att lösa vårt problem.
+* Specialmetod som körs när ett objekt skapas
+* Används för att initiera objektets fält/egenskaper
+* Ser till så att ett objekt inte kan skapas i ett "ogiltigt" tillstånd
 
+```csharp
+public class TodoItem
+{
+    public string Title { get; set; }
+    public bool IsDone { get; set; }
+
+    // Konstruktor
+    // Namnet måste vara samma som klassens namn
+    // OBS! Ingen returtyp, inte ens void. Det konstruktorn returnerar alltid en instans av klassen
+    public TodoItem(string title)
+    {
+        Title = title;
+        IsDone = false;
+    }
+}
+```
