@@ -48,7 +48,7 @@ git status
 ## Steg 2: Skapa en första fil och gör en commit
 Skapa en ny fil i mappen som heter `hej.txt` och skriv något i den. (Gör detta på valfritt sätt, t.ex. med notepad, vscode, echo-kommandot i terminalen, etc.)
 ```bash title="Skapa filen med echo-kommandot såhär:"
-echo "Hej Git!" > hej.txt
+echo 'Hej Git!' > hej.txt
 ```
 
 Kolla status i ditt repo:
