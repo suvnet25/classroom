@@ -46,10 +46,17 @@ git status
 ---
 
 ## Steg 2: Skapa en första fil och gör en commit
-Skapa en ny fil i mappen som heter `hej.txt` och skriv något i den. (Gör detta på valfritt sätt, t.ex. med notepad, vscode, echo-kommandot i terminalen, etc.)
+Skapa en ny fil i mappen som heter `hej.txt` och skriv något i den. (Gör detta antingen med vscode eller som nedan med echo-kommandot i terminalen)
 ```bash title="Skapa filen med echo-kommandot såhär:"
 echo 'Hej Git!' > hej.txt
 ```
+
+Kolla att filen finns i katalogen:
+```bash
+ls # macOS/Linux
+dir # Windows
+```
+
 
 Kolla status i ditt repo:
 ```bash
@@ -104,6 +111,8 @@ Visa skillnader:
 git diff
 ```
 ***Fråga: Vad visar `git diff` just nu?***
+
+Prova att göra en ändring i filen och kör `git diff` igen. Vad ser du nu?
 
 ---
 
@@ -317,4 +326,15 @@ Undersök vad `git fetch` är för något. Hur skiljer det sig från `git pull`?
 
 ## Del 4 GitHub Classroom
 
-Kommer, eller så tar vi den direkt under lektionen.
+1. Gå till länken för övningen i GitHub Classroom som du hittar på Google Classroom.
+2. Acceptera uppgiften så skapas ett repo åt dig på GitHub.
+3. Klona repot till din dator med `git clone <URL>` där `<URL>` är URL:en till ditt repo på GitHub.
+4. Öppna repot i VSCode.
+5. **VIKTIGT** Skapa en .gitignore-fil! Använd kommandot `dotnet new gitignore`
+6. Skapa ett nytt console-projekt med `dotnet new console`
+8. Se till att committa ofta! Gärna direkt efter `dotnet new console`
+7. Kopiera in all kod som har med Adressboksövningen att göra (så långt som du kommit nu)
+8. Committa
+9. Pusha!
+
+10. Jobba vidare på Adressboken så mycket du vill, öva på att skapa metoder och kanske nån extra klass? Exempelvis, en egen klass för telefonnummer?

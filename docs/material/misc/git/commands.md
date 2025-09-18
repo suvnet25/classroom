@@ -54,6 +54,36 @@ git log
 
 Med `git log --oneline` får du en mer kompakt vy av commit-historiken.
 
+## diff
+
+Visar skillnader mellan olika commits, eller mellan din arbetskatalog och den senaste committen. Om du bara kör `git diff` utan några argument, visar det skillnader mellan din arbetskatalog och den senaste committen.
+
+```bash
+git diff
+```
+
+Om du vill se skillnader mellan två specifika commits, kan du använda deras commit ID:n:
+
+```bash
+git diff commitID1 commitID2
+```
+
+## show
+
+Visar detaljerad information om en specifik commit, inklusive ändrade filer och skillnader. Du måste ange commit ID:n för den commit du vill visa.
+
+```bash
+git show commitID
+```
+
+Om du vill se hur en viss fil såg ut i en specifik commit, kan du använda:
+
+```bash
+git show commitID:filnamn.txt
+```
+
+---
+
 ## branch
 Visar vilka branches som finns i ditt repository. Den branch du befinner dig på markeras med en asterisk (*).
 
