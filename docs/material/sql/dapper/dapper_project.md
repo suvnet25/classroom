@@ -65,12 +65,3 @@ string sql = "DELETE FROM Students WHERE Id = @Id";
 db.Execute(sql, new { Id = 1 });
 ```
 
-## Vanliga metoder
-
-| Metod | Användning | Dokumentation |
-|-------|------------|---------------|
-| [Query<T>()](http://dapper-tutorial.net/query) | Hämtar data och mappar till objekt | [Länk](https://dapper-tutorial.net/query) |
-| [Execute()](http://dapper-tutorial.net/execute) | Kör INSERT, UPDATE eller DELETE | [Länk](https://dapper-tutorial.net/execute) |
-| [QueryFirst()](http://dapper-tutorial.net/queryfirst) | Hämtar första raden eller kastar exception | [Länk](https://dapper-tutorial.net/queryfirst) |
-| [QuerySingle()](http://dapper-tutorial.net/querysingle) | Hämtar exakt en rad | [Länk](https://dapper-tutorial.net/querysingle) |
-| [ExecuteScalar()](http://dapper-tutorial.net/executescalar) | Hämtar ett enda värde (t.ex. COUNT) | [Länk](https://dapper-tutorial.net/executescalar) |
