@@ -48,7 +48,7 @@ git status
 ## Steg 2: Skapa en första fil och gör en commit
 Skapa en ny fil i mappen som heter `hej.txt` och skriv något i den. (Gör detta på valfritt sätt, t.ex. med notepad, vscode, echo-kommandot i terminalen, etc.)
 ```bash title="Skapa filen med echo-kommandot såhär:"
-echo "Hej Git!" > hej.txt
+echo 'Hej Git!' > hej.txt
 ```
 
 Kolla status i ditt repo:
@@ -203,7 +203,8 @@ Testa att skapa en konflikt genom att göra ändringar i `hej.txt` på samma rad
 Du kommer nu att få ett felmeddelande om en konflikt! Varför händer detta? Jo, Git vet inte vilken av ändringarna den ska behålla, eftersom de båda ändrar samma rad i filen.
 
 Nu måste du själv gå in och lösa konflikten i `hej.txt`. Öppna filen i en texteditor och leta upp konfliktmarkeringarna som lagts till av Git:
-```<<<<<<< HEAD
+```bash
+<<<<<<< HEAD
 =======
 >>>>>>> nya-grejjer
 ```
