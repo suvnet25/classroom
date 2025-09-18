@@ -5,7 +5,7 @@
 
 # Välkommen!
 
-Det här är en hemsida som sammanfattar grunderna i C# och utveckling i Microsoft .NET och Visual Studio Code.
+Det här är en hemsida som sammanfattar grunderna i C# och utveckling i Microsoft .NET och Visual Studio Code, samt SQL.
 
 Det första du kan göra om du är helt ny är att gå till [Installera VS Code och .NET](misc/guides/quickstart.md) och följa instruktionerna där för att installera allt du behöver, och komma igång med din första C#-applikation.
 
@@ -16,6 +16,9 @@ Här finns det lite allmänna saker som är bra att känna till när du programm
 
 #### C\#
 Allt som har specifikt med C# att göra, samt grundläggande info om objektorienterad programmering.
+
+#### SQL
+Allt som har specifikt med SQL att göra, samt hur man kommer igång med DataGrip mot Kristers server.
 
 #### GIT
 Versionshantering och samarbete med GIT och GitHub.
