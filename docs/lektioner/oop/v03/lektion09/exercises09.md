@@ -203,7 +203,8 @@ Testa att skapa en konflikt genom att göra ändringar i `hej.txt` på samma rad
 Du kommer nu att få ett felmeddelande om en konflikt! Varför händer detta? Jo, Git vet inte vilken av ändringarna den ska behålla, eftersom de båda ändrar samma rad i filen.
 
 Nu måste du själv gå in och lösa konflikten i `hej.txt`. Öppna filen i en texteditor och leta upp konfliktmarkeringarna som lagts till av Git:
-```<<<<<<< HEAD
+```bash
+<<<<<<< HEAD
 =======
 >>>>>>> nya-grejjer
 ```
