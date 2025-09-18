@@ -1,10 +1,10 @@
 ---
-title: Datagrip - Introduktion
+title: Datagrip setup
 description: Kom igång med Dagarip för MariaDB.
 icon: simple/datagrip
 ---
 
-# DataGrip + MariaDB
+# DataGrip setup
 
 [DataGrip](https://www.jetbrains.com/) är JetBrains databas-IDE.  
 Här visar vi hur du kopplar upp dig mot en MariaDB-databas med ditt studentkonto.
@@ -61,8 +61,8 @@ Nu får du en editor där du kan skriva och köra SQL. Här kan du t.ex. skapa e
 
 I Query Console kan du skriva SQL och köra det med **⌘⏎ (Cmd+Enter)** på Mac eller **Ctrl+Enter** på Windows.
 
-Exempel: skapa en databas (om du har behörighet):
+Exempel: skapa en databas:
 
 ```sql
-CREATE DATABASE kalle_mindatabas;
-
+CREATE DATABASE yh_förnamn_mindatabas;
+```
