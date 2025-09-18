@@ -1,0 +1,4 @@
+nav:
+  - Installation: install.md
+  - Konfiguration: config.md
+  - Felhantering: errorhandling.md
