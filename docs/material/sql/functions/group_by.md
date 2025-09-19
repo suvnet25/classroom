@@ -9,6 +9,16 @@
 `GROUP BY` används för att gruppera rader med samma värde i en eller flera kolumner.  
 Det är vanligt att kombinera `GROUP BY` med funktioner som `COUNT`, `AVG`, `SUM`, `MIN` och `MAX`.  
 
+## Vanliga funktioner som används med GROUP BY
+
+| Funktion | Beskrivning                          | Exempel |
+|----------|--------------------------------------|---------|
+| COUNT()  | Räknar antal rader                   | Antal studenter |
+| AVG()    | Medelvärde                           | Medelbetyg |
+| SUM()    | Summerar värden                      | Totala poäng |
+| MIN()    | Minsta värde                         | Äldsta student |
+| MAX()    | Största värde                        | Senaste födelsedatum |
+
 ## Syntax
 ```sql
 SELECT kolumn, funktion(kolumn)
