@@ -334,7 +334,8 @@ Undersök vad `git fetch` är för något. Hur skiljer det sig från `git pull`?
 6. Skapa ett nytt console-projekt med `dotnet new console`
 8. Se till att committa ofta! Gärna direkt efter `dotnet new console`
 7. Kopiera in all kod som har med Adressboksövningen att göra (så långt som du kommit nu)
-8. Committa
-9. Pusha!
-
-10. Jobba vidare på Adressboken så mycket du vill, öva på att skapa metoder och kanske nån extra klass? Exempelvis, en egen klass för telefonnummer?
+8. Committa, med knappen i VS Code eller med `git commit -am "Lade till Adressbokskod"`
+9. Pusha, antingen med knappen i VS Code eller med kommandot `git push`
+10. Jobba vidare på Adressboken så mycket du vill:
+    - öva på att skapa metoder
+    - Kanske nån extra klass? Exempelvis, en egen klass för telefonnummer eller namn, så att telefonnummer kan ha en kategori, eller namn kan delas upp i förnamn, mellannamn och efternamn.
