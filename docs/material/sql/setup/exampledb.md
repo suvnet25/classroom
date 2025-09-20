@@ -20,11 +20,11 @@ På så sätt kan vi visa vanliga scenarier i en databas:
 - *Många-till-många-relationer* (t.ex. en student kan gå flera kurser, och en kurs kan ha flera studenter)  
 ## Som ER-diagram
 Som ER-diagram illustreras databasen såhär:
-![ER-diagram](img/studentdb_ER.png)
+![ER-diagram](../img/studentdb_ER.png)
 
 ## Som relationsschema
 Som relationsschema illustreras databasen såhär:
-![Relationsschema](img/studentdb_rel.png)
+![Relationsschema](../img/studentdb_rel.png)
 
 ## Databasdefinition
 Du kan använda koden nedan för att testa. Skapa först en databas (t.ex med namnet `dittnamn_schooldb`). Kopiera sedan detta och kör som SQL (exempeldata finns nedan):
