@@ -27,7 +27,8 @@ Som relationsschema illustreras databasen såhär:
 ![Relationsschema](../img/studentdb_rel.png)
 
 ## Databasdefinition
-Du kan använda koden nedan för att testa. Skapa först en databas (t.ex med namnet `dittnamn_schooldb`). Kopiera sedan detta och kör som SQL (exempeldata finns nedan):
+Såhär ser databasen ut i SQL-kod. Se nedan för hur du kan lägga in den och querya mot den.
+
 ```sql
 -- Skapa Students-tabellen med auto-inkrement på Id
 CREATE TABLE Students (
@@ -62,6 +63,6 @@ CREATE TABLE Enrollments (
 );
 ```
 
-Här finns exempeldata att fylla på med. Notera att exempeldatan kan skilja något från exemplen i denna dokumentation:
+Skapa först en databas (`CREATE DATABSE yh_dittnamn_schooldb`). Sedan kan du öppna denna fil och köra run i just den databasen eller öppna en ny query och klistra in innehållet i filen.
 
-[📥 Ladda ner data till exempeldatabasen (schooldb_data.sql)](schooldb_data.sql)
+[📥 Ladda ner exempeldatabasen (schooldb.sql)](schooldb.sql)
