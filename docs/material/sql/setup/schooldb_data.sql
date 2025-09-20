@@ -4,7 +4,7 @@ INSERT INTO Teachers (Id, Name, Email) VALUES
 (2, 'Krister', 'krister@by.com'),
 (3, 'David', 'david@by.com'),
 (4, 'Lars', 'lars@by.com'),
-(5, 'Henrik', 'henrik@by.com');
+(5, 'Henrik', 'henrik@by.com'),
 (6, 'Jimmy', 'jimmy@by.com');
 
 -- Insert Courses
