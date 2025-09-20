@@ -33,6 +33,8 @@ FROM Courses c
 INNER JOIN Enrollments e ON c.Id = e.CourseId
 GROUP BY c.Name;
 ```
+
+### Steg 1
 För att förstå detta kan vi föreställa oss att vi först får ut följande resultat:
 
 | CourseName     | Grade    |
@@ -41,10 +43,12 @@ För att förstå detta kan vi föreställa oss att vi först får ut följande 
 | Databaser      | 2        |
 | Databaser      | 0        |
 | Databaser      | 2        |
+|||
 | OOP1           | 2      |
 | OOP1           | 1      |
 | OOP1           | 1      |
 
+### Steg 2
 Det som händer är att alla Databaser och alla OOP1 slås ihop till en:
 
 | CourseName     | Grade    |
@@ -53,10 +57,12 @@ Det som händer är att alla Databaser och alla OOP1 slås ihop till en:
 |                | 2        |
 |                | 0        |
 |                | 2        |
+|||
 | OOP1           | 2      |
 |                | 1      |
 |                | 1      |
 
+### Steg 3
 Sedan summeras alla betyg Grade-kolumen för respektive CourseName (`GROUP BY c.Name`) och vi räknar ut medel med `AVG()` (summan/antal):
 
 * Databaser: (1+2+0+2)/4 = 1.25
