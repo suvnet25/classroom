@@ -1,6 +1,6 @@
-# C#-quiz – demo
+# Quiz
 
-> Tre frågor i en grupp, med en gemensam **Rätta alla**-knapp.
+Här kommer några frågor på temat get/set metoder
 
 <div class="quiz-group" id="quiz-set-1">
 
@@ -30,9 +30,6 @@
   <div class="quiz" data-quiz-id="q3" data-points="1" data-pattern="^\s*&quot;Hej, världen!&quot;\s*$">
     <p><strong>3) Fyll i argumentet så att programmet skriver ut <code>Hej, världen!</code>.</strong></p>
     <pre><code class="language-csharp">Console.WriteLine(<input class="quiz-inline-input" data-answer="&quot;Hej, världen!&quot;">);</code></pre>
-    <details class="quiz-solution"><summary>Visa lösning</summary>
-      <code>"Hej, världen!"</code>
-    </details>
     <p class="quiz-feedback" hidden></p>
   </div>
 

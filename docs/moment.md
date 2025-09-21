@@ -3,9 +3,9 @@
 Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig själv frågan ibland: Bland de ikryssadeade punkterna nedan, vilka vet jag vad de betyder och hur de fungerar? Skulle jag kunna förklara för någon annan något om det?
 
 ## **Allmänna begrepp**
-- [X] [Filsystem](material/general/datorkunskap/filesystem.md)
-- [X] IDE / Editor / VSCode
-- [X] [Terminal/Console](material/general/datorkunskap/console.md)
+- [x] [Filsystem](material/general/datorkunskap/filesystem.md)
+- [x] IDE / Editor / VSCode
+- [x] [Terminal/Console](material/general/datorkunskap/console.md)
 - [x] Miljö (Environment)
 - [x] Ramverk / Framework
 - [x] [C# och .NET](material/general/dotnet/index.md)
@@ -13,9 +13,9 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [ ] Algoritmer
 
 ## **Metodik**
-- [X] [Pseudokod](material/general/methodology/pseudocode.md)
-- [ ] [Flödesscheman](material/general/methodology/flowcharts.md)
-- [X] [Debugging](material/general/methodology/debugging.md)
+- [x] [Pseudokod](material/general/methodology/pseudocode.md)
+- [x] [Flödesscheman](material/general/methodology/flowcharts.md)
+- [x] [Debugging](material/general/methodology/debugging.md)
 - [ ] [Kodstandard](material/general/methodology/codeconventions.md)
 - [ ] [Parprogrammering](material/general/methodology/pairprogramming.md)
 
@@ -36,11 +36,11 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [x] string
 - [x] bool
 - [X] array
-- [ ] List<>
+- [X] List<>
 - [x] null
-- [ ] Variablers livslängd ***<- Viktigt!***
-- [ ] Reference type / Value type ***<- Viktigt!***
-- [ ] Garbage Collection
+- [X] Variablers livslängd ***<- Viktigt!***
+- [X] Reference type / Value type ***<- Viktigt!***
+- [X] Garbage Collection
 
 #### Kontrollstrukturer
 - [x] Kodblock
@@ -51,7 +51,7 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 
 #### Metoder
 - [x] Metoddeklaration
-- [ ] "Rena" metoder och single responsibility principle
+- [x] "Rena" metoder och single responsibility principle
 - [x] Metodsignatur
 - [ ] Method overloading
 - [ ] Method overriding (ex ToString())
@@ -65,27 +65,27 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [ ] DateTime
 
 ### GIT och GitHub
-- [ ] Init
-- [ ] Add
-- [ ] Status
-- [ ] Log
-- [ ] Commit
-- [ ] Branch / Merge
-- [ ] Switch (Checkout)
-- [ ] Remote
-- [ ] Clone
-- [ ] Fetch/Push/Pull
-- [ ] GitHUB: Fork
+- [x] Init
+- [x] Add
+- [x] Status
+- [x] Log
+- [x] Commit
+- [x] Branch / Merge
+- [x] Switch (Checkout)
+- [x] Remote
+- [x] Clone
+- [x] Fetch/Push/Pull
+- [x] GitHUB: Fork
 
 ### Objektorienterad Programmering
-- [ ] OOP som begrepp
-- [ ] Namespaces
-- [ ] Klasser och objekt
-- [ ] Keywordet new
-- [ ] Konstruktorer	
+- [x] OOP som begrepp
+- [x] Klasser och objekt
+- [x] Keywordet new
+- [x] Inkapsling (Begreppet)
 - [ ] Properties (Get/Set)
+- [ ] Konstruktorer	
+- [ ] Namespaces
 - [ ] Abstrakta klasser
-- [ ] Inkapsling (Begreppet)
 - [ ] Polymorphism (Begreppet)
 - [ ] Object som alla klassers basklass
 - [ ] Arv (Begreppet)
