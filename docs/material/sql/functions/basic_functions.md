@@ -1,44 +1,47 @@
 ---
     title: Funktioner
-    description: Lär dig vanliga SQL-funktioner som COUNT, AVG, SUM, MIN och MAX.
+    description: Lär dig enkla SQL-funktioner
     icon: material/function
 ---
 
 # Funktioner
 
-SQL innehåller många inbyggda funktioner för att räkna, summera och analysera data.  
-De vanligaste används tillsammans med `SELECT` för att beräkna värden från flera rader.  
+SQL innehåller många inbyggda funktioner för att räkna, summera och analysera data.
 
-## Vanliga funktioner
+Det vanligaste är att funktioner i SQL används tillsammans med `SELECT` för att beräkna värden från flera rader. Dessa används ofta tillsammans med [`GROUP BY`](group_by.md). Men för att först förstå konceptet med funktioner i SQL, låt oss titta på dem *utan* [`GROUP BY`](group_by.md).
 
-| Funktion | Beskrivning                          | Exempel |
-|----------|--------------------------------------|---------|
-| COUNT()  | Räknar antal rader                   | Antal studenter |
-| AVG()    | Medelvärde                           | Medelbetyg |
-| SUM()    | Summerar värden                      | Totala poäng |
-| MIN()    | Minsta värde                         | Äldsta student |
-| MAX()    | Största värde                        | Senaste födelsedatum |
-
-## Syntax
+## Enkla funktioner
+Testa några funktioner som inte ens behöver någon tabell för att funka:
 ```sql
-SELECT funktion(kolumn)
-FROM tabell
-WHERE villkor;
+SELECT NOW();       -- aktuell datum+tid
+SELECT PI();        -- pi (används väl aldrig men funkar som exempel...)
+SELECT RAND();      -- slumpa flyttal mellan 0 och 1
+SELECT ROUND(3.14159, 2)   -- Avrunda till två decimaler.
 ```
-## Exempel
+
+## Funktioner för att räkna på tabeller/kolumner
+Dessa funktioner används nästan alltid med [`GROUP BY`](group_by.md) men vi kan testa dem utan. Låt oss använda funktionen `AVG()` som räknar ut medelvärdet (average).
+
+Hämta ut genomssnittsbetyget för alla kurser i hela skolan:
+
 ```sql
--- Ge en kolumn ett alias
-SELECT Name AS StudentName, DateOfBirth AS Birthday
-FROM Students;
-
--- Ge en tabell ett alias och använd det i WHERE
-SELECT s.Name, s.Email
-FROM Students AS s
-WHERE s.DateOfBirth > '1990-01-01';
-
--- Alias på både tabeller och kolumner
-SELECT s.Name AS StudentName, c.Name AS CourseName, e.Grade
-FROM Students s
-INNER JOIN Enrollments e ON s.Id = e.StudentId
-INNER JOIN Courses c ON e.CourseId = c.Id;
+SELECT AVG(Enrollments.Grade)
+FROM Enrollments;
 ```
+
+Eller för en viss student:
+```sql
+SELECT AVG(Enrollments.Grade)
+FROM Enrollments
+WHERE StudentId=31;
+```
+
+Eller för en viss kurs med kursnamn:
+```sql
+select AVG(e.Grade)
+FROM Enrollments e
+INNER JOIN Courses c ON e.CourseId = c.Id
+WHERE c.Name = "Databaser";
+```
+
+Men om vi vill få ut medelvärdet för alla studenter eller för alla kurser så behöver jo jobba med [`GROUP BY`](group_by.md).
