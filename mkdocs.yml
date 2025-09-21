@@ -3,8 +3,10 @@ site_url: https://klassrum.suvnet.se/
 extra_css:
   - assets/stylesheets/extra.css
   - assets/week_color/week_color.css
+  - assets/quiz/quiz.css
 extra_javascript:
   - assets/week_color/week_color.js
+  - assets/quiz/quiz.js
 theme:
   features:
     - content.code.copy
