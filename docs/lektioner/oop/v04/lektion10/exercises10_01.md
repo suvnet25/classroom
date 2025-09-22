@@ -7,11 +7,11 @@ tags:
 
 > **OBS:** Se [avsnittet om properties](../../../../material/cs/oop/properties.md) för att se hur det skrivs i kod.
 
-## Steg 3: *Properties* istället för get/set metoder
+## Steg 1: *Properties* istället för get/set metoder
 
 Det moderna alternativet till att skapa get- och set-metoder är att använda *properties*. All kod i standardbiblioteket, och de flesta andra proffessionelt skrivna bibliotek, använder properties, så det är bra att vänja sig vid det.
 
-### 3.1 Byt ut get/set metoder mot properties
+### 1.1 Byt ut get/set metoder mot properties
 
 1. Ta bort get- och set-metoderna du skapade i steg 2.
 2. Skapa istället publika properties `Name` och `Phone` med `get` och `set`.
@@ -23,14 +23,14 @@ Det moderna alternativet till att skapa get- och set-metoder är att använda *p
     * När du använder properties så används de precis som vanliga fält.
     * Namnen på properties ska  börja med stor bokstav, medan fältnamn ska  börja med liten bokstav.
     
-### 3.2 En till property
+### 1.2 En till property
 
 Ofta i adressböcker går det att markera vissa kontakter som favoriter. Låt oss lägga till en sådan property.
 
 1. Lägg till en publik property `IsFavorite` av typen `bool` med både `get` och `set`.
 2. Denna property ska vara en *auto-implemented property*.
 
-### 3.3 Ännu en property - CreatedAt
+### 1.3 Ännu en property - CreatedAt
 I många system är det vanligt att spara när ett objekt skapades. Låt oss lägga till en sådan property.
 
 1. Lägg till en publik property `CreatedAt` av typen `DateTime` med bara en `get`. Detta blir nu en *read-only property*.
