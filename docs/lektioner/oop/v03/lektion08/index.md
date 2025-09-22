@@ -12,6 +12,9 @@
 
 ---
 
-## Relevanta länkar
+## Quiz
+
+* [OOP Design](quiz_oop.md)  
+* [Inkapsling](quiz_encapsulation.md)
 
 

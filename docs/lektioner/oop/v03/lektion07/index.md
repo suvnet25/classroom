@@ -8,6 +8,12 @@
 * [Övning 07 Adressboken](./exercises07_2.md) (Resten av dagen)
 ---
 
+## Quiz
+
+[Klasser](quiz_classes.md)
+
+---
+
 ## Relevanta länkar
 
 * [C#-skolan](https://csharpskolan.se/article/klasser-en-introduktion/)

@@ -15,6 +15,12 @@
 
 ---
 
+## Quiz
+
+[Git Quiz](quiz_git.md)
+
+---
+
 ## Relevanta länkar
 
 * [Git-avsnittet i Material](../../../../material/misc/git/index.md)

@@ -2,7 +2,10 @@
 
 ## Dagens innehåll
 
-* Repetition och påminnelse om GIT
+* Dagens enkät! (0.5h)
+* GIT-repetition (0.5h)
 * Properties (1h)
-* Konstruktorer (1h) (Om vi hinner)
-* Arv, object och overrides
+* Konstruktorer (1h)
+* Arv, object och overrides (3h)
+
+## Quiz

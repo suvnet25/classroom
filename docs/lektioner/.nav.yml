@@ -1,4 +1,5 @@
 nav:
+  - index.md
   - Intro: intro
   - OOP: oop
   - Projekt: project

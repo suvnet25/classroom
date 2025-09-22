@@ -17,56 +17,59 @@ Så här funkar lektionerna på Suvnet:
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|----|-------|-------|-------|-------|-------|
 | mån |       |**oop**|       |       |       |       |       |       |       |        |    |       |       |       |       |       |
 | tis |**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|DB     |DB      | DB |**oop**|**oop**|DB     |**oop**|DB     |
-| ons |**oop**|**oop**|**oop**|**oop**|tenta  |DB     |**oop**|DB     |DB     |tenta db| DB |**oop**|**oop**|DB     |       |DB     |
+| ons |**oop**|**oop**|**oop**|**oop**|*tenta*  |DB     |**oop**|DB     |DB     |*tenta db*| DB |**oop**|**oop**|DB     |       |DB     |
 | tor |       |**oop**|**oop**|**oop**|DB     |DB     |DB     |DB     |**oop**|**oop** | DB |**oop**|DB     |**oop**|DB     |**oop**|
 | fre |**oop**|       |       |       |       |       |       |       |       |        |    |       |       |       |       |       |
 
 ## Lektionsöversikt
 
-**Lektion**  
+Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 
-01 intro
-02 variabler if-sats array loop
-03 pseudokod problemlösning random file string debugger
+**01** Intro  
+**02** Variabler, if-sats, array, loop  
+**03** pseudokod problemlösning random file string debugger  
 
-04 metoder titta på fullt program meny-övning
-05 list tryparse 
-06 Lab #1 (grundläggande C#) 
+**04** Metoder, titta på helt program, meny-övning  
+**05** List, Tryparse  
+**06** Lab #1 (grundläggande C#)  
 
-07 oop intro
-08 oop forts
-09 git och github
+**07** OOP klasser och objekt  
+**08** OOP klassmetoder och access modifiers  
+**09** Git och GitHub  
 
-10 oop arv och polymorfism
-11 oop projektstruktur, namespaces, paket
-12 Lab #2 via github classroom (oop)
+**10** OOP properties, konstruktorer, arv och polymorfism  
+**11** OOP namespaces, projekt och projektstruktur  
+**12** Lab #2 - OOP och Git  
 
-13 Exceptions
+**13** Paket och Exceptions
 
-14 Enums
+**14** Enums
 
-16 Lab #3 Github Workflows
-15 SOLID
+**16** Lab #3 - Github Workflows  
+**15** SOLID
 
-17 Interfaces
+**17** Interfaces
 
-18 Bufferdag
+**18** Bufferdag, men troligen mer SOLID
 
-19 Lab #4 SOLID
+**19** Lab #4 - SOLID & Interfaces
 
-x
-x
-x
+```cs
+/* -------------------
+    C# paus en vecka.
+    Bara databas!  
+   ------------------- */  
+```
 
-20 testning
-21 testning
-22 Lab #5 testning
+**20** Testning  
+**21** Testning  
+**22** Lab #5 - Testning  
 
-23 projektarbete uppstart
-24 workshop
+**23** Projektarbete - uppstart  
+**24** Workshop  
  
-25 workshop
+**25** Workshop  
 
-26 workshop
+**26** Workshop  
 
-27 workshop
+**27** Workshop  

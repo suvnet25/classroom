@@ -31,7 +31,7 @@ Person person = new Person();
 person.Id = 1;
 person.CreatedAt = DateTime.Now;
 person.Name = "Alice";
-person.Email = "epost@exempel.se";
+person.Email = "alice@epost.se";
 ```
 
 ## Konstruktorer och arv
@@ -66,7 +66,7 @@ public class Person : Entity
 
 ## Metoder och arv
 
-Subklasser kan också ärva metoder från sina basklasser. Om en metod i basklassen är markerad som `virtual`, kan subklassen *override* (överskriva) den med sin egen implementation.
+Subklasser kan också ärva metoder från sina basklasser. Om en metod i basklassen är markerad som `virtual`, kan subklassen *override* (skriva över) den med sin egen implementation.
 
 ```csharp
 public class Entity
@@ -135,4 +135,15 @@ Person person = new Person(2, "Alice", "epost@exempel.se");
 PrintEntityInfo(entity); // Anropar Entity's GetInfo
 PrintEntityInfo(person); // Anropar Person's GetInfo
 ```
+
+Ett annat exempel, där vi använder typen `object`, som är basklassen för alla typer i C#, för att lagra referenser till olika objekt:
+
+```csharp
+object person = new Person(); //Vi håller reda på en Person-instans som ett object
+object entity = new Entity(); //Vi håller reda på en Entity-instans som ett object
+
+Console.WriteLine(person.GetType().Name); // Skriver ut "Person"
+Console.WriteLine(entity.GetType().Name); // Skriver ut "Entity"
+```
+
 

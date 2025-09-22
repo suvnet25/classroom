@@ -2,7 +2,6 @@
 
 ## Dagens innehåll
 
+* Namespaces och allmän ordning och reda
 * Projektstruktur
 * Flera projekt i ett?!
-* Namespaces och allmän ordning och reda
-* Paket
