@@ -3,6 +3,7 @@
    - Stable radio/checkbox groups + per-option IDs (data-optid)
    - Delegated "Rätta alla" button
    - Robust init on DOMContentLoaded + document$.subscribe + fallback observers
+   - Patch: sparar 'graded' och återställer .quiz-correct/.quiz-wrong vid init
 */
 
 (function () {
@@ -193,16 +194,29 @@
 
   function initGroup(groupEl) {
     const groupId  = groupEl.id || groupEl.getAttribute('data-quiz-group') || 'group';
-    const keyScore = `${pageKeyPrefix()}|${groupId}|score`;
+    const keyScore = `${pageKeyPrefix()}|:${groupId}|score`; // keep legacy-safe? we'll use consistent below too
+    // NOTE: keep a consistent key (without colon typo); fix to:
+    const fixedKeyScore = `${pageKeyPrefix()}|${groupId}|score`;
 
     const quizzes = qsAll(groupEl, '.quiz');
     quizzes.forEach(q => initQuiz(q, groupId));
 
     const resultEl = document.querySelector(`#${groupId}-result`);
-    const saved = lsGet(keyScore);
+    const saved = lsGet(fixedKeyScore) ?? lsGet(keyScore); // read either, if older key existed
+
     if (saved && resultEl) {
       resultEl.hidden = false;
       resultEl.textContent = `Tidigare resultat: ${saved.total} / ${saved.max} poäng.`;
+    }
+
+    // NYTT: applicera rätt/fel-klasser vid init om resultat finns (dvs gruppen har rättats)
+    if (saved) {
+      quizzes.forEach(q => {
+        const r = checkCorrectness(q);
+        q.classList.toggle('quiz-correct', r.correct);
+        q.classList.toggle('quiz-wrong',  !r.correct);
+        markCompleted(q, true);
+      });
     }
   }
 
@@ -228,12 +242,13 @@
     quizzes.forEach(q => {
       ensureGroupNames(q); // safety
       if (!isAnswered(q)) answeredAll = false;
-const r = checkCorrectness(q);
-total += r.points; max += r.max;
 
-// sätt visuella klasser per fråga
-q.classList.toggle('quiz-correct', r.correct);
-q.classList.toggle('quiz-wrong',  !r.correct);
+      const r = checkCorrectness(q);
+      total += r.points; max += r.max;
+
+      // visuellt: rätt/fel per fråga
+      q.classList.toggle('quiz-correct', r.correct);
+      q.classList.toggle('quiz-wrong',  !r.correct);
 
       const qid = q.getAttribute('data-quiz-id') || '';
       lsSet(`${pageKeyPrefix()}|${groupId}|${qid}|done`, true);
@@ -250,7 +265,10 @@ q.classList.toggle('quiz-wrong',  !r.correct);
       resultEl.hidden = false;
       resultEl.textContent = msg;
     }
+
+    // spara totalscore + graded-flagga
     lsSet(`${pageKeyPrefix()}|${groupId}|score`, { total, max, ts: Date.now() });
+    lsSet(`${pageKeyPrefix()}|${groupId}|graded`, true);
   });
 
   // ===== Robust hooks for MkDocs Material =====
