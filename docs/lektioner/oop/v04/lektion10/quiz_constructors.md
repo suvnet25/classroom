@@ -14,7 +14,7 @@ Här kommer några frågor på temat Konstruktorer i C#
     <p><strong>1) Vad är syftet med en konstruktor?</strong></p>
     <div class="quiz-options" role="group" aria-label="q1">
       <label class="quiz-option"><input type="radio" data-correct> Att initiera ett objekt när det skapas</label>
-      <label class="quiz-option"><input type="radio"> Att radera ett objekt ur minnet</label>
+      <label class="quiz-option"><input type="radio"> Att uppdatera olika properties</label>
       <label class="quiz-option"><input type="radio"> Att skriva ut data till konsolen</label>
     </div>
     <p class="quiz-feedback" hidden></p>
@@ -24,10 +24,10 @@ Här kommer några frågor på temat Konstruktorer i C#
   <div class="quiz" data-quiz-id="q2" data-points="2">
     <p><strong>2) Vilka av följande är giltiga konstruktorer i en klass <code>Person</code>?</strong></p>
     <div class="quiz-options" role="group" aria-label="q2">
-      <label class="quiz-option"><input type="checkbox" data-correct> public Person() { }</label>
-      <label class="quiz-option"><input type="checkbox"> public void Person() { }</label>
-      <label class="quiz-option"><input type="checkbox" data-correct> public Person(string name) { this.Name = name; }</label>
-      <label class="quiz-option"><input type="checkbox"> private string Person() { return "hej"; }</label>
+      <label class="quiz-option"><input type="checkbox" data-correct> <code>public Person() { } </code></label>
+      <label class="quiz-option"><input type="checkbox"> <code>public void Person() { }</code></label>
+      <label class="quiz-option"><input type="checkbox" data-correct> <code>public Person(string name) { this.Name = name; }</code></label>
+      <label class="quiz-option"><input type="checkbox"> <code>private string Person() { return "hej"; }</code></label>
     </div>
     <p class="quiz-feedback" hidden></p>
   </div>
@@ -43,10 +43,14 @@ Här kommer några frågor på temat Konstruktorer i C#
     <p class="quiz-feedback" hidden></p>
   </div>
 
-  <!-- Q4: fyll i inline (klass med konstruktor) -->
-  <div class="quiz" data-quiz-id="q4" data-points="1" data-pattern="^\s*public\s+Person\s*\(\s*string\s+name\s*\)\s*\{\s*this\.Name\s*=\s*name;\s*\}\s*$">
-    <p><strong>4) Skriv en konstruktor till klassen <code>Person</code> som tar en parameter <code>name</code> och sätter fältet <code>Name</code>.</strong></p>
-    <pre><code class="language-csharp"><input class="quiz-inline-input" data-answer="public Person(string name) { this.Name = name; }"></code></pre>
+    <!-- Q4: enkel flervals (default konstruktor) -->
+  <div class="quiz" data-quiz-id="q4" data-points="1">
+    <p><strong>4) Måste du skriva konstruktorer till alla klasser?</strong></p>
+    <div class="quiz-options" role="group" aria-label="q4">
+      <label class="quiz-option"><input type="radio"> Ja</label>
+      <label class="quiz-option"><input type="radio" data-correct> Nej</label>
+      <label class="quiz-option"><input type="radio"> Det beror på, ibland måste man det</label>
+    </div>
     <p class="quiz-feedback" hidden></p>
   </div>
 
