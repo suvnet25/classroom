@@ -7,3 +7,4 @@
 * Ser ofta till så att ett objekt inte kan skapas i ett "ogiltigt" tillstånd
 * Eller, att sätta "default"-värden på fält/egenskaper
 * En klass kan ha flera konstruktorer med olika parametrar (precis som metoder)
+* *this* och *base* är keywords som blir relevanta i konstruktorsammanhang

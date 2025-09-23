@@ -4,4 +4,4 @@
 
 * Veckans enkät!
 * SOLID
-* Flera projekt i samma projekt
+* Projektstruktur och flera projekt i en lösning
