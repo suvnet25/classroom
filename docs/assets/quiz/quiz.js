@@ -228,8 +228,12 @@
     quizzes.forEach(q => {
       ensureGroupNames(q); // safety
       if (!isAnswered(q)) answeredAll = false;
-      const { points, max: m } = checkCorrectness(q);
-      total += points; max += m;
+const r = checkCorrectness(q);
+total += r.points; max += r.max;
+
+// sätt visuella klasser per fråga
+q.classList.toggle('quiz-correct', r.correct);
+q.classList.toggle('quiz-wrong',  !r.correct);
 
       const qid = q.getAttribute('data-quiz-id') || '';
       lsSet(`${pageKeyPrefix()}|${groupId}|${qid}|done`, true);
