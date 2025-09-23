@@ -4,7 +4,3 @@
 
 * Veckans enkät!
 * Exceptions
-
----
-
-## Relevanta länkar

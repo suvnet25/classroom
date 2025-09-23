@@ -5,7 +5,3 @@
 * Veckans enkät!
 * SOLID
 * Flera projekt i samma projekt
-
----
-
-## Relevanta länkar

@@ -4,7 +4,3 @@
 
 * Veckans enkät!
 * Enums
-
----
-
-## Relevanta länkar
