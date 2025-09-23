@@ -79,12 +79,12 @@
       $quiz.querySelectorAll('input[type="radio"]').forEach((inp) => {
         if (!inp.name) inp.name = `${id}-${pageKey}`;
       });
-    //   const st = load(id);
-    //   if (st?.ok) {
-    //     $quiz.classList.add("quiz-correct");
-    //     const fb = $quiz.querySelector(".quiz-feedback");
-    //     if (fb) { fb.hidden = false; fb.textContent = "✅ Gjord"; }
-    //   }
+      const st = load(id);
+      if (st?.ok) {
+        $quiz.classList.add("quiz-correct");
+        const fb = $quiz.querySelector(".quiz-feedback");
+        if (fb) { fb.hidden = false; fb.textContent = "✅ Klar!"; }
+      }
     });
   }
 
