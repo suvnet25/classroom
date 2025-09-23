@@ -13,7 +13,7 @@ Det moderna alternativet till att skapa get- och set-metoder är att använda *p
 
 ### 1.1 Byt ut get/set metoder mot properties
 
-1. Ta bort get- och set-metoderna du skapade i steg 2.
+1. Ta bort get- och set-metoderna du skapade i [Övning 08 Inkapsling](../../v03/lektion08/exercises08_02.md).
 2. Skapa istället publika properties `Name` och `Phone` med `get` och `set`.
 3. Lägg in valideringen i `set`-delen av `Name` propertyn (Om du hade något validering vill säga. Annars kan du lägga in det! Alltså, om nån försöker sätta `Name` till en tom sträng, så ska den antingen sättas till "No Name" eller behålla det tidigare namnet).
 4. `Phone` propertyn ska inte ha någon validering, utan kan vara en *auto-implemented property*.
