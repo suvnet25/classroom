@@ -49,3 +49,9 @@
   background: var(--md-code-bg-color, transparent);
   color: inherit;
 }
+
+.quiz.quiz-completed {
+  outline: 2px solid var(--md-accent-fg-color);
+  border-radius: .35rem;
+}
+.quiz .quiz-feedback[hidden] { display: none; }
