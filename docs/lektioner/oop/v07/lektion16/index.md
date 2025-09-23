@@ -2,9 +2,4 @@
 
 ## Innehåll
 
-* Veckans enkät!
-*
-
----
-
-## Relevanta länkar
+* Lab #3 - Github Workflows + SOLID

@@ -3,7 +3,7 @@
 ## Innehåll
 
 * Veckans enkät!
-* Enums!
+* Enums
 
 ---
 

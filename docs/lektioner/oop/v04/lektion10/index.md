@@ -6,7 +6,6 @@
 * GIT-repetition (0.5h)
 * Properties (1h)
 * Konstruktorer (1h)
-* Arv, object och overrides (3h)
 
 ## Quiz
 

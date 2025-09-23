@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning 10 Arv
+# Övning 11 Arv
 
 > Se [avsnittet om arv](../../../../material/cs/oop/inheritance.md) för att se hur det skrivs i kod.
 

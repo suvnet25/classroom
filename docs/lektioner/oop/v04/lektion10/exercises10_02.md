@@ -19,4 +19,4 @@ Vi vill kunna skapa ett `Contact`-objekt och direkt skicka med namn och telefonn
 ### 2.1. Constructor overloading
 
 5. Prova att göra konstruktorn till en *overloaded constructor* genom att skapa en till konstruktor som bara tar emot namn.
-6. Testa att skapa `Contact`-objekt med båda konstruktorerna.
+6. Testa att skapa `Contact`-objekt med den nya konstruktorn istället. OBS! Det är fortfarande bara en konstruktor som ska användas! Välj den som passar bäst.

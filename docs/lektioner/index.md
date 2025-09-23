@@ -45,8 +45,8 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 
 **14** Enums
 
-**16** Lab #3 - Github Workflows  
-**15** SOLID
+**15** SOLID  
+**16** Lab #3 - Github Workflows + SOLID
 
 **17** Interfaces
 
