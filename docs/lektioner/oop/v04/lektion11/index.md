@@ -2,8 +2,12 @@
 
 ## Dagens innehåll
 
+* Några kvarvarande saker om konstruktorer
+    * Primary Constructors
+    * this, base
+* Namespaces och allmän ordning och reda (1h)
 * Arv, object och overrides (3h)
-* Namespaces och allmän ordning och reda
+* Om tid finns: **static**
 
 
 ---
