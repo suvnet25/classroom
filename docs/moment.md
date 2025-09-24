@@ -53,8 +53,8 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [x] Metoddeklaration
 - [x] "Rena" metoder och single responsibility principle
 - [x] Metodsignatur
-- [ ] Method overloading
-- [ ] Method overriding (ex ToString())
+- [x] Method overloading
+- [x] Method overriding (ex ToString())
 
 ### **.NET-bibliotek**
 - [X] Console
@@ -82,14 +82,14 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [x] Klasser och objekt
 - [x] Keywordet new
 - [x] Inkapsling (Begreppet)
-- [ ] Properties (Get/Set)
-- [ ] Konstruktorer	
-- [ ] Namespaces
+- [x] Properties (Get/Set)
+- [x] Konstruktorer	
+- [x] Namespaces
 - [ ] Abstrakta klasser
-- [ ] Polymorphism (Begreppet)
-- [ ] Object som alla klassers basklass
-- [ ] Arv (Begreppet)
-- [ ] Abstraktion (Begreppet)
+- [x] Polymorphism (Begreppet)
+- [x] Object som alla klassers basklass
+- [x] Arv (Begreppet)
+- [x] Abstraktion (Begreppet)
 - [ ] Interface
 - [ ] SOLID
 - [ ] Struct

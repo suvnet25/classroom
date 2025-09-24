@@ -101,7 +101,7 @@ Här kommer några frågor på temat OOP-grunder och Adressbok-övningen
   <div class="quiz" data-quiz-id="q9" data-points="1" data-pattern="^\s*contacts\.Add\(\s*c\s*\)\s*;\s*$">
     <p><strong>9) Skriv koden som lägger till objektet <code>c</code> i listan <code>contacts</code>.</strong></p>
     <pre><code class="language-csharp"><span class="cm">// Anta att 'c' är ett Contact-objekt och 'contacts' är List&lt;Contact&gt;</span>
-<input class="quiz-inline-input" data-answer="contacts.Add(c)">;</code></pre>
+<input class="quiz-inline-input" data-answer="contacts.Add(c);"></code></pre>
     <p class="quiz-feedback" hidden></p>
   </div>
 
