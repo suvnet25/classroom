@@ -145,7 +145,23 @@ Skapa klassen `BankAccount` som innehåller metoden `Withdraw(int amount)`.
     }
     ```
 
-### **Övning 2 - Hindra skapandet av Contacts med tomt namn**
+### **Övning 2 - Bankkonto med insättning**
+
+Lägg till metoden Withdraw(int amount) i din klass `BankAccount`. Metoden skall dra av mängden `amount` från Balance. Fundera på vilka fel som kan uppstå när någon använder den metoden. Var är det rimligt att kasta undantag? Vilket undantag passar bäst? 
+
+??? Info "Lista på vanliga exceptions"
+    
+    * ArgumentException: När ett metodargument inte är giltigt (fel värde).
+    * ArgumentNullException: När ett metodargument som inte får vara null faktiskt är null.
+    * ArgumentOutOfRangeException: När ett argument ligger utanför det tillåtna intervallet.
+    * InvalidOperationException: När en metod anropas i ett läge där den inte är giltig.
+    * NullReferenceException: När man försöker använda en referens som är null.
+    * IndexOutOfRangeException: När man försöker nå ett element utanför arrayens/listans gränser.
+    * FormatException: När en sträng inte kan konverteras till rätt format.
+    * DivideByZeroException: När man försöker dividera ett heltal med noll.
+    * OverflowException: När en beräkning ger ett resultat som är för stort eller för litet för datatypen.
+
+### **Övning 3 - Hindra skapandet av Contacts med tomt namn**
 
 I din tidigare klass `Contact`:
 
@@ -154,3 +170,42 @@ I din tidigare klass `Contact`:
 * Se nu till att fånga undantaget i huvudprogrammet med try/catch och skriv ut ett felmeddelande.
 
 Att kasts ett exception i en konstruktor eller property är ett sätt att skydda att objekt hamnar i ett ogiltigt tillstånd, men det är bättre att se till så att det inte händer genom att validera indata innan objektet skapas. Hur skulle du kunna göra det?
+
+### **Övning 4 - Hitta användare**
+
+Utgå från startkoden nedan.
+
+* Skriv klart metoden `FindUser(string username)`. Den skall hitta användaren i listan.
+* Om användaren inte finns, kasta ett KeyNotFoundException och hantera det på något sätt.
+
+**Diskutera med dig själv eller andra**: Är det bäst att kasta undantag när något inte hittas, eller är det bättre att returnera null eller istället göra en metod i stil med `TryFindUser` som returnerar en bool och använder en out-variabel?
+
+??? Tip "Startkod"
+    ```cs
+    class Program
+    {
+        static List<string> users = [new(){ Username = "alice" },
+                                     new(){ Username = "bob" },
+                                     new(){ Username = "charlie" }];
+
+        static void Main()
+        {
+            Console.Write("Ange användarnamn att hitta: ");
+            string username = Console.ReadLine();
+
+            User user = FindUser(username);
+            Console.WriteLine($"Hittade användaren: {user.Username} med ID {user.Id}");
+        }
+
+        static User FindUser(string username)
+        {
+            throw new NotImplementedException(); // Implementera sökningen här
+        }
+    }
+
+    class User
+    {
+        public int Id { get; set; } = Random.Shared.Next(1, 100);
+        public string Username { get; set; }
+    }
+    ```
