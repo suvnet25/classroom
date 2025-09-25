@@ -39,20 +39,20 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 
 **10** OOP properties, konstruktorer 
 **11** OOP arv och polymorfism, namespaces  
-**12** Lab #2 - OOP och Git  
+**12** Felhantering och Exceptions
 
-**13** Paket och Exceptions
+**13** Lab #2 - OOP och Git
 
-**14** Enums
+**14** Paket och Enums
 
 **15** SOLID, Projektstruktur
-**16** Lab #3 - Github Workflows + SOLID
+**16** Interfaces
 
-**17** Interfaces
+**17** Lab #3 - SOLID & Interfaces
 
 **18** Bufferdag, men troligen mer SOLID
 
-**19** Lab #4 - SOLID & Interfaces
+**19** Lab #4 - Github Workflows + SOLID
 
 ```cs
 /* -------------------

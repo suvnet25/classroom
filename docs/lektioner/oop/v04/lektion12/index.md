@@ -1,5 +1,12 @@
-# Lektion 12 - Lab #2
+# Lektion 12
 
 ## Dagens innehåll
 
-* Lab #2
+* Felhantering och Exceptions
+
+---
+
+## Länkar
+
+* [Övningar](exercises12_1.md)
+* [Material: Exceptions](../../../../material/cs/basics/exceptions.md)

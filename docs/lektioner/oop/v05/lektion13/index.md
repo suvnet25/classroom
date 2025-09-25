@@ -2,6 +2,4 @@
 
 ## Innehåll
 
-* Veckans enkät!
-* Exceptions
-* Paket
+* Lab #2

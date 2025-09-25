@@ -5,3 +5,4 @@ nav:
   - Iteration: iteration.md
   - Metoder: methods.md
   - Felhantering: errorhandling.md
+  - Exceptions: exceptions.md
