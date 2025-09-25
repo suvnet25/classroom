@@ -147,7 +147,7 @@ Skapa klassen `BankAccount` som innehåller metoden `Withdraw(int amount)`.
 
 ### **Övning 2 - Bankkonto med insättning**
 
-Lägg till metoden Withdraw(int amount) i din klass `BankAccount`. Metoden skall dra av mängden `amount` från Balance. Fundera på vilka fel som kan uppstå när någon använder den metoden. Var är det rimligt att kasta undantag? Vilket undantag passar bäst? 
+Lägg till metoden Deposit(int amount) i din klass `BankAccount`. Metoden skall sätta in mängden `amount` till Balance. Fundera på vilka fel som kan uppstå när någon använder den metoden. Var är det rimligt att kasta undantag? Vilket undantag passar bäst? 
 
 ??? Info "Lista på vanliga exceptions"
     
