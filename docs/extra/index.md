@@ -126,3 +126,123 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
     ```
 
 ## Arv
+
+## Logiska fel
+
+Här är några övningar där koden har logiska fel. Identifiera och rätta till dem så att programmen fungerar som avsett. Använd debuggern eller skriv ut variabler med `Console.WriteLine` för att förstå vad som händer.
+
+??? Info "Summera tal"
+    Programmet ska summera alla tal i en array och skriva ut summan, men koden har något logiskt fel. Identifiera och rätta till dem så att programmet fungerar som avsett.
+
+    ```csharp
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int sum = 0;
+
+            for (int i = 0; i <= numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
+
+            Console.WriteLine("Summan är: " + sum);
+        }
+    }
+    ```
+
+??? Tip "(SVÅR) Många logiska fel"
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    class Program
+    {
+        static void Main()
+        {
+            var temps = GenerateTemperatures(31);
+
+            Console.WriteLine("Första 5 mätningarna:");
+            for (int i = 0; i <= 5; i++) 
+            {
+                Console.Write(temps[i] + (i < 5 ? ", " : "\n"));
+            }
+
+            Console.WriteLine($"Medel: {Average(temps)}");
+            Console.WriteLine($"Median: {Median(temps)}");
+            Console.WriteLine($"Typvärde: {Mode(temps)}");
+            Console.WriteLine($"Kallaste: {temps.Min()}");
+            Console.WriteLine($"Varmaste: {temps.Max()}");
+        }
+
+        static List<int> GenerateTemperatures(int days)
+        {
+            var list = new List<int>(days);
+            for (int i = 0; i < days; i++)
+            {
+                var rng = new Random();
+                list.Add(rng.Next(-10, 26));
+            }
+            return list;
+        }
+
+        static double Average(List<int> values)
+        {
+            int sum = 0;
+            foreach (var v in values)
+                sum += v;
+
+            return sum / values.Count;
+        }
+
+        static double Median(List<int> values)
+        {
+            List<int> sorted = values;
+            sorted.Sort();
+
+            int n = sorted.Count;
+            if (n % 2 == 1)
+            {
+                return sorted[n / 2];
+            }
+            else
+            {
+                return (sorted[n / 2] + sorted[n / 2 + 1]) / 2.0;
+            }
+        }
+
+        static int Mode(List<int> values)
+        {
+            var counts = new Dictionary<int, int>();
+            foreach (var v in values)
+            {
+                if (!counts.ContainsKey(v))
+                    counts[v] = 0;
+
+                counts[v]++;
+
+                if (counts[v] % 5 == 0)
+                {
+                    var anyKey = counts.Keys.First();
+                    counts[anyKey] = 0;
+                }
+            }
+
+            int bestKey = counts.First().Key;
+            int bestCount = counts[bestKey];
+
+            foreach (var kv in counts)
+            {
+                if (kv.Value >= bestCount)
+                {
+                    bestKey = kv.Key;
+                    bestCount = kv.Value;
+                }
+            }
+
+            return bestKey;
+        }
+    }
+    ```

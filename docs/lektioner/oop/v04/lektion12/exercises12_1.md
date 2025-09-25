@@ -184,9 +184,11 @@ Utgå från startkoden nedan.
     ```cs
     class Program
     {
-        static List<string> users = [new(){ Username = "alice" },
-                                     new(){ Username = "bob" },
-                                     new(){ Username = "charlie" }];
+        static List<User> users = [
+            new(){ Username = "alice" },
+            new(){ Username = "bob" },
+            new(){ Username = "charlie" }
+        ];
 
         static void Main()
         {
