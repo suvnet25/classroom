@@ -25,22 +25,22 @@ Dessa funktioner används nästan alltid med [`GROUP BY`](group_by.md) men vi ka
 Hämta ut genomssnittsbetyget för alla kurser i hela skolan:
 
 ```sql
-SELECT AVG(Enrollments.Grade)
-FROM Enrollments;
+SELECT AVG(Enrollment.Grade)
+FROM Enrollment;
 ```
 
 Eller för en viss student:
 ```sql
-SELECT AVG(Enrollments.Grade)
-FROM Enrollments
+SELECT AVG(Enrollment.Grade)
+FROM Enrollment
 WHERE StudentId=31;
 ```
 
 Eller för en viss kurs med kursnamn:
 ```sql
 select AVG(e.Grade)
-FROM Enrollments e
-INNER JOIN Courses c ON e.CourseId = c.Id
+FROM Enrollment e
+INNER JOIN Course c ON e.CourseId = c.Id
 WHERE c.Name = "Databaser";
 ```
 

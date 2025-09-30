@@ -17,15 +17,15 @@ VALUES (värde1, värde2, värde3, ...);
 ## Exempel
 ```sql
 -- Lägg till en student (Id sätts automatiskt med AUTO_INCREMENT)
-INSERT INTO Students (Name, Email, DateOfBirth)
+INSERT INTO Student (Name, Email, DateOfBirth)
 VALUES ('Anna Andersson', 'anna@suvnet.se', '1990-05-12');
 
 -- Lägg till en student utan att ange alla kolumner (Email blir NULL)
-INSERT INTO Students (Name, DateOfBirth)
+INSERT INTO Student (Name, DateOfBirth)
 VALUES ('Björn Berg', '1985-11-23');
 
 -- Lägg till flera studenter samtidigt
-INSERT INTO Students (Name, Email, DateOfBirth)
+INSERT INTO Student (Name, Email, DateOfBirth)
 VALUES
     ('Carla Carlsson', 'carla@suvnet.se', '1992-03-15'),
     ('David Dahl', 'david@suvnet.se', '1979-07-08');

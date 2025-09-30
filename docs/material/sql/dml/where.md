@@ -49,26 +49,26 @@ Används för att kombinera flera villkor i en `WHERE`-sats.
 ```sql
 -- Hämta alla studenter födda efter 1990
 SELECT Name, DateOfBirth
-FROM Students
+FROM Student
 WHERE DateOfBirth > '1990-01-01';
 
 -- Hämta alla studenter med e-post angiven (inte NULL)
 SELECT Name, Email
-FROM Students
+FROM Student
 WHERE Email IS NOT NULL;
 
 -- Hämta alla studenter födda på 80-talet
 SELECT Name, DateOfBirth
-FROM Students
+FROM Student
 WHERE DateOfBirth BETWEEN '1980-01-01' AND '1989-12-31';
 
 -- Hämta alla studenter med namn som börjar på 'A'
 SELECT Name
-FROM Students
+FROM Student
 WHERE Name LIKE 'A%';
 
 -- Hämta alla studenter som heter Anna Andersson eller Björn Berg
 SELECT Name
-FROM Students
+FROM Student
 WHERE Name = 'Anna Andersson' OR Name = 'Björn Berg';
 ```

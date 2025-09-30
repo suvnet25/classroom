@@ -33,7 +33,7 @@ Precis som i C\# så jobbar SQL med olika datatyper:
 Såhär skriver vi för att skapa en tabell:
 ```sql
 -- Skapa en tabell med vanliga datatyper
-CREATE TABLE Students (
+CREATE TABLE Student (
     Id INT,                             -- Auto-inkrementerande Id
     Name VARCHAR(100),                  -- Studentens namn
     Email VARCHAR(100),                 -- Studentens e-post
@@ -46,7 +46,7 @@ CREATE TABLE Students (
 SHOW TABLES;
 
 -- Visa kolumnerna i en viss tabell
-DESCRIBE Students;
+DESCRIBE Student;
 ```
 ## Primary key
 Varje tabell i en databas behöver en **primärnyckel** (`PRIMARY KEY`) som unikt identifierar varje rad. Primary key är egentligen en **constraint**, vilket alltså begränsar just innehållet i denna kolumn. Det tvingar den att vara unik, den kan inte ha null-värde. Dessutom är en primärnyckel extra snabb att indexera (söka i).
@@ -55,7 +55,7 @@ Oftast använder man en kolumn som heter `Id`. Ibland ser man att folk döper de
 ### Auto increment
 Ofta låter man id-fälen  automatiskt få ett nytt värde för varje rad som läggs till.  I MySQL/MariaDB gör man detta med `AUTO_INCREMENT`:  
 ```sql
-CREATE TABLE Students (
+CREATE TABLE Student (
     Id INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-inkrementerande Id
     Name VARCHAR(100),
     Email VARCHAR(100),
@@ -67,21 +67,21 @@ CREATE TABLE Students (
 Enklast är om man gör rätt ifrån början men ibland kan man ändå behöva redigera tabeller.
 
 ```sql
--- 1) Lägg till en ny kolumn i Students
-ALTER TABLE Students ADD COLUMN PhoneNumber VARCHAR(20);
+-- 1) Lägg till en ny kolumn i Student
+ALTER TABLE Student ADD COLUMN PhoneNumber VARCHAR(20);
 
--- 2) Byt namn på en kolumn i Teachers
-ALTER TABLE Teachers RENAME COLUMN Name TO FullName;
+-- 2) Byt namn på en kolumn i Teacher
+ALTER TABLE Teacher RENAME COLUMN Name TO FullName;
 
--- 3) Ändra datatyp/längd på en kolumn i Courses
-ALTER TABLE Courses MODIFY COLUMN Name VARCHAR(150);
+-- 3) Ändra datatyp/längd på en kolumn i Course
+ALTER TABLE Course MODIFY COLUMN Name VARCHAR(150);
 
--- 4) Ta bort en kolumn i Enrollments
-ALTER TABLE Enrollments DROP COLUMN Grade;
+-- 4) Ta bort en kolumn i Enrollment
+ALTER TABLE Enrollment DROP COLUMN Grade;
 
--- 5) Byt namn på tabellen Students till Pupils
-ALTER TABLE Students RENAME TO Pupils;
+-- 5) Byt namn på tabellen Student till Pupils
+ALTER TABLE Student RENAME TO Pupils;
 
 -- 6) Göra en kolumn auto_increment
-ALTER TABLE Teachers MODIFY COLUMN Id INT AUTO_INCREMENT;
+ALTER TABLE Teacher MODIFY COLUMN Id INT AUTO_INCREMENT;
 ```

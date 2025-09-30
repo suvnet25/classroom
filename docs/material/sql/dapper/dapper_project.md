@@ -23,7 +23,7 @@ public class Student
 ## SELECT
 
 ```
-var students = db.Query<Student>("SELECT Id, Name, Email FROM Students").ToList();
+var students = db.Query<Student>("SELECT Id, Name, Email FROM Student").ToList();
 
 foreach (var student in students)
 {
@@ -38,14 +38,14 @@ string name = "Pelle";
 string email = "pelle@skola.com";
 string dateOfBirth = "1990-01-01";
 
-string sql = "INSERT INTO Students (Name, Email, DateOfBirth) VALUES (@Name, @Email, @DateOfBirth)";
+string sql = "INSERT INTO Student (Name, Email, DateOfBirth) VALUES (@Name, @Email, @DateOfBirth)";
 db.Execute(sql, new { Name = "Krister", Email = "krister@example.com", DateOfBirth = new DateTime(1990, 1, 1) });
 ```
 
 ## Utan parametrar
 Här är utan parametrar. Detta är osäkert för SQL-injections men kan vara enklare att förstå.
 ```
-string sql = $"INSERT INTO Students (Name, Email, DateOfBirth) VALUES ('{name}', '{email}', '{dateOfBirth}')";
+string sql = $"INSERT INTO Student (Name, Email, DateOfBirth) VALUES ('{name}', '{email}', '{dateOfBirth}')";
 db.Execute(sql);
 ```
 #
@@ -54,14 +54,14 @@ db.Execute(sql);
 ## UPDATE
 
 ```
-string sql = "UPDATE Students SET Email = @Email WHERE Id = @Id";
+string sql = "UPDATE Student SET Email = @Email WHERE Id = @Id";
 db.Execute(sql, new { Email = "newmail@example.com", Id = 1 });
 ```
 
 ## DELETE
 
 ```
-string sql = "DELETE FROM Students WHERE Id = @Id";
+string sql = "DELETE FROM Student WHERE Id = @Id";
 db.Execute(sql, new { Id = 1 });
 ```
 

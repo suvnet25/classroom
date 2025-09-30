@@ -19,16 +19,16 @@ ORDER BY kolumn1 [ASC|DESC], kolumn2 [ASC|DESC], ...;
 ```sql
 -- Sortera studenter efter födelsedatum stigande (äldst först)
 SELECT Name, DateOfBirth
-FROM Students
+FROM Student
 ORDER BY DateOfBirth ASC;
 
 -- Sortera studenter efter födelsedatum fallande (yngst först)
 SELECT Name, DateOfBirth
-FROM Students
+FROM Student
 ORDER BY DateOfBirth DESC;
 
 -- Sortera på flera kolumner: först efter namn, sedan efter födelsedatum
 SELECT Name, Email, DateOfBirth
-FROM Students
+FROM Student
 ORDER BY Name ASC, DateOfBirth DESC;
 ```

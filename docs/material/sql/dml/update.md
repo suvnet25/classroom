@@ -18,17 +18,17 @@ WHERE villkor;
 
 ```sql
 -- Ändra en kolumn för en specifik rad (student med Id = 1)
-UPDATE Students
+UPDATE Student
 SET Email = 'anna.ny@suvnet.se'
 WHERE Id = 1;
 
 -- Ändra flera kolumner samtidigt (student(er) med namnet 'Björn Berg')
-UPDATE Students
+UPDATE Student
 SET Email = 'bjorn.berg@suvnet.se', DateOfBirth = '1986-01-01'
 WHERE Id = 4;
 
 -- Ändra alla rader i tabellen.
 -- Var försiktig! Man vill nästan alltid ha med ett WHERE-villkor
-UPDATE Students
+UPDATE Student
 SET Email = 'unknown@x.com';
 ```
