@@ -2,7 +2,7 @@
 
 ## Klasser, objekt och Git
 
-Första labben där vi jobbar med klasser och objekt i en struktur som påminner mer om hur verkliga projekt är uppbyggda, även om det är i en väldigt liten skala än så länge. Du kommer också få testa att använda Git i denna övning. När du är klar för dagen, pusha din kod till GitHub.  
+Första labben där vi jobbar med klasser och objekt i en struktur som påminner mer om hur verkliga projekt är uppbyggda, även om det är i en väldigt liten skala än så länge. Du kommer också få testa att använda Git i denna övning. När du är klar för dagen, pusha din kod till GitHub.
 
 Det kan kanske verka som att det är mycket att göra i denna lab, men tänk på att ni inte måste hinna klart med allt! Det viktiga är att ni kommer igång med att tänka i klasser och objekt, och att ni får testa Git medan ni jobbar.
 
@@ -26,7 +26,9 @@ Här är ett flödesschema över hur systemet ska fungera:
   <img src="../lab2.png" width=400>
 </p>
 
-Startkoden hittar du på Github Classroom. Länken dit får du av läraren under lektionen. Startkoden innehåller:
+Startkoden hittar du på Github Classroom. Länken dit får du av läraren under lektionen. Acceptera uppgiften och använd sedan `git clone` för att ladda ner koden till din dator. Du ska alltså inte använda *fork* i detta fall.
+
+Startkoden innehåller:
 
 * Ett projekt som heter `PenneCustomer`. ***Det är där all er kod ska ligga! Ingen annan stans.***
 * Ett projekt som heter `Utils`, som innehåller klassen `Input` med diverse metoder för att läsa in och validera användarinput. Använd den eller skriv egen kod. Läs mer under [Appendix A](#appendix-a-utils).
