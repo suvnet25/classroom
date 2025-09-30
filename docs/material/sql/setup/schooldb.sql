@@ -1,4 +1,42 @@
--- Insert Teachers
+-- Drop old tables
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `Enrollments`;
+DROP TABLE IF EXISTS `Courses`;
+DROP TABLE IF EXISTS `Teachers`;
+DROP TABLE IF EXISTS `Students`;
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- Skapa Students-tabellen med auto-inkrement på Id
+CREATE TABLE Students (
+    Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
+    Name VARCHAR(100),                   -- Studentens namn
+    Email VARCHAR(100),                  -- Studentens e-post
+    DateOfBirth DATE                     -- Studentens födelsedatum
+);
+
+-- Skapa Teachers-tabellen med auto-inkrement på Id
+CREATE TABLE Teachers (
+    Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
+    Name VARCHAR(100),                   -- Lärarens namn
+    Email VARCHAR(100)                   -- Lärarens e-post
+);
+
+-- Skapa Courses-tabellen med auto-inkrement på Id
+CREATE TABLE Courses (
+    Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
+    Name VARCHAR(100),                   -- Namnet på kursen
+    Credits INT,                         -- Antal poäng för kursen
+    TeacherId INT                        -- Lärarens Id som håller kursen
+);
+
+-- Skapa Enrollments-tabellen (mellanliggande tabell för många-till-många)
+CREATE TABLE Enrollments (
+    Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
+    StudentId INT,                       -- Studentens Id
+    CourseId INT,                        -- Kursens Id
+    EnrollmentDate DATE,                 -- Datum för registreringen
+    Grade INT                            -- Betyg för kursen (0 - IG, 1 - G, 2 - VG)
+);-- Insert Teachers
 INSERT INTO Teachers (Id, Name, Email) VALUES
 (1, 'Gustav', 'gustav@by.com'),
 (2, 'Krister', 'krister@by.com'),
