@@ -18,6 +18,7 @@ Den finska pastaresturangen "Penne" vill ha ett nytt system för sina beställni
 * Göra en beställning genom att lägga till en eller flera rätter till beställningen.
 * När klar, välja att betala med kort eller kontant.
 * Få se ett kvitto på beställningen med ett ordernummer.
+* För att använda "äta här eller ta med" till något kan vi låta orderpriset påverkas av detta. Det är inte ovanligt att det kostar lite extra att äta på plats.
 
 Här är ett flödesschema över hur systemet ska fungera:
 
