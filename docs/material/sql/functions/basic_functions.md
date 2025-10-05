@@ -13,10 +13,13 @@ Det vanligaste är att funktioner i SQL används tillsammans med `SELECT` för a
 ## Enkla funktioner
 Testa några funktioner som inte ens behöver någon tabell för att funka:
 ```sql
-SELECT NOW();       -- aktuell datum+tid
-SELECT PI();        -- pi (används väl aldrig men funkar som exempel...)
-SELECT RAND();      -- slumpa flyttal mellan 0 och 1
-SELECT ROUND(3.14159, 2)   -- Avrunda till två decimaler.
+SELECT NOW();               -- aktuell datum+tid
+SELECT PI();                -- pi (används väl aldrig men funkar som exempel...)
+SELECT RAND();              -- slumpa flyttal mellan 0 och 1
+SELECT ROUND(3.14159, 2);   -- Avrunda till två decimaler.
+SELECT NOW();               -- Aktuellt datum och tid
+SELECT CURDATE();           -- Endast datum
+SELECT CURTIME();           -- Endast tid
 ```
 
 ## Funktioner för att räkna på tabeller/kolumner

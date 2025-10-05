@@ -99,4 +99,4 @@ Det är lätt att blanda ihop `GROUP BY` och `ORDER BY` eftersom båda påverkar
 | **GROUP BY** | Grupperar rader för att kunna använda funktioner som COUNT, AVG, SUM | "Hur många studenter per kurs?"              |
 | **ORDER BY** | Sorterar resultatet i en viss ordning (stigande/fallande)            | "Visa alla studenter i åldersordning"        |
 
-Vi kan inte använda `GROUP BY` **utan** att använda oss av en funktion medan vi kan anva `ORDER BY` utan en funktion. 
+Vi **kan inte** använda `GROUP BY` utan att använda oss av en funktion medan vi **kan** använda `ORDER BY` utan en funktion. 
