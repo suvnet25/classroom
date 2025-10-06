@@ -10,11 +10,12 @@ tags:
 1. Skapa en enum som heter `Season` med värdena `Spring`, `Summer`, `Autumn`, och `Winter`.
 2. Prova att skapa en variabel av typen `Season` och tilldela den ett värde.
 3. Skriv ut detta värde till konsolen.
-4. ----
-5. Skapa en klass som du kallar `SeasonalActivity` med en egenskap `Season` av typen `Season` och en egenskap `Activity` av typen `string`.
-6. Skapa en konstruktor som tar emot båda egenskaperna och sätter dem.
-7. Skapa en instans av `SeasonalActivity` för varje säsong med en passande aktivitet (t.ex. "Skiing" för Winter).
-8. Skriv ut alla aktiviteter med deras säsonger till konsolen.
+
+## 2. En klass med säsongsegenskap
+1. Skapa en klass som du kallar `SeasonalActivity` med en egenskap `Season` av typen `Season` (alltså den du skapade i föregående övning) och en egenskap `Activity` av typen `string`.
+2. Skapa en konstruktor som tar emot båda egenskaperna och sätter dem.
+3. Skapa en instans av `SeasonalActivity` för varje säsong med en passande aktivitet (t.ex. "Skiing" för Winter).
+4. Skriv ut alla aktiviteter med deras säsonger till konsolen.
 
 ## 2. En enum för menyval
 
