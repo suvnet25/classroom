@@ -6,7 +6,9 @@ description: Intro till objektorienterad programmering.
 
 # Intro
 
-I takt med att ett program växer och blir mer komplext, växer också behovet av att organisera koden på ett bra sätt så att det går att jobba effektivt med den. Ett sätt att göra detta är att använda sig av objektorienterad programmering (OOP). C# är ett objektorienterat språk, vilket innebär att det är baserat på de objektorienterade principerna.
+I takt med att ett program växer och blir mer komplext, växer också behovet av att organisera koden på ett bra sätt så att det går att jobba effektivt med den. Ett sätt att göra detta är att använda sig av objektorienterad programmering (OOP). C# är ett objektorienterat språk, vilket innebär att det är baserat på de objektorienterade principerna.  
+
+*Objektorientering i sig är inte ett programmeringsspråk, utan ett sätt att tänka kring och strukturera data*.
 
 ## Vad är OOP?
 

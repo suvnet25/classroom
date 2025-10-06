@@ -6,3 +6,4 @@ nav:
   - Metoder: methods.md
   - Felhantering: errorhandling.md
   - Exceptions: exceptions.md
+  - Enums: enums.md
