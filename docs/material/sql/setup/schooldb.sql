@@ -1,43 +1,43 @@
 -- Drop old tables
 SET FOREIGN_KEY_CHECKS = 0;
-DROP TABLE IF EXISTS `Enrollments`;
-DROP TABLE IF EXISTS `Courses`;
-DROP TABLE IF EXISTS `Teachers`;
-DROP TABLE IF EXISTS `Students`;
+DROP TABLE IF EXISTS `Enrollment`;
+DROP TABLE IF EXISTS `Course`;
+DROP TABLE IF EXISTS `Teacher`;
+DROP TABLE IF EXISTS `Student`;
 SET FOREIGN_KEY_CHECKS = 1;
 
--- Skapa Students-tabellen med auto-inkrement på Id
-CREATE TABLE Students (
+-- Skapa Student-tabellen med auto-inkrement på Id
+CREATE TABLE Student (
     Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
     Name VARCHAR(100),                   -- Studentens namn
     Email VARCHAR(100),                  -- Studentens e-post
     DateOfBirth DATE                     -- Studentens födelsedatum
 );
 
--- Skapa Teachers-tabellen med auto-inkrement på Id
-CREATE TABLE Teachers (
+-- Skapa Teacher-tabellen med auto-inkrement på Id
+CREATE TABLE Teacher (
     Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
     Name VARCHAR(100),                   -- Lärarens namn
     Email VARCHAR(100)                   -- Lärarens e-post
 );
 
--- Skapa Courses-tabellen med auto-inkrement på Id
-CREATE TABLE Courses (
+-- Skapa Course-tabellen med auto-inkrement på Id
+CREATE TABLE Course (
     Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
     Name VARCHAR(100),                   -- Namnet på kursen
     Credits INT,                         -- Antal poäng för kursen
     TeacherId INT                        -- Lärarens Id som håller kursen
 );
 
--- Skapa Enrollments-tabellen (mellanliggande tabell för många-till-många)
-CREATE TABLE Enrollments (
+-- Skapa Enrollment-tabellen (mellanliggande tabell för många-till-många)
+CREATE TABLE Enrollment (
     Id INT AUTO_INCREMENT PRIMARY KEY,   -- Auto-inkrementerande Id
     StudentId INT,                       -- Studentens Id
     CourseId INT,                        -- Kursens Id
     EnrollmentDate DATE,                 -- Datum för registreringen
     Grade INT                            -- Betyg för kursen (0 - IG, 1 - G, 2 - VG)
-);-- Insert Teachers
-INSERT INTO Teachers (Id, Name, Email) VALUES
+);-- Insert Teacher
+INSERT INTO Teacher (Id, Name, Email) VALUES
 (1, 'Gustav', 'gustav@by.com'),
 (2, 'Krister', 'krister@by.com'),
 (3, 'David', 'david@by.com'),
@@ -45,8 +45,8 @@ INSERT INTO Teachers (Id, Name, Email) VALUES
 (5, 'Henrik', 'henrik@by.com'),
 (6, 'Jimmy', 'jimmy@by.com');
 
--- Insert Courses
-INSERT INTO Courses (Id, Name, Credits, TeacherId) VALUES
+-- Insert Course
+INSERT INTO Course (Id, Name, Credits, TeacherId) VALUES
 (1, 'Databaser', 7.5, 2),
 (2, 'OOP1', 15, 1),
 (3, 'OOP2', 7.5, 1),
@@ -57,8 +57,8 @@ INSERT INTO Courses (Id, Name, Credits, TeacherId) VALUES
 (8, 'Webbdesign', 10, 3),
 (9, 'AI-utveckling', 10, NULL);
 
--- Insert initial Students
-INSERT INTO Students (Name, Email, DateOfBirth) VALUES
+-- Insert initial Student
+INSERT INTO Student (Name, Email, DateOfBirth) VALUES
 ('Anna Andersson', 'anna@student.by.com', '1990-05-12'),
 ('Björn Berg', 'bjorn@student.by.com', '1985-11-23'),
 ('Carla Carlsson', 'carla@student.by.com', '1992-03-15'),
@@ -264,8 +264,8 @@ INSERT INTO Students (Name, Email, DateOfBirth) VALUES
 ('Selma Magnusson', 'selma.magnusson@student.by.com', '1999-11-14'),
 ('Cornelia Jansson', 'cornelia.jansson@student.by.com', '1993-11-10');
 
--- Insert initial Enrollments
-INSERT INTO Enrollments (StudentId, CourseId, EnrollmentDate, Grade) VALUES
+-- Insert initial Enrollment
+INSERT INTO Enrollment (StudentId, CourseId, EnrollmentDate, Grade) VALUES
 (1, 1, '2023-09-01', 2),
 (1, 2, '2023-09-01', 2),
 (2, 1, '2023-09-01', 0),

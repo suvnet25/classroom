@@ -6,9 +6,9 @@ icon: material/download
 
 # DataGrip – Installation och första anslutning
 
-[DataGrip](https://www.jetbrains.com/datagrip/) är JetBrains databas-IDE.  
+[DataGrip](https://www.jetbrains.com/datagrip/) är JetBrains databas-manager.
 
-Som student får du en gratis licens genom din skolmail **@skola.boras.se**. Den gäller i ett år (men jag tror du kan förlänga den).
+Som student får du en gratis licens genom din skolmail **@skola.boras.se**. Den gäller i ett år (men jag tror du kan förlänga den). [Ansök här](https://www.jetbrains.com/shop/eform/students)
 
 ---
 

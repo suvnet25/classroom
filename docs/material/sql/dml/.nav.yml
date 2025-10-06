@@ -2,6 +2,7 @@ nav:
   - Lägga in data: insert.md
   - Hämta ut data: select.md
   - Filtrera data: where.md
+  - Boolska uttryck: boolean.md
   - Sortera data: order_by.md
   - Uppdatera data: update.md
   - Ta bort data: delete.md

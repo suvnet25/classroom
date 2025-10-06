@@ -17,13 +17,13 @@ WHERE villkor;
 ## Exempel
 ```sql
 -- Ta bort en specifik student (med Id = 4)
-DELETE FROM Students
+DELETE FROM Student
 WHERE Id = 4;
 
 -- Ta bort flera studenter utan e-postadress
-DELETE FROM Students
+DELETE FROM Student
 WHERE Email IS NULL;
 
 -- Ta bort alla studenter i tabellen (var försiktig!)
-DELETE FROM Students;
+DELETE FROM Student;
 ```

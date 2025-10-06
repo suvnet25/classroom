@@ -29,8 +29,8 @@ GROUP BY kolumn;
 ```sql
 -- Beräkna medelbetyg per kurs
 SELECT c.Name AS CourseName, AVG(e.Grade) AS AverageGrade
-FROM Courses c
-INNER JOIN Enrollments e ON c.Id = e.CourseId
+FROM Course c
+INNER JOIN Enrollment e ON c.Id = e.CourseId
 GROUP BY c.Name;
 ```
 
@@ -80,14 +80,14 @@ Det faktiska resultatet vi får för vår query blir alltså:
 ```sql
 -- Räkna hur många studenter som är registrerade i varje kurs
 SELECT c.Name AS CourseName, COUNT(e.StudentId) AS AntalStudenter
-FROM Courses c
-INNER JOIN Enrollments e ON c.Id = e.CourseId
+FROM Course c
+INNER JOIN Enrollment e ON c.Id = e.CourseId
 GROUP BY c.Name;
 
 -- Summera poäng (credits) per lärare
 SELECT t.Name AS TeacherName, SUM(c.Credits) AS TotalaPoäng
-FROM Teachers t
-INNER JOIN Courses c ON t.Id = c.TeacherId
+FROM Teacher t
+INNER JOIN Course c ON t.Id = c.TeacherId
 GROUP BY t.Name;
 ```
 ## GROUP BY vs ORDER BY
@@ -99,4 +99,4 @@ Det är lätt att blanda ihop `GROUP BY` och `ORDER BY` eftersom båda påverkar
 | **GROUP BY** | Grupperar rader för att kunna använda funktioner som COUNT, AVG, SUM | "Hur många studenter per kurs?"              |
 | **ORDER BY** | Sorterar resultatet i en viss ordning (stigande/fallande)            | "Visa alla studenter i åldersordning"        |
 
-Vi kan inte använda `GROUP BY` **utan** att använda oss av en funktion medan vi kan anva `ORDER BY` utan en funktion. 
+Vi **kan inte** använda `GROUP BY` utan att använda oss av en funktion medan vi **kan** använda `ORDER BY` utan en funktion. 

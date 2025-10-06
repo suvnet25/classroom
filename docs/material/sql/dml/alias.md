@@ -19,11 +19,11 @@ FROM tabellnamn AS alias;
 ```sql
 -- Ge en kolumn ett alias
 SELECT Name AS StudentName, DateOfBirth AS Birthday
-FROM Students;
+FROM Student;
 
 -- Ge en tabell ett alias och använd det i WHERE, utan AS
 SELECT s.Name, s.Email
-FROM Students s
+FROM Student s
 WHERE s.DateOfBirth > '1990-01-01';
 ```
 ## Alias och JOINs
@@ -31,7 +31,7 @@ Alias blir extra nyttigt när vi jobbar med joins. Ofta blir join-satserna annar
 
 ```sql
 SELECT s.Name AS StudentName, c.Name AS CourseName, e.Grade
-FROM Students s
-INNER JOIN Enrollments e ON s.Id = e.StudentId
-INNER JOIN Courses c ON e.CourseId = c.Id;
+FROM Student s
+INNER JOIN Enrollment e ON s.Id = e.StudentId
+INNER JOIN Course c ON e.CourseId = c.Id;
 ```

@@ -28,5 +28,5 @@ USE school;
 SHOW TABLES;
 
 -- Visa kolumnerna i en tabell
-DESCRIBE Students;
+DESCRIBE Student;
 ```

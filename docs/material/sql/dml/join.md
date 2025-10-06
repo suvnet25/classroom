@@ -17,7 +17,7 @@ JOIN tabell2 ON tabell1.kolumn = tabell2.kolumn;
 ## Exempel
 Tänk dig att vi har följande två tabeller:
 
-### Teachers
+### Teacher
 | Id | Name       | Email                |
 |----|------------|----------------------|
 | 1  | Gustav     | gustav@by.com   |
@@ -26,7 +26,7 @@ Tänk dig att vi har följande två tabeller:
 | 4  | Lars       | lars@by.com   |
 | 5  | Henrik     | henrik@by.com   |
 
-### Courses
+### Course
 | Id | Name          | Credits | TeacherId |
 |----|---------------|---------|-----------|
 | 1  | Databaser     | 7.5     | 2         |
@@ -40,9 +40,9 @@ Tänk dig att vi har följande två tabeller:
 ### INNER JOIN
 ```sql
 -- INNER JOIN: Hämta kurser och deras lärare
-SELECT Courses.Name AS CourseName, Teachers.Name AS TeacherName
-FROM Courses
-INNER JOIN Teachers ON Courses.TeacherId = Teachers.Id;
+SELECT Course.Name AS CourseName, Teacher.Name AS TeacherName
+FROM Course
+INNER JOIN Teacher ON Course.TeacherId = Teacher.Id;
 ```
 Ger följande resultat:
 
@@ -58,9 +58,9 @@ Ger följande resultat:
 ### LEFT JOIN
 ```sql
 -- LEFT JOIN: Hämta alla kurser även om de inte har någon lärare
-SELECT Courses.Name AS CourseName, Teachers.Name AS TeacherName
-FROM Courses
-LEFT JOIN Teachers ON Courses.TeacherId = Teachers.Id;
+SELECT Course.Name AS CourseName, Teacher.Name AS TeacherName
+FROM Course
+LEFT JOIN Teacher ON Course.TeacherId = Teacher.Id;
 ```
 Ger följande result set:
 
@@ -77,9 +77,9 @@ Ger följande result set:
 ### RIGHT JOIN
 ```sql
 -- RIGHT JOIN: Hämta alla lärare även om de inte har någon kurs
-SELECT Courses.Name AS CourseName, Teachers.Name AS TeacherName
-FROM Courses
-RIGHT JOIN Teachers ON Courses.TeacherId = Teachers.Id;
+SELECT Course.Name AS CourseName, Teacher.Name AS TeacherName
+FROM Course
+RIGHT JOIN Teacher ON Course.TeacherId = Teacher.Id;
 ```
 Ger följande result set:
 
@@ -104,7 +104,7 @@ Exempel:
 → Därför behövs en mellantabell som kopplar ihop `students` och `courses`.  
 
 Vi har följande tabeller:
-### Students
+### Student
 
 | Id | Name             | Email                | DateOfBirth |
 |----|------------------|----------------------|-------------|
@@ -113,7 +113,7 @@ Vi har följande tabeller:
 | 3  | Carla Carlsson   | carla@example.com    | 1992-03-15  |
 | 4  | David Dahl       | david@example.com    | 1979-07-08  |
 
-### Courses
+### Course
 
 | Id | Name          | Credits | TeacherId |
 |----|---------------|---------|-----------|
@@ -124,7 +124,7 @@ Vi har följande tabeller:
 | 8  | Webbdesign    | 10      | 3         |
 | 9  | AI-utveckling | 10      | NULL      |
 
-### Enrollments (mellantabellen med betyg)
+### Enrollment (mellantabellen med betyg)
 | StudentId | CourseId | EnrollmentDate | Grade |
 |-----------|----------|----------------|-------|
 | 1         | 1        | 2023-09-01     | 2     |
@@ -137,13 +137,13 @@ Vi har följande tabeller:
 Exempel hur vi kan skriva queryn:
 ```sql
 SELECT
-  Students.Name  AS StudentName,
-  Courses.Name   AS CourseName,
-  Enrollments.Grade
-FROM Students
-INNER JOIN Enrollments ON Students.Id = Enrollments.StudentId
-INNER JOIN Courses     ON Enrollments.CourseId = Courses.Id
-ORDER BY Students.Name, Courses.Name;
+  Student.Name  AS StudentName,
+  Course.Name   AS CourseName,
+  Enrollment.Grade
+FROM Student
+INNER JOIN Enrollment ON Student.Id = Enrollment.StudentId
+INNER JOIN Course     ON Enrollment.CourseId = Course.Id
+ORDER BY Student.Name, Course.Name;
 ```
 
 Resultat:

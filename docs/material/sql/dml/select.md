@@ -20,9 +20,9 @@ ORDER BY kolumn ASC|DESC;
 ```sql
 -- Hämta alla kolumner från tabellen
 SELECT * 
-FROM Students;
+FROM Student;
 
 -- Hämta specifika kolumner
 SELECT Name, DateOfBirth 
-FROM Students;
+FROM Student;
 ```

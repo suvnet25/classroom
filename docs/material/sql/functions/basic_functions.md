@@ -13,10 +13,13 @@ Det vanligaste är att funktioner i SQL används tillsammans med `SELECT` för a
 ## Enkla funktioner
 Testa några funktioner som inte ens behöver någon tabell för att funka:
 ```sql
-SELECT NOW();       -- aktuell datum+tid
-SELECT PI();        -- pi (används väl aldrig men funkar som exempel...)
-SELECT RAND();      -- slumpa flyttal mellan 0 och 1
-SELECT ROUND(3.14159, 2)   -- Avrunda till två decimaler.
+SELECT NOW();               -- aktuell datum+tid
+SELECT PI();                -- pi (används väl aldrig men funkar som exempel...)
+SELECT RAND();              -- slumpa flyttal mellan 0 och 1
+SELECT ROUND(3.14159, 2);   -- Avrunda till två decimaler.
+SELECT NOW();               -- Aktuellt datum och tid
+SELECT CURDATE();           -- Endast datum
+SELECT CURTIME();           -- Endast tid
 ```
 
 ## Funktioner för att räkna på tabeller/kolumner
@@ -25,22 +28,22 @@ Dessa funktioner används nästan alltid med [`GROUP BY`](group_by.md) men vi ka
 Hämta ut genomssnittsbetyget för alla kurser i hela skolan:
 
 ```sql
-SELECT AVG(Enrollments.Grade)
-FROM Enrollments;
+SELECT AVG(Enrollment.Grade)
+FROM Enrollment;
 ```
 
 Eller för en viss student:
 ```sql
-SELECT AVG(Enrollments.Grade)
-FROM Enrollments
+SELECT AVG(Enrollment.Grade)
+FROM Enrollment
 WHERE StudentId=31;
 ```
 
 Eller för en viss kurs med kursnamn:
 ```sql
 select AVG(e.Grade)
-FROM Enrollments e
-INNER JOIN Courses c ON e.CourseId = c.Id
+FROM Enrollment e
+INNER JOIN Course c ON e.CourseId = c.Id
 WHERE c.Name = "Databaser";
 ```
 
