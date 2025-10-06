@@ -5,13 +5,13 @@ tags:
 
 # Övning 14 Refaktorering
 
-Dags att refaktorera lite kod så att den blir mer objektorienterad och håller sig bättre till SRP (Single Responsibility Principle).
+Dags att refaktorera lite kod så att den blir mer objektorienterad och håller sig bättre till SRP (Single Responsibility Principle).  
 
-Följande klasser är så kallade domänklasser, som skall innehålla data och beteenden som hör ihop med datan, specifikt för en restaurangmeny och beställning.
+Följande klasser är så kallade domänklasser, som skall innehålla data och beteenden som hör ihop med datan, specifikt för en restaurangmeny och beställning.  
 
-Problemet just nu är att de också innehåller kod för att läsa in data från användaren och skriva ut data till konsolen, vilket bryter mot SRP (eftersom de då också håller på med användargränssnitt).
+Problemet just nu är att de också innehåller kod för att läsa in data från användaren och skriva ut data till konsolen, vilket bryter mot SRP (eftersom de då också håller på med användargränssnitt).  
 
-Ditt uppdrag här är att **få bort all in- och utmatning från dessa klasser**. Dvs, MenuItem och Order skall inte längre ha några Console.ReadLine eller Console.WriteLine i sig. All in- och utmatning skall istället ske i Program.cs.
+Ditt uppdrag här är att **få bort all in- och utmatning från dessa klasser**. Dvs, MenuItem och Order skall inte längre ha några Console.ReadLine eller Console.WriteLine i sig. All in- och utmatning skall istället ske i Program.cs.  
 
 ```cs title="Startkod"
 class MenuItem
@@ -33,7 +33,28 @@ class MenuItem
 
 class Order
 {
+    public string EatOptions { get; set; }
     public List<MenuItem> _items = [];
+
+    public void EatHereOrTakeAway()
+    {
+        Console.WriteLine("Välj alternativ");
+        Console.WriteLine("1. Äta här");
+        Console.WriteLine("2. Ta med");
+
+        int val = int.Parse(Console.ReadLine());
+
+        if (val == 1)
+        {
+            EatOptions = "Äta här";
+        }
+        else
+        {
+            EatOptions = "Ta med";
+        }
+
+        Console.WriteLine($"Du valde att: {EatOptions.ToLower()}");
+    }
 
     public void AddItem(List<MenuItem> menu)
     {
@@ -81,6 +102,8 @@ class Program
 
         var order = new Order();
 
+        order.EatHereOrTakeAway();
+
         do
         {
             order.AddItem(menu);
@@ -91,6 +114,7 @@ class Program
     }
 }
 ```
+
 ## Extra: En enum för matkategori
 
 1. Skapa en enum som heter `FoodCategory` med värdena `Appetizer`, `MainCourse`, `Dessert`, och `Beverage`.
