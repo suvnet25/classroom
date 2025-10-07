@@ -30,20 +30,17 @@ Precis som i C\# så jobbar SQL med olika datatyper:
 | `BOOLEAN`      | Sant/Falskt (TRUE/FALSE eller 1/0)                  | `TRUE`              |
 
 ## Skapa tabell
-Såhär skriver vi för att skapa en tabell:
+Såhär kan vi skriva vi för att skapa en tabell:
 ```sql
 -- Skapa en tabell med vanliga datatyper
 CREATE TABLE Student (
-    Id INT AUTO_INCREMENT PRIMARY KEY,  -- Id
+    Id INT,  -- Id
     Name VARCHAR(100),                  -- Studentens namn
     Email VARCHAR(100),                 -- Studentens e-post
     DateOfBirth DATE                    -- Studentens födelsedatum
 );
 ```
-
-## AUTO_INCREMENT PRIMARY KEY 
-En kolumn med `AUTO_INCREMENT PRIMARY KEY` används för att skapa ett unikt id som automatiskt ökar med varje ny rad. Du behöver alltså inte ange något värde själv när du lägger till data – databasen sköter det åt dig.
-
+Notera att `Id` troligen bör vara `AUTO INCREMENT` och `PRIMARY KEY`, se nedan.
 ## Visa tabeller och innehåll
 ```sql
 -- Visa alla tabeller i databasen
