@@ -73,10 +73,10 @@ class Order
             return;
         }
 
-        _items.Add(menu[index]);
+        _items.Add(menu[index - 1]);
 
         Console.Write($"Lade till: ");
-        menu[index].Show();
+        menu[index - 1].Show();
     }
 
     public void ShowTotal()
