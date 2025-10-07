@@ -25,3 +25,10 @@ Vi kan jobba med detta genom att använda så kallade CRC-kort (Class, Responsib
 
 Ett sätt att komma fram till detta är att låta en person per grupp "spela" rollen av en viss klass. Vem håller kolla på vilken information? Vem gör vad? Vilka andra klasser behöver de prata med för att få sitt jobb gjort?
 
+## Läxan 
+
+Uppgiften går ut på att skapa dessa klasser och få en redan existerande kod att fungera med dessa klasser!
+
+??? "Startkod"
+    ```cs
+    ```
