@@ -34,12 +34,16 @@ Såhär skriver vi för att skapa en tabell:
 ```sql
 -- Skapa en tabell med vanliga datatyper
 CREATE TABLE Student (
-    Id INT,                             -- Auto-inkrementerande Id
+    Id INT AUTO_INCREMENT PRIMARY KEY,  -- Id
     Name VARCHAR(100),                  -- Studentens namn
     Email VARCHAR(100),                 -- Studentens e-post
     DateOfBirth DATE                    -- Studentens födelsedatum
 );
 ```
+
+## AUTO_INCREMENT PRIMARY KEY 
+En kolumn med `AUTO_INCREMENT PRIMARY KEY` används för att skapa ett unikt id som automatiskt ökar med varje ny rad. Du behöver alltså inte ange något värde själv när du lägger till data – databasen sköter det åt dig.
+
 ## Visa tabeller och innehåll
 ```sql
 -- Visa alla tabeller i databasen
