@@ -29,6 +29,37 @@ Ett sätt att komma fram till detta är att låta en person per grupp "spela" ro
 
 Uppgiften går ut på att skapa dessa klasser och få en redan existerande kod att fungera med dessa klasser!
 
-??? "Startkod"
+??? Tip "Startkod"
     ```cs
+    Driver driver = new Driver("Gustav", "123456-7890");
+    Console.WriteLine($"Förare skapad: {driver.Name}, Personnummer: {driver.PersonalNumber}");
+
+    Vehicle vehicle = new Vehicle("ABC123", "Volvo", 0.7, FuelType.Diesel);
+    Vehicle vehicle2 = new Vehicle("XYZ789", "Toyota", 0.5, FuelType.Gasoline);
+
+    //Skapa några resor
+    Journey journey1 = new Journey(new DateTime(2023, 1, 1, 6, 0, 0), new DateTime(2023, 1, 1, 7, 0, 0), 100, driver, vehicle);
+    Journey journey2 = new Journey(new DateTime(2023, 1, 1, 8, 0, 0), new DateTime(2023, 1, 1, 10, 0, 0), 200, driver, vehicle2);
+
+    // Registrera resorna i FleetManager
+    FleetManager fleetManager = new FleetManager();
+    fleetManager.RegisterJourney(journey1);
+    fleetManager.RegisterJourney(journey2);
+
+    // Generera rapporter för en viss förare som en sträng (Hur långt den kört totalt, total bränsleföbrukning, total kostnad)
+    Console.WriteLine(fleetManager.GenerateReportForDriver(driver));
+
+    // Mer avancerad, generera en rapport för ett visst fordon och ta emot det som ett VehicleReport objekt
+    VehicleReport report = fleetManager.GenerateReportForVehicle(vehicle);
+    Console.WriteLine($"Vehicle Report for {vehicle.Name} ({vehicle.RegistrationNumber}):");
+    Console.WriteLine($"Total Distance: {report.TotalDistance} km");
+    Console.WriteLine($"Total Fuel Consumption: {report.TotalFuelConsumption} liters");
+    Console.WriteLine($"Total Cost: {report.TotalCost} SEK");
+
+    // Generera en total rapport för alla fordon på samma sätt som ovan
+    var totalReport = fleetManager.GenerateTotalReport();
+    Console.WriteLine("Total Report for all vehicles:");
+    Console.WriteLine($"Total Distance: {totalReport.TotalDistance} km");
+    Console.WriteLine($"Total Fuel Consumption: {totalReport.TotalFuelConsumption} liters");
+    Console.WriteLine($"Total Cost: {totalReport.TotalCost} SEK");
     ```
