@@ -80,7 +80,7 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
         return width * height;
     }
     ```
-??? Tip "Anropa färdiga metoder"
+??? Info "Anropa färdiga metoder"
     ```cs
     // Lös uppgifterna steg för steg.
     // Testa att köra programmet efter varje steg för att se resultatet.
@@ -134,7 +134,23 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
         }
     }
     ```
-??? Tip "Skriv metoderna som saknas"
+
+??? Tip "Exempellösning"
+    ```csharp
+    ShowMessage();
+
+    string userName = GetUserName();
+
+    GreetUser(userName);
+
+    int userAge = GetUserAge();
+
+    int ageInDays = ConvertAgeToDays(userAge);
+    Console.WriteLine($"Du är {ageInDays} dagar gammal.");
+    ```
+
+
+??? Info "Skriv metoderna som saknas"
     ```cs
     // Skriv de metoder som behövs så att programmet fungerar att köra. 
     // Du ***ska inte*** ändra något i Main-metoden, bara läggat till metoder.
@@ -162,6 +178,86 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
         }
     }
     ```
+
+??? Tip "Exempellösning enkel"
+    ```csharp
+    static void ShowHeader()
+    {
+        Console.WriteLine("Word analyzer");
+        Console.WriteLine("--------------");
+    }
+
+    static string GetWordFromUser()
+    {
+        Console.Write("Ange ett ord: ");
+        return Console.ReadLine();
+    }
+
+    static int GetLengthOfWord(string word)
+    {
+        return word.Length;
+    }
+
+    static string GetLongerWord(string word1, string word2)
+    {
+        if (word1.Length >= word2.Length)
+            return word1;
+        else
+            return word2;
+    }
+
+    static void ShowFooter(string word1, string word2)
+    {
+        int totalLength = word1.Length + word2.Length;
+        Console.WriteLine($"Hejdå! Du skrev in {totalLength} antal bokstäver totalt.");
+    }
+    ```
+
+??? Tip "Exempellösning mer avancerad"
+    ```cs
+    static void ShowHeader()
+    {
+        //Kan du förklara vad som händer här?
+        Console.WriteLine("Word analyzer\n==============");
+    }
+
+    // Vad ser den här metoden till att lösa som den första enkla versionen inte gjorde?
+    static string GetWordFromUser()
+    {
+        string input;
+
+        while (true)
+        {
+            Console.Write("Skriv ett ord: ");
+            input = Console.ReadLine().Trim();
+            if (!input.Contains(' ')) break;
+            Console.WriteLine("Bara ett ord, försök igen.");
+        }
+
+        return input;
+    }
+
+    static int GetLengthOfWord(string word)
+    {
+        // Kan du förklara vad som händer på den här raden?
+        return word.Trim().Length;
+    }
+
+    static string GetLongerWord(string word1, string word2)
+    {
+        //Varför används GetLengthOfWord här istället för word1.Length tror du?
+        if (GetLengthOfWord(word1) >= GetLengthOfWord(word2)) return word1;
+        return word2;
+        //Och, varför behövs det inte en else-sats här?
+    }
+
+    static void ShowFooter(string word1, string word2)
+    {
+        int totalLength = GetLengthOfWord(word1) + GetLengthOfWord(word2);
+        Console.WriteLine($"Hejdå! Du skrev in {totalLength} antal bokstäver totalt.");
+    }
+    ```
+
 
 ## Klasser och objekt
 

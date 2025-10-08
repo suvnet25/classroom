@@ -120,6 +120,46 @@ else
 }
 ```
 
+## Defaultvärden
+
+Ibland vill man kunna anropa en metod utan att behöva skicka med alla parametrar. Detta kan göras genom att ange **defaultvärden** för vissa eller alla parametrar. Om en parameter har ett defaultvärde, kan den utelämnas vid anropet.
+
+```csharp title="Exempel på defaultvärden"
+void Greet(string name = "Gäst", string greeting = "Hej")
+{
+    Console.WriteLine($"{greeting}, {name}!");
+}
+// Anrop med båda parametrarna
+Greet("Anna", "Välkommen");
+// Anrop med en parameter, den andra får defaultvärdet
+Greet("Bob");
+// Anrop utan parametrar, båda får defaultvärdena
+Greet();
+```
+
+Viktigt att veta är att om en metod har parametrar med defaultvärden, måste dessa komma sist i parameterlistan.
+
+## Params
+
+Ibland vill man kunna skicka in ett obestämt antal argument till en metod. Detta kan göras med hjälp av `params`-nyckelordet. En `params`-parameter måste vara den sista parametern i metodens parameterlista och kan ta emot noll eller flera argument av samma typ.
+
+```csharp title="Exempel på params"
+int Sum(params int[] numbers)
+{
+    int total = 0;
+    foreach (int number in numbers)
+    {
+        total += number;
+    }
+    return total;
+}
+
+// Anrop med olika antal argument
+int result1 = Sum(1, 2, 3); // 6
+int result2 = Sum(10, 20);   // 30
+int result3 = Sum();         // 0
+```
+
 
 ## Länkar
 

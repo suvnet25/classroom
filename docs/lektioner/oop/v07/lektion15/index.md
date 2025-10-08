@@ -1,7 +1,16 @@
 # Lektion 15
 
+> Moment: `SOLID`, `Abstrakta klasser`
+
 ## Innehåll
 
 * Veckans enkät!
+* Läxan
+* Exempel: Abstrakta klasser och polymorfism (Report-klass)
 * SOLID
-* Projektstruktur och flera projekt i en lösning
+
+---
+
+## Länkar
+
+* [**Material:** SOLID](../../../../material/cs/oop/solid.md)

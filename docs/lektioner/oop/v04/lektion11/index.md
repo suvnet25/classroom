@@ -1,6 +1,6 @@
 # Lektion 11 - Projektstruktur och paket
 
-> Moment: `Namespaces`, `Arv`, `Object som alla klassers basklass`
+> Moment: `Namespaces`, `Arv`, `Object som alla klassers basklass`, `Polymorfism`
 
 ## Dagens innehåll
 
@@ -8,7 +8,7 @@
     * Primary Constructors
     * this, base
 * Namespaces och allmän ordning och reda (1h)
-* Arv, object och overrides (3h)
+* Arv, polymorfism, object, overrides (3h)
 * Om tid finns: **static**
 
 ---
@@ -17,6 +17,7 @@
 
 * [Microsoft: Namespaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)
 * [**Material:** Primary Constructors](../../../../material/cs/oop/constructors.md#primary-constructors)
+* [**Material:** Polymorfism](../../../../material/cs/oop/polymorphism.md)
 
 ---
 
