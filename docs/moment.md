@@ -23,9 +23,9 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 
 - [x] Keywords
 - [x] Operatorer/Uttryck/Satser
-- [ ] Enum
-- [ ] Felhantering
-- [ ] Exceptions: Try/Catch/Finally
+- [x] Enum
+- [x] Felhantering
+- [x] Exceptions: Try/Catch/Finally
 - [ ] Skapa egna exceptions (Att det går att skapa är det viktiga att veta)
 
 #### Variabler
@@ -108,5 +108,3 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 | case     | double   | if      | null      | static    | void    |
 | catch    | else     | in      | object    | string\*  | while   |
 | char     | enum     | int     | out       | switch    |         |
-
-

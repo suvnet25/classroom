@@ -23,5 +23,5 @@
 
 #### Länkar
 
-https://github.com/dotnet
-https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
+* [DotNets GitHub-repo](https://github.com/dotnet)
+* https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction

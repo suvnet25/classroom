@@ -3,7 +3,7 @@ tags:
   - OOP1-Övning
 ---
 
-# Övning 10 Konstruktorer
+# Övning 10 Konstruktor
 
 > **OBS:** Se [avsnittet om konstruktorer](../../../../material/cs/oop/constructors.md) för att se hur det skrivs i kod.
 

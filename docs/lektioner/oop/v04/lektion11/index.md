@@ -1,5 +1,7 @@
 # Lektion 11 - Projektstruktur och paket
 
+> Moment: `Namespaces`, `Arv`, `Object som alla klassers basklass`
+
 ## Dagens innehåll
 
 * Några kvarvarande saker om konstruktorer
@@ -9,6 +11,12 @@
 * Arv, object och overrides (3h)
 * Om tid finns: **static**
 
+---
+
+## Länkar
+
+* [Microsoft: Namespaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)
+* [**Material:** Primary Constructors](../../../../material/cs/oop/constructors.md#primary-constructors)
 
 ---
 
@@ -21,6 +29,9 @@
     * Alla klasser ärver från `object`-klassen
     * `Exception`-klassen är basklass för alla undantagsklasser
     * `Stream`-klassen är basklass för olika typer av strömmar (t.ex. `FileStream`, `MemoryStream`)
+* Exempel på andra möjliga arv:
+    * En `Discount`-klass kan ha flera subklasser som `PercentageDiscount` och `FixedAmountDiscount`
+    * En `Report`-klass kan ha flera subklasser som `PdfReport`, `ExcelReport`, `HtmlReport`
 
 ## Namespaces
 

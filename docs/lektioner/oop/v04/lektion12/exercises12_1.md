@@ -5,7 +5,7 @@ tags:
 
 # Övning 12 Exceptions
 
-> Titta på avsnittet om [Exceptions](../../../../material/cs/basics/exceptions.md) om du undrar hur du skriver koden.
+> Läs avsnittet om [Exceptions](../../../../material/cs/basics/exceptions.md) om du undrar hur du skriver koden.
 
 ---
 

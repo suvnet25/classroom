@@ -1,15 +1,15 @@
 # Lektion 14
 
+> Moment: `Enums`
+
 ## Innehåll
 
 * Veckans enkät!
 * Gå igenom provet
 * Prata om Lab #2
-* Enums
+* **Enums**
 * CRC-workshop och läxa!
 
-## OOP
+## Länkar
 
-* Fokus på vad OOP är: Fokus på datastrukturer och beteenden, inte programmeringskod och syntax.
-
-* Exempel med arv: Basklass Discount, subklasser PercentageDiscount, FixedAmountDiscount, NoDiscount, CompositeDiscount, ConditionalDiscount, LimitedUseDiscount, TimeLimitedDiscount osv osv
+* [**Material:** Enums](../../../../material/cs/basics/enums.md)

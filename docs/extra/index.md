@@ -80,6 +80,60 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
         return width * height;
     }
     ```
+??? Tip "Anropa färdiga metoder"
+    ```cs
+    // Lös uppgifterna steg för steg.
+    // Testa att köra programmet efter varje steg för att se resultatet.
+
+    class Program
+    {
+        static void Main()
+        {
+            // 1. Kalla på metoden ShowMessage: (1 rad kod behövs)
+            
+
+            // 2. Kalla på metoden GetUserName och spara returvärdet i en variabel. (1 rad kod behövs)
+            
+
+            // 3. Kalla på metoden GreetUser, skicka in användarnamnet som argument. (1 rad kod behövs)
+            
+
+            // 4. Kalla på metoden GetUserAge och spara returvärdet i en variabel. (1 rad kod behövs)
+            
+
+            // 5. Kalla på metoden ConvertAgeToDays, och skriv ut "Du är X dagar gammal" i konsolen. (2 rader kod behövs)
+
+
+        }
+
+        static void ShowMessage()
+        {
+            Console.WriteLine("Välkommen till Metodövningar!\n---------------------");
+        }
+
+        static string GetUserName()
+        {
+            Console.Write("Ange ditt namn: ");
+            return Console.ReadLine();
+        }
+
+        static void GreetUser(string name)
+        {
+            Console.WriteLine($"Hej, {name}! Hoppas det går bra med kodandet.");
+        }
+
+        static int GetUserAge()
+        {
+            Console.Write("Ange din ålder: ");
+            return int.Parse(Console.ReadLine());
+        }
+
+        static int ConvertAgeToDays(int age)
+        {
+            return age * 365;
+        }
+    }
+    ```
 
 ## Klasser och objekt
 

@@ -1,5 +1,7 @@
 # Lektion 09 - Git och GitHub
 
+> Moment: `GIT och GitHub`
+
 ## Innehåll
 
 * **Git**
@@ -23,7 +25,7 @@
 
 ## Relevanta länkar
 
-* [Git-avsnittet i Material](../../../../material/misc/git/index.md)
+* [**Material:** Git](../../../../material/misc/git/index.md)
 * [Sammanfattning på en sida](https://training.github.com/downloads/github-git-cheat-sheet/)
 * [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 * [Gits officiella dokumentation](https://git-scm.com/book/en/v2)
