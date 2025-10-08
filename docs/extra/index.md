@@ -134,6 +134,34 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
         }
     }
     ```
+??? Tip "Skriv metoderna som saknas"
+    ```cs
+    // Skriv de metoder som behövs så att programmet fungerar att köra. 
+    // Du ***ska inte*** ändra något i Main-metoden, bara läggat till metoder.
+
+    class Program
+    {
+        static void Main()
+        {
+            ShowHeader(); // Ska visa programmets namn: "Word analyzer"
+
+            string word1 = GetWordFromUser(); // Ska fråga användaren om ett ord och returnera det
+            string word2 = GetWordFromUser();
+
+            int length1 = GetLengthOfWord(word1); // Ska returnera längden på ordet
+            int length2 = GetLengthOfWord(word2);
+
+            Console.WriteLine($"The word {word1} has {length1} letters.");
+            Console.WriteLine($"The word {word2} has {length2} letters.");
+
+            string longerWord = GetLongerWord(word1, word2); // Ska returnera det längsta ordet
+            Console.WriteLine($"The longer word is: {longerWord}");
+
+            // Ska visa ett avslutningsmeddelande som ska visa texten "Hejdå! Du skrev in X antal bokstäver totalt."
+            ShowFooter(word1, word2);
+        }
+    }
+    ```
 
 ## Klasser och objekt
 
