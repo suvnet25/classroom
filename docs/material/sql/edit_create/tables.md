@@ -30,16 +30,17 @@ Precis som i C\# så jobbar SQL med olika datatyper:
 | `BOOLEAN`      | Sant/Falskt (TRUE/FALSE eller 1/0)                  | `TRUE`              |
 
 ## Skapa tabell
-Såhär skriver vi för att skapa en tabell:
+Såhär kan vi skriva vi för att skapa en tabell:
 ```sql
 -- Skapa en tabell med vanliga datatyper
 CREATE TABLE Student (
-    Id INT,                             -- Auto-inkrementerande Id
+    Id INT,  -- Id
     Name VARCHAR(100),                  -- Studentens namn
     Email VARCHAR(100),                 -- Studentens e-post
     DateOfBirth DATE                    -- Studentens födelsedatum
 );
 ```
+Notera att `Id` troligen bör vara `AUTO INCREMENT` och `PRIMARY KEY`, se nedan.
 ## Visa tabeller och innehåll
 ```sql
 -- Visa alla tabeller i databasen
