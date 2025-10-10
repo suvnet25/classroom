@@ -652,6 +652,12 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
     }
     ```
 
+??? Info "Skapa en övning på temat Klasser och Objekt"
+    Skapa en egen övning som handlar om klasser och objekt. Beskriv vad som ska göras, och skriv en exempellösning. Låt sedan din lärare göra övningen och ge feedback på den.
+
+??? Tip "Exempellösning"
+    Se alla andra övningar för exempel på övningar :)
+
 ## Arv
 
 ## Logiska fel
