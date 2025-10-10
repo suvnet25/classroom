@@ -303,6 +303,355 @@ Här fyller jag på med extra övningar i C# som kan vara bra att göra för att
     Console.WriteLine(car3.GetCarInfo());
     ```
 
+??? Info "Använd två existerande klasser"
+
+    I den här uppgiften behöver du skapa några objekt, och sedan använda deras metoder och egenskaper för att lösa uppgiften.
+    Du behöver inte ändra något i klasserna `Book` och `Library`, utan bara använda dem i `Main`-metoden.
+    Undersök klasserna och deras metoder och egenskaper för att förstå hur de fungerar.
+
+    Det finns också några extra frågor samt en extra uppgift i kommentarerna i koden som du kan fundera på.
+
+    ```cs
+    using System.Collections.ObjectModel;
+
+    class Program
+    {
+        static void Main()
+        {
+            // Instansiera ett nytt objekt av typen Library (1 rad)
+
+
+            // Skapa två objekt av typen Book med valfria värden för titel, författare och antal sidor (2 rader)
+
+
+            // Lägg till båda böckerna i biblioteket med metoden AddBook (2 rader)
+
+
+            // Skriv ut det totala antalet böcker i biblioteket med hjälp av egenskapen TotalBookCount (1 rad)
+
+
+            // Lista alla tillgängliga böcker i biblioteket med hjälp av metoden GetAvailableBooks (6 rader)
+
+
+            // Låna ut en bok med hjälp av metoden BorrowBook. Om det lyckas (om metoden returnerar true) 
+            // skriv ut ett meddelande om att lånet lyckades, annars  skriv ut ett felmeddelande. (Kan lösas på 2 rader, men lättare med flera)
+
+
+            // Lista alla lånade böcker med hjälp av metoden GetBorrowedBooks (6 rader)
+
+
+            // Återlämna den lånade boken med hjälp av metoden ReturnBook. Om det lyckas (om metoden returnerar true)
+            // skriv ut ett meddelande om att återlämningen lyckades, annars skriv ut ett felmeddelande. (Kan lösas på 2 rader, men lättare med flera)
+
+
+            // Lista alla tillgängliga böcker i biblioteket igen för att verifiera att den återlämnade boken finns  (6 rader)
+
+
+        }
+    }
+
+    class Book
+    {
+        private string title; // Fråga: Kan du förklara varför dessa fält behövs och varför de är privata?
+        private string author;
+        private int pages;
+
+        public string Title
+        {
+            get => title; // Att skriva så här är ett kortare sätt att skriva get { return title; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Title cannot be empty.");
+                title = value;
+            }
+        }
+
+        public string Author
+        {
+            get => author;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Author cannot be empty.");
+                author = value;
+            }
+        }
+
+        public int Pages
+        {
+            get => pages;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("Pages must be greater than zero.");
+                pages = value;
+            }
+        }
+
+        public Book(string title, string author, int pages)
+        {
+            Title = title;
+            Author = author;
+            Pages = pages;
+        }
+    }
+
+    class Library
+    {
+        private readonly List<Book> availableBooks = []; //Fråga: Vad gör 'readonly' för något?
+        private readonly List<Book> borrowedBooks = [];
+
+        public int TotalBookCount
+        {
+            get
+            {
+                return availableBooks.Count + borrowedBooks.Count;
+            }
+        }
+
+        public void AddBook(Book book)
+        {
+            if (book == null)
+                throw new ArgumentNullException(nameof(book));
+            if (IsBookInLibrary(book))
+                throw new InvalidOperationException("Book is already in the library.");
+
+            availableBooks.Add(book);
+        }
+
+        public void RemoveBook(Book book)
+        {
+            ArgumentNullException.ThrowIfNull(book);
+            if (!IsBookInLibrary(book))
+                throw new InvalidOperationException("Book is not in the library.");
+
+            availableBooks.Remove(book);
+        }
+
+        public bool BorrowBook(Book book)
+        {
+            ArgumentNullException.ThrowIfNull(book);
+            if (!availableBooks.Contains(book)) return false;
+
+            availableBooks.Remove(book);
+            borrowedBooks.Add(book);
+            return true;
+        }
+
+        public bool ReturnBook(Book book)
+        {
+            ArgumentNullException.ThrowIfNull(book);
+            if (!borrowedBooks.Contains(book)) return false;
+
+            borrowedBooks.Remove(book);
+            availableBooks.Add(book);
+            return true;
+        }
+
+        private bool IsBookInLibrary(Book book)
+        {
+            return availableBooks.Contains(book) || borrowedBooks.Contains(book);
+        }
+
+        public List<Book> GetAllBooks()
+        {
+            return availableBooks;
+        }
+
+        public List<Book> GetAvailableBooks()
+        {
+            return new List<Book>(availableBooks); //Fråga: Vad blir det för skillnad på det och att bara returnera availableBooks direkt?
+        }
+
+        public ReadOnlyCollection<Book> GetBorrowedBooks()
+        {
+            return borrowedBooks.AsReadOnly(); //Fråga: Vad tror du händer här egentligen? Vad är ReadOnlyCollection och varför används den? Vad är skillnaden från metoden ovan?
+        }
+    }
+    ```
+
+??? Tip "Exempellösning"
+
+    ```cs
+    using System.Collections.ObjectModel;
+
+    class Program
+    {
+        static void Main()
+        {
+            // Instansiera ett nytt objekt av typen Library
+            Library myLibrary = new Library();
+
+            // Skapa två bok-objekt
+            Book book1 = new Book("1984", "George Orwell", 328);
+            Book book2 = new Book("To Kill a Mockingbird", "Harper Lee", 281);
+
+            // Lägg till båda böckerna i biblioteket med metoden AddBook
+            myLibrary.AddBook(book1);
+            myLibrary.AddBook(book2);
+
+            // Skriv ut det totala antalet böcker i biblioteket med hjälp av egenskapen TotalBookCount
+            Console.WriteLine($"Total books in library: {myLibrary.TotalBookCount}");
+
+            // Lista alla tillgängliga böcker i biblioteket med hjälp av metoden GetAvailableBooks
+            List<Book> availableBooks = myLibrary.GetAvailableBooks();
+            Console.WriteLine("Available Books:");
+            foreach (var book in availableBooks)
+            {
+                Console.WriteLine($"- {book.Title} by {book.Author}, {book.Pages} pages");
+            }
+
+            // Låna ut en bok med hjälp av metoden BorrowBook. Om det lyckas (om metoden returnerar true) 
+            // skriv ut ett meddelande om att lånet lyckades, annars  skriv ut ett felmeddelande.
+
+            bool borrowSuccess = myLibrary.BorrowBook(book1);
+            Console.WriteLine(borrowSuccess ? $"Successfully borrowed '{book1.Title}'." : "Failed");
+
+            // Lista alla lånade böcker med hjälp av metoden GetBorrowedBooks
+            var borrowedBooks = myLibrary.GetBorrowedBooks();
+            Console.WriteLine("Borrowed Books:");
+            foreach (var book in borrowedBooks)
+            {
+                Console.WriteLine($"- {book.Title} by {book.Author}, {book.Pages} pages");
+            }
+
+            // Återlämna den lånade boken med hjälp av metoden ReturnBook. Om det lyckas (om metoden returnerar true)
+            // skriv ut ett meddelande om att återlämningen lyckades, annars skriv ut ett felmeddelande.
+            bool returnSuccess = myLibrary.ReturnBook(book1);
+            Console.WriteLine(returnSuccess ? $"Successfully returned '{book1.Title}'." : "Failed");
+
+            // Lista alla tillgängliga böcker i biblioteket igen för att verifiera att den återlämnade boken finns med
+            availableBooks = myLibrary.GetAvailableBooks();
+            Console.WriteLine("Available Books After Return:");
+            foreach (var book in availableBooks)
+            {
+                Console.WriteLine($"- {book.Title} by {book.Author}, {book.Pages} pages");
+            }
+        }
+    }
+
+    class Book
+    {
+        private string title; // Fråga: Kan du förklara varför dessa fält behövs och varför de är privata?
+        private string author;
+        private int pages;
+
+        public string Title
+        {
+            get => title; // Att skriva så här är ett kortare sätt att skriva get { return title; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Title cannot be empty.");
+                title = value;
+            }
+        }
+
+        public string Author
+        {
+            get => author;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Author cannot be empty.");
+                author = value;
+            }
+        }
+
+        public int Pages
+        {
+            get => pages;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("Pages must be greater than zero.");
+                pages = value;
+            }
+        }
+
+        public Book(string title, string author, int pages)
+        {
+            Title = title;
+            Author = author;
+            Pages = pages;
+        }
+    }
+
+    class Library
+    {
+        private readonly List<Book> availableBooks = []; //Fråga: Vad gör 'readonly' för något?
+        private readonly List<Book> borrowedBooks = [];
+
+        public int TotalBookCount
+        {
+            get
+            {
+                return availableBooks.Count + borrowedBooks.Count;
+            }
+        }
+
+        public void AddBook(Book book)
+        {
+            if (book == null)
+                throw new ArgumentNullException(nameof(book));
+            if (IsBookInLibrary(book))
+                throw new InvalidOperationException("Book is already in the library.");
+
+            availableBooks.Add(book);
+        }
+
+        public void RemoveBook(Book book)
+        {
+            ArgumentNullException.ThrowIfNull(book);
+            if (!IsBookInLibrary(book))
+                throw new InvalidOperationException("Book is not in the library.");
+
+            availableBooks.Remove(book);
+        }
+
+        public bool BorrowBook(Book book)
+        {
+            return MoveBook(book, availableBooks, borrowedBooks);
+        }
+
+        public bool ReturnBook(Book book)
+        {
+            return MoveBook(book, borrowedBooks, availableBooks);
+        }
+
+        private bool MoveBook(Book book, List<Book> fromList, List<Book> toList)
+        {
+            ArgumentNullException.ThrowIfNull(book);
+            if (!fromList.Contains(book)) return false;
+
+            fromList.Remove(book);
+            toList.Add(book);
+            return true;
+        }
+
+        private bool IsBookInLibrary(Book book)
+        {
+            return availableBooks.Contains(book) || borrowedBooks.Contains(book);
+        }
+
+        public List<Book> GetAllBooks()
+        {
+            return availableBooks;
+        }
+
+        public List<Book> GetAvailableBooks()
+        {
+            return new List<Book>(availableBooks); //Fråga: Vad blir det för skillnad på det och att bara returnera availableBooks direkt?
+        }
+
+        public ReadOnlyCollection<Book> GetBorrowedBooks()
+        {
+            return borrowedBooks.AsReadOnly(); //Fråga: Vad tror du händer här egentligen? Vad är ReadOnlyCollection och varför används den? Vad är skillnaden från metoden ovan?
+        }
+    }
+    ```
+
 ## Arv
 
 ## Logiska fel
