@@ -14,4 +14,4 @@ tags:
 * Loop genom listan och anropa `MakeSound()` för varje djur, och skriv ut resultatet till konsolen.
 * Bonus: Lägg till propertyn `Name` i `Animal`-klassen och sätt namn för varje djur. Skriv ut namnet tillsammans med ljudet.
 
-## 1. Abstrakt klass för fordon
+## 1. Abstrakt klass för 
