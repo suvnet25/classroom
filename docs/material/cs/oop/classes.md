@@ -95,6 +95,24 @@ Skillnaden mellan klasser och objekt är att:
 Detta betyder ju dock inte att det ännu finns någon speciell bil, utan bara en beskrivning av hur bilar är och fungerar.
 * Ett **objekt** kan ses som något som faktiskt finns. Så vi kan använda föregående bil-klass för att skapa faktiska bilar. Vi kan med klassens hjälp skapa ett bil-objekt med egenskaperna röd färg, Volvo som märke, XC90 som modell och 300 som max-hastighet. Detta bil-objekt går nu att använda till något konkret, genom att starta, stanna och köra.
 
+## Abstrakta klasser
+
+Abstrakta klasser är klasser som inte kan instansieras direkt, utan måste ärvas av andra klasser. De används för att definiera gemensam funktionalitet och struktur som kan delas av flera relaterade klasser, men där det inte är relevant att instansiera själva den abstrakta klassen.
+
+> Exempel: En abstrakt klass 'Shape' kan definiera gemensamma egenskaper och metoder för olika former som 'Circle' och 'Rectangle',
+> men du kan inte skapa en instans av 'Shape' direkt. 
+
+En abstrakt klass kan också definiera abstrakta metoder, som är metoder utan implementation som måste implementeras av subklasserna.
+
+> Exempel: En `Shape`-klass kan ha en abstrakt metod `CalculateArea()` som måste implementeras av alla subklasser.
+
+```csharp
+public abstract class Shape
+{
+    public abstract double CalculateArea();
+}
+
+
 ## Länkar
 
 [Medlemmar](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members)

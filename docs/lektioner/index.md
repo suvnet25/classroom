@@ -13,13 +13,13 @@ Så här funkar lektionerna på Suvnet:
 
 ## Schema
 
-| V   |   36  |   37  |   38  |  39   | 40    |   41  |   42  |   43  |   44  |  45    | 46 |   47  |   48  | 49    |  50   | 51    |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|----|-------|-------|-------|-------|-------|
-| mån |       |**oop**|       |       |       |       |       |       |       |        |    |       |       |       |       |       |
-| tis |**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|DB     |DB      | DB |**oop**|**oop**|DB     |**oop**|DB     |
-| ons |**oop**|**oop**|**oop**|**oop**|*tenta*  |DB     |**oop**|DB     |DB     |*tenta db*| DB |**oop**|**oop**|DB     |       |DB     |
-| tor |       |**oop**|**oop**|**oop**|DB     |DB     |DB     |DB     |**oop**|**oop** | DB |**oop**|DB     |**oop**|DB     |**oop**|
-| fre |**oop**|       |       |       |       |       |       |       |       |        |    |       |       |       |       |       |
+| V   |   36  |   37  |   38  |  39   | 40    |   41  |   42  |   43  |   44  |  45      | 46 |   47  |   48  | 49    |  50   | 51    |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|-------|----------|----|-------|-------|-------|-------|-------|
+| mån |       |**oop**|       |       |       |       |       |       |       |          |    |       |       |       |       |       |
+| tis |**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|**oop**|DB     |DB        | DB |**oop**|**oop**|DB     |**oop**|DB     |
+| ons |**oop**|**oop**|**oop**|**oop**|*tenta*|DB     |**oop**|DB     |DB     |*tenta db*| DB |**oop**|**oop**|DB     |       |DB     |
+| tor |       |**oop**|**oop**|**oop**|DB     |DB     |DB     |DB     |**oop**|**oop**   | DB |**oop**|DB     |**oop**|DB     |**oop**|
+| fre |**oop**|       |       |       |       |       |       |       |       |          |    |       |       |       |       |       |
 
 ## Lektionsöversikt
 
@@ -45,14 +45,14 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 
 **14** Tenta- och Lab #2-genomgång, Enums och CRC-övning   
 
-**15** Genomgång läxa. SOLID, Projektstruktur   
+**15** Genomgång läxa. Abstrakta klasser, SOLID, Projektstruktur   
 **16** Interfaces   
 
-**17** Lab #3 - SOLID & Interfaces   
+**17** Lab #3 - Github Workflows och Interfaces   
 
-**18** Bufferdag, men troligen mer SOLID  
+**18** Lab #4 - Videoteket fortsätter  
 
-**19** Lab #4 - Github Workflows + SOLID  
+**19** Lab #4 fortsätter
 
 ```cs
 /* -------------------
@@ -61,9 +61,9 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
    ------------------- */  
 ```
 
-**20** Testning  
-**21** Testning  
-**22** Lab #5 - Testning  
+**20** Grupparbeteenkät. Enhetstestning start.
+**21** Enhetstestning  
+**22** Lab #5 - Enhetstestning  
 
 **23** Projektarbete - uppstart  
 **24** Workshop  

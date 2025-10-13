@@ -5,8 +5,9 @@
 ## Innehåll
 
 * Veckans enkät!
-* Läxan
-* Exempel: Abstrakta klasser och polymorfism (Report-klass)
+* Vi tittar på läxan
+* Repetition The Four Pillars of OOP
+* Abstrakta klasser (Report-klass, Shape-klass)
 * SOLID
 
 ---
