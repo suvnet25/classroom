@@ -5,8 +5,121 @@ tags:
 
 # Övning 16 - Interfaces
 
-# Simpelt interface
+## Intro: DateTime.Now
+En strukturerad övning vi gör tillsammans steg för steg i klassrummet.
 
-# Payment Processor
+Vi skapar först klassen `TimedGreetingService`. Den använder `DateTime.Now` för att ta reda på vilken tid på dygnet det är och visar olika hälsningsfraser beroende på det.
 
-# Save Orders
+## Startkod
+
+Kommande övningar utgår från denna startkod:
+
+??? info "Startkod"
+
+    ```cs
+    class Program
+    {
+        static void Main()
+        {
+            var addressBook = new AddressBook();
+            addressBook.Add(new Contact("Kalle", "Anka", "kalle@anka.se", new DateTime(1980, 1, 1)));
+            addressBook.Add(new Contact("Kajsa", "Anka", "kajsa@anka.se", new DateTime(1985, 2, 2)));
+
+            foreach (var c in addressBook.GetAll())
+            {
+                Console.WriteLine(c);
+            }
+        }
+    }
+
+    class Contact(string firstName, string lastName, string email)
+    {
+        public string FirstName { get; } = firstName;
+        public string LastName { get; } = lastName;
+        public string Email { get; } = email;
+        public DateTime BirthDate { get; set; } = DateTime.MinValue;
+    }
+
+    class AddressBook
+    {
+        private readonly List<Contact> _contacts = new();
+
+        public void Add(Contact contact)
+        {
+            if (string.IsNullOrWhiteSpace(contact.Email) || !contact.Email.Contains("@"))
+            {
+                return;
+            }
+
+            _contacts.Add(contact);
+        }
+
+        public IEnumerable<Contact> GetAll()
+        { 
+            return _contacts;
+        }
+
+        public Contact? FindByEmail(string email)
+        {
+            foreach (var c in _contacts)
+            {
+                if (c.Email.Equals(email, StringComparison.OrdinalIgnoreCase))
+                {
+                    return c;
+                }
+            }
+            return null;
+        }
+    }
+    ```
+
+## IEmailService
+
+Vi vill lägga till möjligheten att skicka ett grattis-mail till alla kontakter som fyller år idag.
+
+1. Skapa en klass som skall ha ansvaret för att skicka epost. Klassen ska heta `TestEmailService` och ha en metod `SendEmail(string to, string subject, string body)`. Denna metod ska bara skriva ut till konsolen att ett mail skickas (vi skickar inga riktiga mail i denna övning).
+2. Lägg till metoden `SendBirthdayEmails()` i `AddressBook` som skickar ett mail till alla kontakter som fyller år idag:
+    * Loopa igenom alla kontakter
+    * Kolla om kontaktens `BirthDate` är samma dag och månad som idag
+    * Om det är det, skapa en ny instans av `TestEmailService` och anropa `SendEmail` med kontaktens epostadress, ämnet "Grattis på födelsedagen!" och valfri brödtext.
+3. Testa i `Main` att det fungerar genom att anropa `SendBirthdayEmails()` på din `AddressBook`-instans.
+4. Men, det är ju inte bra att `AddressBook` skapar en instans av `TestEmailService` direkt! Det leder till stark koppling mellan klasserna, och gör det svårt att byta ut `TestEmailService` mot en annan implementation (t.ex. en som skickar riktiga mail). 
+5. Vi löser detta genom att koppla loss AddressBook från EmailService med hjälp av ett interface! 
+6. Skapa ett interface `IEmailService` med metoden `SendEmail(string to, string subject, string body)`.
+7. Ändra `TestEmailService` så att den implementerar `IEmailService`.
+8. Ändra `AddressBook` så att den tar in ett `IEmailService` i konstruktorn och använder det för att skicka mail i `SendBirthdayEmails()`.
+9. Ändra i `Main` så att den skapar en instans av `TestEmailService` och skickar in den i `AddressBook`-konstruktorn.
+10. Testa att det fortfarande fungerar.
+11. Skapa nu en ny klass `RealEmailService` som implementerar `IEmailService`. Den ska också bara skriva ut till konsolen att
+    ett mail skickas (Men kanske med en annan färg eller något, vi låtsas att den mailar på riktigt. Kanske skriver till en textfil istället om du inte vill att den skriver till konsolen).
+12. Ändra i `Main` så att AddressBook får `RealEmailService` istället för `TestEmailService`. Testa att det fungerar.
+
+**Kopplingen mellan AddressBook och klasserna som skickar mail är nu betydligt svagare!** Vi kan enkelt byta implementation av `IEmailService` utan att behöva ändra i `AddressBook`.
+
+## ILogger
+
+Kommer ...
+
+## IRepository
+
+Utgå från startkoden ovan.
+
+Klassen `AddressBook` har idag ansvar för att 
+
+* lagra kontakter
+* validera e-postadresser
+* söka efter kontakter
+
+Lagringen går till så att kontakter sparas i en lista i minnet. Det är inte särskilt flexibelt, och det går inte att spara kontakter mellan körningar av programmet. Låt oss därför skapa ett interface så att AddressBook inte behöver veta exakt hur lagringen går till, bara att den kan lagra och hämta kontakter!
+
+### Uppgift
+
+1. Skapa ett interface `IContactRepository` med metoderna `Add(Contact contact)` och `IEnumerable<Contact> GetAll()`.
+2. Ändra `AddressBook` så att den tar in ett `IContactRepository` i konstruktorn och använder det för lagring och hämtning av kontakter.
+3. Skapa en klass `InMemoryContactRepository` som implementerar `IContactRepository` och lagrar kontakter i en lista i minnet (som idag).
+5. Ändra i `Main` så att den först använder `InMemoryContactRepository` för att lagra kontakter i minnet. Testa att det fungerar.
+4. Skapa nu en ny klass: `FileContactRepository` som implementerar `IContactRepository` och lagrar kontakter i en textfil istället (t.ex. CSV-format). Testa att köra programmet med denna istället för `InMemoryContactRepository`.
+
+
+## Payment Processor
+Kommer kanske...
