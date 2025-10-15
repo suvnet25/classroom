@@ -87,7 +87,7 @@ Vi vill lägga till möjligheten att skicka ett grattis-mail till alla kontakter
 5. Vi löser detta genom att koppla loss AddressBook från EmailService med hjälp av ett interface! 
 6. Skapa ett interface `IEmailService` med metoden `SendEmail(string to, string subject, string body)`.
 7. Ändra `TestEmailService` så att den implementerar `IEmailService`.
-8. Ändra `AddressBook` så att den tar in ett `IEmailService` i konstruktorn och använder det för att skicka mail i `SendBirthdayEmails()`.
+8. Lägg till en konstruktor till `AddressBook` som tar in ett objekt av typen `IEmailService`. Skapa ett fält av typen `IEmailService`, för att lagra referensen till objektet. Använd sedan detta fält i `SendBirthdayEmails()` istället för att skapa en ny instans av `TestEmailService`.
 9. Ändra i `Main` så att den skapar en instans av `TestEmailService` och skickar in den i `AddressBook`-konstruktorn.
 10. Testa att det fortfarande fungerar.
 11. Skapa nu en ny klass `RealEmailService` som implementerar `IEmailService`. Den ska också bara skriva ut till konsolen att
