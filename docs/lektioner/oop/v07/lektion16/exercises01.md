@@ -98,7 +98,13 @@ Vi vill lägga till möjligheten att skicka ett grattis-mail till alla kontakter
 
 ## ILogger
 
-Kommer ...
+Det är vanligt att vi i olika program vill logga vad som händer, t.ex. för att kunna felsöka problem. Men hur loggning sker kan skilja sig åt mellan olika program, eller i olika skeden av utvecklinge av programmet. Ibland kanske vi vill logga till en textfil, ibland till en databas, ibland bara skriva till konsolen. Detta är en perfekt exempel på när vi kan använda ett interface för att koppla loss loggningen från resten av programmet.
+
+Så, säg att vi vill logga ut varje gång en kontakt läggs till i `AddressBook`.
+
+1. Börja med det absolut enklaste sättet: Lägg till Console.WriteLine i `Add`-metoden i `AddressBook` så att den skriver ut "Lade till kontakt: {förnamn} {efternamn}" varje gång en kontakt läggs till.
+2. Det vi nu gjort är att vi löst *ett* sätt att logga när en kontakt läggs till. Men, kopplingen till just att det ska loggas till consolen är nu väldigt stark.
+3. För att kunna göra kopplingen svagare, skapa ett interface `ILogger` med en metod `Log(string message)`.
 
 ## IRepository
 
