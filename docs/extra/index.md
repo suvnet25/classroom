@@ -1,4 +1,9 @@
-# Extar övningar
+---
+tags:
+  - OOP1-Övning
+---
+
+# Extra övningar
 
 Här fyller jag på med extra övningar i C# som kan vara bra att göra för att träna på olika saker.
 
