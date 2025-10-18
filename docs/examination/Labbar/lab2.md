@@ -1,4 +1,4 @@
-# &#9733; Lab #2
+# &#10003; Lab #2
 
 ## Klasser, objekt och Git
 
