@@ -85,13 +85,13 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 - [x] Properties (Get/Set)
 - [x] Konstruktorer	
 - [x] Namespaces
-- [ ] Abstrakta klasser
+- [x] Abstrakta klasser
 - [x] Polymorphism (Begreppet)
 - [x] Object som alla klassers basklass
 - [x] Arv (Begreppet)
 - [x] Abstraktion (Begreppet)
-- [ ] Interface
-- [ ] SOLID
+- [x] Interface
+- [x] SOLID
 - [ ] Struct
 - [ ] Record
 
@@ -104,7 +104,9 @@ Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig sj�
 | base     | continue | float   | is        | protected | true    |
 | bool     | decimal  | for     | long      | public    | try     |
 | break    | default  | foreach | namespace | ref       | typeof  |
-| byte     | do       | goto    | new       | return    | virtual |
+| byte     | do       | goto\*  | new       | return    | virtual |
 | case     | double   | if      | null      | static    | void    |
-| catch    | else     | in      | object    | string\*  | while   |
+| catch    | else     | in      | object    | string    | while   |
 | char     | enum     | int     | out       | switch    |         |
+
+* Förbjudet, använd aldrig keywordet `goto`. Låtsas som att det inte finns. 
