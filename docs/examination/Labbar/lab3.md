@@ -2,7 +2,7 @@
 
 ## Grupplabb
 
-Detta är en grupplabb där ni får samarbeta i grupper om 2-3 personer. Det vi kommer öva i denna labb är följande:
+Detta är en grupplabb där ni får samarbeta i grupper om 3-4 personer. Det vi kommer öva i denna labb är följande:
 
 * Grupparbete
 * Flera projekt
@@ -86,6 +86,7 @@ Detta steg är enklast om ni gör tillsammans på en persons dator. Alla ska all
     Om ni vill kan ni testa att göra detta på en egen branch, för att tillsammans testa hur det går till. Ni kommer i steg fem att skapa egna branches för era implementationer, så det är bra att öva på detta nu!
 
 Gör så här:
+
 1. Observera att det finns en `src`-mapp i rotmappen för repot. Detta är en konvention för att hålla alla källkodsfiler samlade på ett och samma ställe.
 2. Lägg också märke till att det finns en mapp som heter `NameGen UI` i `src`-mappen. Detta är konsolprojektet som ni redan har jobbat med (Ni ser att det finns en `.csproj`-fil där inne, vilket betyder att det är ett c#-projekt).
 3. Skapa nu ett nytt projekt i `src`-mappen som är av typen "Class Library" och döp det till `NameGenCore`.
