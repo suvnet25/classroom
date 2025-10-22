@@ -693,6 +693,7 @@ Här är några övningar där koden har logiska fel. Identifiera och rätta til
     ```
 
 ??? Tip "(SVÅR) Många logiska fel"
+
     ```csharp
     using System;
     using System.Collections.Generic;
@@ -786,3 +787,26 @@ Här är några övningar där koden har logiska fel. Identifiera och rätta til
         }
     }
     ```
+
+## 2-minuters-övningar
+
+Alla dessa övningar är tänkta att kunna lösas på ungefär 2 minuter vardera. Prova att sätta en timer på 2 minuter och se hur långt du kommer på den tiden!  
+
+Alla övningar kan också föregås av att skapa ett nytt konsolprojekt från scratch för att öva på det.  
+
+??? Info "2 minuters övning #1"
+    1. Skapa och initiera en lista med strängar. Den ska innehålla namnen "Bill", "Bull" och "Pelle". (20s)
+    2. Skriv ut det andra namnet i listan med Console.WriteLine (10 sekunder).
+    3. Skriv en for-each-loop som loopar igenom alla namn i listan och skriver ut dem (30s).
+
+??? Info "2 minuters övning #2"
+    1. Skapa och initiera en lista med 5 heltalsvärden. (20s)
+    2. Skriv ut summan av alla värden i listan. Använd en for-each-loop. (30s).
+    3. Skriv en for-loop som skriver ut varannat värde i listan (40s).
+
+??? Info "2 minuters övning #3"
+    1. Skapa klassen `Rectangle` med två egenskaper: `Width` och `Height` av typen `double`. (1min)
+    2. Lägg till en instansmetod `GetArea` som returnerar arean av rektangeln (Width * Height). (30s)
+    3. Med top-level statements i Program.cs, instansiera ett objekt av typen `Rectangle`. (10s)
+    4. Sätt dess `Width` till 5 och `Height` till 10. (10s)
+    5. Skriv ut arean i terminalen med hjälp av `GetArea`-metoden. (10s)
