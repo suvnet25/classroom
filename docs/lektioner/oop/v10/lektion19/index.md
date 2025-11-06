@@ -3,8 +3,6 @@
 ## Innehåll
 
 * Veckans enkät!
-*
-
----
-
-## Relevanta länkar
+* Arkitekturexempel
+    * https://github.com/BYSuvNet/arkitekturexempel
+* Fortsätta med grupparbetet
