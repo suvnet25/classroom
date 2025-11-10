@@ -13,7 +13,7 @@ Den gör det enkelt och snabbt att köra SQL-frågor och mappa resultaten till C
 
 Skapa nytt projekt och lägg till paketen:
 
-```
+```csharp
 dotnet new console
 dotnet add package Dapper
 dotnet add package MySql.Data
@@ -23,7 +23,7 @@ dotnet add package MySql.Data
 
 ## Anslutning
 
-```
+```csharp
 using System.Data;
 using MySql.Data.MySqlClient;
 using Dapper;
