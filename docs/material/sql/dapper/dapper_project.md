@@ -39,11 +39,16 @@ string email = "pelle@skola.com";
 string dateOfBirth = "1990-01-01";
 
 string sql = "INSERT INTO Student (Name, Email, DateOfBirth) VALUES (@Name, @Email, @DateOfBirth)";
-db.Execute(sql, new { Name = "Krister", Email = "krister@example.com", DateOfBirth = new DateTime(1990, 1, 1) });
+
+// skapa ett anonymt objekt med new. I det sätt värdena från variablerna ovan.
+// Notera skillnaden mellan stora (Properties) och små (variablerna från ovan) bokstäver:
+db.Execute(sql, new { Name = name, Email = email, DateOfBirth = dateOfBirth });
 ```
 
 ## Utan parametrar
 Här är utan parametrar. Detta är osäkert för SQL-injections men kan vara enklare att förstå.
+
+Samma variabler som ovan.
 ```csharp
 string sql = $"INSERT INTO Student (Name, Email, DateOfBirth) VALUES ('{name}', '{email}', '{dateOfBirth}')";
 db.Execute(sql);
