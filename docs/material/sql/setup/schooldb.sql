@@ -36,7 +36,8 @@ CREATE TABLE Enrollment (
     CourseId INT,                        -- Kursens Id
     EnrollmentDate DATE,                 -- Datum för registreringen
     Grade INT                            -- Betyg för kursen (0 - IG, 1 - G, 2 - VG)
-);-- Insert Teacher
+);
+-- Insert Teacher
 INSERT INTO Teacher (Id, Name, Email) VALUES
 (1, 'Gustav', 'gustav@by.com'),
 (2, 'Krister', 'krister@by.com'),
