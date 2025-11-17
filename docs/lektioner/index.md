@@ -52,7 +52,7 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 
 **18** Lab #4 - Videoteket  
 
-**19** Lab #4 fortsätter
+**19** Lab #4 fortsätter   
 
 ```cs
 /* -------------------
@@ -62,8 +62,8 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 ```
 
 **20** Grupparbeteenkät. Enhetstestning start.  
-**21** Enhetstestning fortsättning.
-**22** Lab #5 - Enhetstestning
+**21** Enhetstestning fortsättning.  
+**22** Lab #5 - Enhetstestning  
 
 **23** Projektarbete - Uppstart  
 **24** Projektarbete - Records och structs  
