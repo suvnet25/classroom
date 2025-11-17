@@ -50,7 +50,7 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
 
 **17** Lab #3 - Github Workflows och Interfaces   
 
-**18** Lab #4 - Videoteket fortsätter  
+**18** Lab #4 - Videoteket  
 
 **19** Lab #4 fortsätter
 
@@ -61,15 +61,15 @@ Grupperingarna visar vilka lektioner som äger rum under samma vecka.
    ------------------- */  
 ```
 
-**20** Grupparbeteenkät. Enhetstestning start.
-**21** Enhetstestning  
-**22** Lab #5 - Enhetstestning  
+**20** Grupparbeteenkät. Enhetstestning start.  
+**21** Enhetstestning fortsättning.
+**22** Lab #5 - Enhetstestning
 
-**23** Projektarbete - uppstart  
-**24** Workshop  
+**23** Projektarbete - Uppstart  
+**24** Projektarbete - Records och structs  
  
-**25** Workshop  
+**25** Projektarbete  
 
-**26** Workshop  
+**26** Projektarbete  
 
-**27** Workshop  
+**27** Projektarbete  
