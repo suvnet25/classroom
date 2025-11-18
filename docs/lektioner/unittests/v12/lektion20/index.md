@@ -3,9 +3,12 @@
 ## Innehåll
 
 * Veckans enkät!
-* Introduktion till enhetstestning
-    * Slides
-* Övningar
+* Slides:
+    1. Introduktion till enhetstestning
+    2. Enhetstestning i xUnit 
+* Övningar:
+    1. Hello World
+    2. Password Validator
 
 ---
 

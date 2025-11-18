@@ -3,7 +3,9 @@
 ## Innehåll
 
 * TDD - Test Driven Development
-* Mocks och Stubs
+* Slides:
+    1. Code covarage
+    2. Test Doubles (Mocks, Stubs, Fakes)
 
 ---
 
