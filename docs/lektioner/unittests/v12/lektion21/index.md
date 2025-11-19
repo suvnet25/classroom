@@ -2,11 +2,8 @@
 
 ## Innehåll
 
-* TDD - Test Driven Development
+* Mer TDD-övningar: [Övning 21](exercises21.md)
 * Slides:
     1. Code covarage
-    2. Test Doubles (Mocks, Stubs, Fakes)
-
----
-
-## Relevanta länkar
+    2. Domain Invariants
+* Exempel med PasswordResetService
