@@ -9,7 +9,7 @@ Dagens labb är uppdelad i två delar:
 
 ## Del 1 - TDD med PasswordResetService
 
-Klona ner repositoryt härifrån: [https://github.com/suvnet25/unittestexercise](https://github.com/suvnet25/unittestexercise)
+Använd Github Classroom assignmenten här: [https://classroom.github.com/a/D7EQb2Wv](https://classroom.github.com/a/D7EQb2Wv)
 
 Din uppgift är nu att med hjälp av TDD-principer implementera minst en av följande funktionaliteter i PasswordResetService:
 
