@@ -2,17 +2,15 @@
 
 ## Innehåll
 
-* Veckans enkät!   
-
-
-* .NET 10
+* Veckans enkät!
+* Vi pratar om testningslabben, Lab #5
+* Vi pratar lite om Videoteket
+* .NET 10-nyheter
     * Field-backed properties
     * Extension properties and methods    
     * Null-conditional assignment
-* Nullable reference types
-* Extension methods   
-
-
+* Andra småbitar av C#:
+    * Nullable reference types 
 * **Start projektarbete**
     * Se Google Classroom för instruktioner
 
