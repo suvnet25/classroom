@@ -54,9 +54,9 @@ MyApp/
  └─ .gitignore          # Glöm inte gitignore!
 ```
 
-* Core - Kärnan i ditt program, klasser som håller data och affärslogik (reglerna för hur data hanteras).
-* UI - Användargränssnitt, t.ex. konsolmenyer och hjälpfunktioner
-* Database - All databasåtkomst, t.ex. SQL-frågor med Dapper osv.
+* **Core** - Kärnan i ditt program, klasser som håller data och affärslogik (reglerna för hur data hanteras).
+* **UI** - Användargränssnitt, t.ex. konsolmenyer och hjälpfunktioner
+* **Database** - All databasåtkomst, t.ex. SQL-frågor med Dapper osv.
 
 ---
 
@@ -84,4 +84,22 @@ MyApp/
  │   │   ├─ UnitTests.csproj
  │   │   └─ ContactServiceTests.cs
  └─ README.md
+```
+
+Här är projektet uppdelat i separata lager med ett faktiskt projekt per lager. Dessa måste knytas ihop med referenser som du kan antingen göra i Solution Explorer eller med hjälp av dotnet-kommandot:
+
+```bash
+dotnet add ConsoleUI/ConsoleUI.csproj reference ../AppCore/AppCore.csproj
+dotnet add ConsoleUI/ConsoleUI.csproj reference ../Database/Database.csproj
+dotnet add Database/Database.csproj reference ../AppCore/AppCore.csproj
+
+dotnet add UnitTests/UnitTests.csproj reference ../AppCore/AppCore.csproj
+```
+
+Även sln-filen bör ha referenser till alla projekt:
+```bash
+dotnet sln MyApp.sln add src/AppCore/AppCore.csproj
+dotnet sln MyApp.sln add src/ConsoleUI/ConsoleUI.csproj
+dotnet sln MyApp.sln add src/Database/Database.csproj
+dotnet sln MyApp.sln add tests/UnitTests/UnitTests.csproj
 ```
