@@ -1,4 +1,4 @@
-# Struktur
+# Strukturexempel
 
 Det finns många sätt att strukturera ett .NET-projekt. Här är några exempel:
 
