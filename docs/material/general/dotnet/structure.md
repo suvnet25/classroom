@@ -12,7 +12,7 @@ MyApp/
 ```
 I exemplet ovan ligger alla källkodsfiler i projektets rotmapp. Detta fungerar bra för små projekt. Vill du dela upp koden i olika mappar kan du göra så här:
 
-```bash title="Fortfarande enkelt projekt"
+```bash title="Enkelt projekt med uppdelning i mappar"
 MyApp/
  ├─ Program.cs
  ├─ MyApp.csproj
@@ -28,64 +28,60 @@ MyApp/
 ```
 
 * **Program.cs** – startpunkten.
-* **Models/** – klasser som bara håller data.
-* **Services/** – klasser med logik/funktionalitet.
-* **Utils/** – små hjälpfunktioner.
-* bin/ och obj/ – genereras automatiskt (ska inte commitas till Git)
+* **Models** – klasser som mest håller data och väldigt lokal logik.
+* **Services** – klasser med logik/funktionalitet som har med flera modeller att göra.
+* **Utils** – små hjälpfunktioner.
+* bin/ och obj/ – genereras automatiskt (ska inte commitas till Git). I fortsättningen skriver vi inte ut dessa mappar.
 
 ---
 
-```bash title="Lite större projekt"
+```bash title="Lite större projekt, med ett projekt för programmet, ett för tester."
 MyApp/
- ├─ MyApp.sln      # Lösningsfil
- ├─ MyApp.Core/    # Kärnlogik
- │   ├─ MyApp.Core.csproj # Projektfil för Core
- │   ├─ Models/
- │   │   └─ Contact.cs
- │   ├─ Services/
- │   │   └─ ContactService.cs
- │   └─ Utils/
- │       └─ Helpers.cs
- ├─ MyApp.Console/ # Konsolapp (Användargränssnittet)
- │   ├─ MyApp.Console.csproj # Projektfil för Console-appen
- │   └─ Program.cs
- ├─ MyApp.Tests/   # Enhetstester
- │   ├─ MyApp.Tests.csproj
+ ├─ App/                # Kärnlogik
+ │   ├─ App.csproj      # Console-projekt
+ │   ├─ Program.cs      # Här startar programmet och knyter ihop Core + UI + Database
+ │   ├─ Core/           # Programmets kärnlogik
+ │   │   └─ Entities/   # Även kallad Models, dataklasser såsom Contact.cs eller Book.cs
+ │   │   └─ Services/   # Affärslogik, t.ex. ContactService.cs
+ │   │   └─ Interfaces/ # Gränssnitt för olika tjänster, t.ex. IContactRepository.cs
+ │   ├─ UI/             # Användargränssnitt, t.ex. ConsoleUI, med tillhörande menyer osv.
+ │   ├─ Database/       # Databasåtkomst, t.ex. SqlContactRepository.cs
+ ├─ Tests/              # Enhetstester
+ │   ├─ Tests.csproj
  │   └─ ContactServiceTests.cs
- └─ README.md
+ ├─ MyApp.sln           # Lösningsfil
+ ├─ README.md           # Lösningsfil
+ └─ .gitignore          # Glöm inte gitignore!
 ```
 
-* **MyApp.sln** – lösningsfil som binder ihop flera projekt.
-* **MyApp.Core/** – kärnlogik som kan återanvändas i olika applikationer.
-* **MyApp.Console/** – konsolapplikationen som användaren kör.
-* **MyApp.Tests/** – enhetstester för att testa kärnlogiken.
-* **README.md** – information om projektet. Visas på GitHub.
+* Core - Kärnan i ditt program, klasser som håller data och affärslogik (reglerna för hur data hanteras).
+* UI - Användargränssnitt, t.ex. konsolmenyer och hjälpfunktioner
+* Database - All databasåtkomst, t.ex. SQL-frågor med Dapper osv.
 
 ---
 
-```bash title="Större projekt src-katalog"
+```bash title="Mer uppdelat projekt med src-katalog och olika projektlager"
 MyApp/
- ├─ MyApp.sln
- ├─ src/           # Källkod
- │   ├─ MyApp.Core/
- │   │   ├─ MyApp.Core.csproj
- │   │   ├─ Models/
+ ├─ MyApp.sln       # Solutionsfil med referenser till alla projekt
+ ├─ .gitignore      # Glöm inte gitignore!
+ ├─ src/            # Källkoden för applikationen
+ │   ├─ AppCore/   
+ │   │   ├─ AppCore.csproj # Classlib, för kärnlogik. Ska ha noll referenser till andra projekt
+ │   │   ├─ Entities/ # Även kallasd Models
  │   │   │   └─ Contact.cs
  │   │   ├─ Services/
  │   │   │   └─ ContactService.cs
- │   │   └─ Utils/
- │   │       └─ Helpers.cs
- │   ├─ MyApp.Console/ # Konsolapp (om det finns en)
- │   │   ├─ MyApp.Console.csproj
+ │   │   └─ Interfaces/
+ │   │       └─ IContactRepository.cs
+ │   ├─ ConsoleUI/ # Även kallad Presentation Layer
+ │   │   ├─ ConsoleUI.csproj # Console-projekt. Refererar till AppCore, kanske även Database
  │   │   └─ Program.cs
- │   └─ MyApp.Web/  # Webbapplikation (om det finns en)
- │       ├─ MyApp.Web.csproj
- │       └─ Program.cs
- ├─ tests/         # Enhetstester
- │   ├─ MyApp.Tests/
- │   │   ├─ MyApp.Tests.csproj
+ │   └─ Database/    # Även kallad Infrastructure
+ │       ├─ Database.csproj # Classlib för databasåtkomst. Refererar till AppCore enbart
+ │       └─ SqlContactRepository.cs
+ ├─ tests/         # Tester av olika slag
+ │   ├─ UnitTests/ # Enhetstestprojekt. Kan också ligga direkt under tests/
+ │   │   ├─ UnitTests.csproj
  │   │   └─ ContactServiceTests.cs
- ├─ docs/          # Dokumentationskatalog
- │  └─ ...
  └─ README.md
 ```
