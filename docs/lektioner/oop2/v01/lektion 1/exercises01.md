@@ -5,6 +5,53 @@ tags:
 
 # Delegatövningar
 
+Exempelkod för Action- och Func-delegater:
+
+```cs
+    Action messagePrinter = () => Console.WriteLine("Hej ");
+    Action<string> greeter = n => Console.WriteLine("Hello " + n);
+    Action<string, int> greeterWithAge = (n, age) => Console.WriteLine("Hello " + n + ". You are " + age);
+
+    messagePrinter();
+    greeter("Bob");
+
+    //Metod som returnerar en bool, ingen inparameter
+    Func<bool> doSomething = () => 10 > 100;
+    bool b = doSomething();
+
+    //Metod som returnerar bool och tar en inparamter
+    Func<int, bool> checkUnderage = age => age < 18;
+
+    bool x = checkUnderage(96);
+```
+
+??? Info "Skriv om metoderna"
+    Skriv om följande metoder till lambda-utryck istället. Skriv de i stil med:
+    'Action printDate = xxxx' osv.
+    Testa sedan att köra dem. Om de returnerar ett värde, skriv ut värdet med WriteLine();
+
+    ```cs
+    static void PrintDate()
+    {
+        Console.WriteLine(DateTime.Now.ToLongTimeString());
+    }
+
+    static void PrintDateAtTime(DateTime dateTime)
+    {
+        Console.WriteLine(DateTime.Now.ToLongTimeString());
+    }
+
+    static int GetDay()
+    {
+        return DateTime.Now.Day;
+    }
+
+    static bool CheckIfLeapDay(DateTime dateTime)
+    {
+        return dateTime.Month == 2 && dateTime.Day == 29;
+    }
+    ```
+
 ??? Info "Action #1"
     Skapa en Action som skriver "Hej!" till konsolen och kör den.
 
