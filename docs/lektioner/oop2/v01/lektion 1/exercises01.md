@@ -82,6 +82,33 @@ Exempelkod för Action- och Func-delegater:
 
 ### Innan följande övningar blir det en liten genomgång av hur delegater kan användas i metoder.
 
+Exempelkod:
+
+```cs
+class Program
+{
+
+    static void Main()
+    {
+        bool result = DoesItContain(s => s.Length > 3);
+
+        Console.WriteLine("Does it contain? " + result);
+    }
+
+    static bool DoesItContain(Func<string, bool> predicate)
+    {
+        List<string> names = ["Bob", "Kim", "Sam"];
+
+        foreach (var n in names)
+        {
+            if (predicate(n)) return true;
+        }
+
+        return false;
+    }
+}
+```
+
 ??? Info "Func #4 - Count"
     Skapa en metod som heter **CountMatching** som tar en lista av heltal och en Func<bool, int> som input. Metoden ska returnera antalet tal i listan som uppfyller villkoret i Funcen.
 
@@ -111,14 +138,12 @@ Exempelkod för Action- och Func-delegater:
 
 ### Inbyggda events
 
-Även dessa övningar görs bäst efter en kort genomgång av events i C#.
-
 ??? Info "Console Ctrl-C"
     Skapa en event-handler för `Console.CancelKeyPress` som skriver ut något när användaren trycker Ctrl-C i konsolen. Gör en evig while-loop för att hålla programmet igång så att du kan testa eventet.
 
     Exempelkod:
     ```cs
-    Console.CancelKeyPress += (sender, e) =>
+    Console.CancelKeyPress += (o, e) =>
     {
         Console.WriteLine("Avslutar programmet...");
     };
