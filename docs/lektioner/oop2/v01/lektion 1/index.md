@@ -7,5 +7,5 @@
 * Veckans enkät!
 * Introduktion till OOP2
 * Livekodning Delegater och Lambda (1h)
-* [Övning 01 Delegater](./exercises01.md) (Resten av dagen)
+* [Övning 01 Delegater](./exercises.md) (Resten av dagen)
 ---

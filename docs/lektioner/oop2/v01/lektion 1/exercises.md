@@ -87,7 +87,6 @@ Exempelkod:
 ```cs
 class Program
 {
-
     static void Main()
     {
         bool result = DoesItContain(s => s.Length > 3);
@@ -135,6 +134,12 @@ class Program
     List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
     List<int> squaredNumbers = TransformList(numbers, ???);
     ```
+
+??? Info "Func #7 - Extensionmethod"
+    Implementera någon av ovanstående metoder som en extensionmethod på en List<string>
+
+??? Info "Funk #8 - Generisk Extension method"
+    Implementera någon av ovanstående metoder som en generisk extensionmethod på IEnumerable<T>
 
 ### Inbyggda events
 
