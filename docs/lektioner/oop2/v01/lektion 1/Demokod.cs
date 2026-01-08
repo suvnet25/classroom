@@ -78,7 +78,6 @@ static class ListExtensions
 
         foreach (T item in source)
         {
-            // Anropa Func delegaten för varje element
             if (predicate(item))
             {
                 result.Add(item);
