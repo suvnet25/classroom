@@ -6,6 +6,6 @@
 
 * Repetition EF + frågor (1h)
 * Slide: TCP/IP (2h)
-* Livekodning och workshop: TCP-server och klient (3h)
+* Livekodning och workshop: TCP-server och klient, nätverkstrafik (3h)
 
 ---
