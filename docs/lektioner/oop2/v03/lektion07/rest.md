@@ -69,7 +69,7 @@ För följande övningar kan du använda REST Client i Visual Studio Code, hopps
 
 ### GET Requests
 
-Skriv GET requests för följande API:er
+Skriv GET requests för följande API:er. Titta på JSON-datan som returneras och se om du kan tolka innehållet.
 
 1. Hämta ett slumpmässigt råd.
     * URL: https://api.adviceslip.com/advice
