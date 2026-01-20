@@ -18,7 +18,7 @@ Använd substantiv i pluralform för att namnge resurser. Inte verb, se nästa p
 
 ## 2. HTTP-metoder
 
-*Metoden* beskriver vad du gör, inte URL:en:
+*Metoden* beskriver vad du gör, inte URL:en.
 
 * GET – hämta
 * POST – skapa
