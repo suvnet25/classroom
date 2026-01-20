@@ -48,7 +48,7 @@ app.MapGet("/users/{id}", (int id) =>
 });
 ```
 
-## Skicka JSON till servern
+## Ta emot JSON data på servern
 
 Den här endpointen tar emot en POST-request med en User i request-body:n och returnerar den skapade användaren med en 201 Created-statuskod. Request bodyn måste vara i JSON-format och matcha User-klassen.
 

@@ -4,7 +4,7 @@
 
 ## Innehåll
 
-* Repetition
-* JSON
-* REST API
-* HttpClient 
+* Repetition + enkät (1h)
+* JSON (2h)
+* REST API (1h)
+* HttpClient (2h)

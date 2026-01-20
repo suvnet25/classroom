@@ -5,4 +5,5 @@
 ## Innehåll
 
 * Minimal Web API
-* Dependency Injection
+* Dependency Injection basics
+* Entity Framework i ASP.NET och DI
