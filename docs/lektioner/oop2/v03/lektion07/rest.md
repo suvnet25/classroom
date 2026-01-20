@@ -6,7 +6,7 @@ HTTP används som kommunikationsprotokoll.
 
 ## 1. Resurser
 
-Allt är en resurs som nås via URL:er:
+Allt är en resurs som nås via URL:er.
 
 ```
 /users
