@@ -22,15 +22,15 @@
 
 ### Vecka 4
 
-- **09** MVC Introduktion: Vad är MVC? Skapa en enkel MVC applikation.
-- **10** MVC fortsättning: Views, ViewModels, Forms.
-- **11** MVC Avancerat: Entity Framework Core, Migrations, Databaskoppling.
+- **09** 
+- **10** Tre vanliga mönster för APIer: Minimal API, API Controllers och Extensionmethods (IEndpoints).
+- **11** Asynkrona metoder i C#: async, await, Task.
 
 ### Vecka 5
 
-- **12** 
-- **13** 
-- **14** 
+- **12** MVC Introduktion: Vad är MVC? Skapa en enkel MVC applikation.
+- **13** MVC fortsättning: Views, ViewModels, Forms.
+- **14** MVC Avancerat: Entity Framework Core, Migrations, Databaskoppling.
 
 ### Vecka 6
 
