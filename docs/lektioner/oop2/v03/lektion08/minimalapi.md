@@ -62,13 +62,13 @@ app.MapPost("/users", (User user) =>
 
 # Övning
 
-Skriv ett API som har dessa routes. Skriv en i taget! Använd model bindsing med url routes och request body. Använd DI-containtern om du vill och hinner, annars är det ok med bara listor i program.cs.
+Skriv ett API som har nedan beskrivna routes. Skriv en i taget! Använd model binding via url routes och request body. Använd DI-containtern om du vill och hinner, annars är det ok med bara listor i program.cs. Se till att följa nedanstående specifikation noga! Se json-exemplen för hur en bok och en DTO ska se ut.
 
 * GET  /api  -> Ska returnera strängen "running"
 * GET  /api/books -> ska returnera en lista med böcker med minst en bok
 * GET  /api/books/{id} -> ska returnera endast en bok
 * POST /api/books -> ska ta emot en bok i json-format och svara med en 201 Created (Se ovan hur!)
-* GET /api/books/search?a=authorname -> Ska via en queryparameter (googla `query parameter asp net minial api`) ta emot ett namn och returnera en lista med alla böcker som matchar
+* GET /api/books/search?a=authorname -> Ska via en queryparameter (googla `query parameter asp net minial api`) ta emot ett namn och returnera en lista med alla böcker som matchar.
 
 **Bok-json**
 ```json

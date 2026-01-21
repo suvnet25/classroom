@@ -5,6 +5,9 @@
 ## Innehåll
 
 * Minimal Web API
-* Dependency Injection basics
-* Entity Framework i ASP.NET och DI
-* Model Binding
+    * Routing och Endpoints
+    * GET (1h)
+    * POST (1h)
+    * Model Binding (1h)
+    * Dependency Injection basics (1h)
+    * Övning (2h)
