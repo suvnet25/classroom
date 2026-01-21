@@ -67,8 +67,8 @@ Skriv ett API som har dessa routes. Skriv en i taget! Använd model bindsing med
 * GET  /api  -> Ska returnera strängen "running"
 * GET  /api/books -> ska returnera en lista med böcker med minst en bok
 * GET  /api/books/{id} -> ska returnera endast en bok
-* POST /api/books -> ska ta emot en bok i json-format och svara med en 201 Created
-* GET /api/books/search?a=authorname -> Ska via en queryparameter ta emot ett namn och returnera en lista med alla böcker som matchar
+* POST /api/books -> ska ta emot en bok i json-format och svara med en 201 Created (Se ovan hur!)
+* GET /api/books/search?a=authorname -> Ska via en queryparameter (googla `query parameter asp net minial api`) ta emot ett namn och returnera en lista med alla böcker som matchar
 
 **Bok-json**
 ```json
