@@ -59,3 +59,30 @@ app.MapPost("/users", (User user) =>
     return Results.Created($"/users/{user.Id}", user);
 });
 ```
+
+# Övning
+
+Skriv ett API som har dessa routes. Skriv en i taget! Använd model bindsing med url routes och request body. Använd DI-containtern om du vill och hinner, annars är det ok med bara listor i program.cs.
+
+* GET  /api  -> Ska returnera strängen "running"
+* GET  /api/books -> ska returnera en lista med böcker med minst en bok
+* GET  /api/books/{id} -> ska returnera endast en bok
+* POST /api/books -> ska ta emot en bok i json-format och svara med en 201 Created
+* POST /api/books/search?a=authorname -> Ska via en queryparameter ta emot ett namn och returnera en lista med alla böcker som matchar
+
+**Bok-json**
+```json
+{
+    "id": 1,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "year": 1997
+}
+```
+
+**DTO-json:**
+```json
+{
+    "author": "J.K. Rowling"
+}
+```

@@ -7,3 +7,4 @@
 * Minimal Web API
 * Dependency Injection basics
 * Entity Framework i ASP.NET och DI
+* Model Binding
