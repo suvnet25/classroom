@@ -21,7 +21,7 @@ builder.Services.AddDbContext<YourDbContext>(options =>
     options.UseInMemoryDatabase("InMemoryDb"));
 
 builder.Services.AddDbContext<YourDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("Data Source=servers.db")));
+    options.UseSqlite("Data Source=servers.db"));
 
 // Eller för SQL Server
 builder.Services.AddDbContext<YourDbContext>(options =>
