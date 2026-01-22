@@ -8,6 +8,8 @@ Några paket måste installeras för att använda Entity Framework Core i ett AS
     * `Microsoft.EntityFrameworkCore.Sqlite` 
     * `Microsoft.EntityFrameworkCore.SqlServer`
 
+Lägg till dem med kommandot `dotnet add package <paketnamn>` i terminalen.
+
 ## Registrera DbContext
 
 För att använda Entity Framework i ASP.NET Core registreras oftas DbContexten i Dependency Injection-containern i `Program.cs`. 
@@ -19,7 +21,7 @@ builder.Services.AddDbContext<YourDbContext>(options =>
     options.UseInMemoryDatabase("InMemoryDb"));
 
 builder.Services.AddDbContext<YourDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("Data Source=servers.db")));
 
 // Eller för SQL Server
 builder.Services.AddDbContext<YourDbContext>(options =>
@@ -31,10 +33,8 @@ builder.Services.AddDbContext<YourDbContext>(options =>
 ```cs
 public class AppDbContext : DbContext
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options)
-        : base(options)
-    {
-    }
+    //Ta emot options via konstruktor och skicka vidare till basklassen
+    public AppDbContext(DbContextOptions<AppDbContext> options): base(options){}
 
     public DbSet<YourEntity> YourEntities { get; set; }
 }
@@ -54,11 +54,10 @@ app.MapGet("/entities", async (AppDbContext db) =>
 OBS! För att se till så att databasen skapats (om du använder SQLite tex) kan du använda denna kod i `Program.cs` (efter `var app = builder.Build();`):
 
 ```cs
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
-}
+using var scope = app.Services.CreateScope();
+
+var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+db.Database.EnsureCreated();
 ```
 
 Detta funger bra för enklare applikationer och utvecklingsändamål. För mer avancerade scenarion, överväg att använda Entity Framework Migrations via CLI istället (Mer om det senare).
