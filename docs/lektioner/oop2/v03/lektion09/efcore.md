@@ -61,3 +61,7 @@ db.Database.EnsureCreated();
 ```
 
 Detta funger bra för enklare applikationer och utvecklingsändamål. För mer avancerade scenarion, överväg att använda Entity Framework Migrations via CLI istället (Mer om det senare).
+
+# Övning
+
+I Bok-APIt från gårdagens lektion, lägg till en DbContext som hanterar böckerna i en SQLite-databas.
