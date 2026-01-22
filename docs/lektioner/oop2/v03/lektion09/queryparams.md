@@ -10,9 +10,9 @@ https://api.example.com/products?category=electronics&sort=price_asc&page=2
 
 !!! tip "Kort övning"
     Gå in på [Inet](https://www.inet.se/) och sök på "laptop". 
-    1. Observera hur URLen ser ut.
-    2. Ändra URLen så att det står `monitor` istället för `laptop` och tryck Enter. Vad hände då? 
-    3. Lägg sedan till `&sortColumn=price&sortDirection=asc` i slutet av URLen och tryck Enter igen. Vad hände nu?
+    - 1. Observera hur URLen ser ut.
+    - 2. Ändra URLen så att det står `monitor` istället för `laptop` och tryck Enter. Vad hände då? 
+    - 3. Lägg sedan till `&sortColumn=price&sortDirection=asc` i slutet av URLen och tryck Enter igen. Vad hände nu?
 
 I exemplet ovan är `category`, `sort` och `page` queryparametrar. Varje parameter består av ett namn och ett värde, separerade av ett likhetstecken (`=`). Flera parametrar separeras med ett ampersand-tecken (`&`).
 
