@@ -10,6 +10,5 @@
     * Entity Framework
     * HTTP
     * WebAPI och REST
-    * Asynkron programmering
 * Repetition + enkät (1h)
 * MVC

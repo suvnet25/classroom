@@ -1,5 +1,5 @@
 # Lektion 12
 
-> Moment: ``,
-
 ## Innehåll
+
+* Workshop - Asynkront megagrupparbete (6h)
