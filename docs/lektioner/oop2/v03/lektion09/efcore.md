@@ -10,6 +10,20 @@ Några paket måste installeras för att använda Entity Framework Core i ett AS
 
 Lägg till dem med kommandot `dotnet add package <paketnamn>` i terminalen.
 
+## Skapa en DbContext
+
+Börja med att skapa en DbContext-klass med en konstruktor som tar `DbContextOptions<T>` som parameter:
+
+```cs
+public class AppDbContext : DbContext
+{
+    //Ta emot options via konstruktor och skicka vidare till basklassen
+    public AppDbContext(DbContextOptions<AppDbContext> options): base(options){}
+
+    public DbSet<YourEntity> YourEntities { get; set; } //Lägg till DbSet för varje entitet (tabell) du vill ha i databasen
+}
+```
+
 ## Registrera DbContext
 
 För att använda Entity Framework i ASP.NET Core registreras oftas DbContexten i Dependency Injection-containern i `Program.cs`. 
@@ -28,17 +42,7 @@ builder.Services.AddDbContext<YourDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 ```
 
-`AddDbContext` är en extensionmethod som konfigurerar DbContexten för Dependency Injection. För att detta ska fungera krävs också att DbContext-klassen är definierad och har en konstruktor som tar `DbContextOptions<T>` som parameter:
-
-```cs
-public class AppDbContext : DbContext
-{
-    //Ta emot options via konstruktor och skicka vidare till basklassen
-    public AppDbContext(DbContextOptions<AppDbContext> options): base(options){}
-
-    public DbSet<YourEntity> YourEntities { get; set; }
-}
-```
+`AddDbContext` är en extensionmethod som konfigurerar DbContexten för Dependency Injection. 
 
 ## Använda DbContext i Minimal APIs:
 
