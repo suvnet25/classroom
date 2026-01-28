@@ -20,17 +20,18 @@ APIerna är följande:
 * CatImageAPI: `GET /api/cats/random`. Svarar med en URL till en slumpmässig bild på en katt. Se till att ha lite katbilder, använda static files i WebAPI-projektet.
 * WeatherFactsAPI: `GET /api/facts/random`. Svarar med ett slumpmässigt väderrelaterat citat eller "Visste du att..."-fakta. Gör en egen liten databas med några fakta/citat.
 
-En bild i mermaid-kod över detta system, där hemsidorna är vita och apierna är blå:
+Så här hänger allt ihop:
 
 ```mermaid
-graph TD
+graph LR
     A[WeatherAPI] --> L[LocationAPI]
     A --> S[StatsAPI]
-    A --> Ad[AdAPI]
-    Ad --> L
+    Ad[AdsAPI] --> L
     Ad --> S
-    B[StatsPage] --> S
-    C[WeatherPage] --> A
+    B[**STATISTIKHEMSIDA**] --> S
+    C[**VÄDERHEMSIDA**] --> A
+    C --> Ad
     C --> Cat[CatImageAPI]
     C --> F[WeatherFactsAPI]
+    C --> ApiX[Annat APIs?]
 ```

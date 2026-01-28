@@ -61,7 +61,11 @@ Console.WriteLine("\nKlar!");
 
 ### 5. Skapa tasks med en knapptryckning
 
-Skriv en konsolapp som skapar en Task varje gång användaren trycker på Enter. Tasken ska vänta slumpmässigt mellan 1 och 5 sekunder och sen skriva "Task X klar!" där X är taskens nummer (1, 2, 3 osv). Appen ska fortsätta skapa tasks tills användaren skriver "exit" och trycker Enter.
+Skriv en konsolapp som skapar en Task varje gång användaren trycker på Enter. Tasken ska vänta slumpmässigt mellan 1 och 5 sekunder och sen skriva "Task X klar!" där X är taskens nummer (1, 2, 3 osv). 
+Om använder skriver något innan hen trycker Enter så ska programmet avslutas.
+
+!!! tip "Tips"
+    Använd en loop med Console.ReadLine() för att vänta på användarens input. Använd en räknare för att hålla koll på task-numret. Du kan använda antingern Task.Run eller ContinueWith för att lösa denna uppgift.
 
 ### HttpClient Övningar
 
