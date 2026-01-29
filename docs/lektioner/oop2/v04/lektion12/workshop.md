@@ -35,6 +35,7 @@ graph LR
     H -- GET --> Cat[CatImageAPI]
     H -- GET --> F[WeatherFactsAPI]
     H -- GET --> SpaceAPI[SpaceAPI]
+    APIACCESS[API-Access] -- POST --> 
 ```
 
 ## Startkod
@@ -88,6 +89,8 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
+
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
