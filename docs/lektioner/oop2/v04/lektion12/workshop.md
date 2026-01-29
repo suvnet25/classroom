@@ -35,3 +35,67 @@ graph LR
     C --> F[WeatherFactsAPI]
     C --> ApiX[Annat APIs?]
 ```
+
+## Startkod
+
+1. Börja projektet genom att skapa ett repo för gruppen på GitHub. Bjud in de andra medlemmarna. Döp repot till det API ni valt, exempelvis WeatherAPI.
+2. En person skapar ett nytt ASP.NET Core WebAPI-projekt med `dotnet new webapi`, lägg till en .gitignore och initiera ett GIT-repo. Pusha repot till det tomma repot på GitHub (följ instruktionerna på GitHub).
+3. Lägg till de EntityFramework Core NuGet-paketen som behövs:
+
+    ```bash
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+    dotnet add package Microsoft.EntityFrameworkCore.InMemory
+    ``` 
+4. Lägg in följande startkod i Program.cs:
+
+```cs
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Lägg till den DbContext ni skapar för er databas här
+// builder.Services.AddDbContext<ApiDbContext>(options =>
+//    options.UseInMemoryDatabase("EventDb"));
+
+//Låt detta vara kvar! Utan denna inställning kommer inte websidan att få access till API:et.
+// Läs mer här: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+var app = builder.Build();
+
+// Denna hör ihop med CORS-inställningen ovan
+app.UseCors();
+
+//Ni ska inte skriva era endpoints här i Program.cs utan i separata controllers, så använd denna:
+app.MapControllers();
+
+app.Run();
+
+```
+
+Simpelt exempel på en API-controller:
+
+```cs
+using Microsoft.AspNetCore.Mvc;
+
+[ApiController]
+[Route("api/v1")]
+public class SampleController : ControllerBase
+{
+    [HttpGet("hello")]
+    public IActionResult GetHello()
+    {
+        return Ok("Hello from SampleController!");
+    }
+}
+```
+
+
