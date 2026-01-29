@@ -25,7 +25,7 @@ Så här hänger allt ihop:
 ```mermaid
 graph LR
     A[WeatherAPI] --> L[LocationAPI]
-    A --> S[StatsAPI]
+    C --> S[StatsAPI]
     Ad[AdsAPI] --> L
     Ad --> S
     B[**STATISTIKHEMSIDA**] --> S
@@ -37,6 +37,25 @@ graph LR
 ```
 
 ## Startkod
+
+!!! tip "Börja med API-definitionen"
+    Det är viktigt att tidigt definera hur API:et ske se ut och vilka endpoints som ska finnas. Diskutera i gruppen och skriv ner detta i README-filen i repot. Skriv exempelvis så här:
+    ```
+    ## API Endpoints
+    - `GET /api/weather/{city}`: Returnerar aktuell väderdata för staden {city}.
+
+    JSON-svar:
+    ```json
+    {
+        "date": "2024-06-01",
+        "temperature": 22,
+        "description": "Soligt",
+        "windSpeed": 5,
+        "longitude": 18.0649,
+        "latitude": 59.3326
+    }
+    ```
+
 
 1. Börja projektet genom att skapa ett repo för gruppen på GitHub. Bjud in de andra medlemmarna. Döp repot till det API ni valt, exempelvis WeatherAPI.
 2. En person skapar ett nytt ASP.NET Core WebAPI-projekt med `dotnet new webapi`, lägg till en .gitignore och initiera ett GIT-repo. Pusha repot till det tomma repot på GitHub (följ instruktionerna på GitHub).
