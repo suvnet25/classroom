@@ -136,3 +136,29 @@ public class Person
 }
 ```
 Läs in JSON-strängen från filen med hjälp av `File.ReadAllText`, deserialisera den till en `Book`-klass och skriv ut bokinformationen i konsolen. Skapa `Book`-klassen med lämpliga egenskaper.
+
+### JSON med HttpClient
+
+Säg att vi från en viss server returnerar följande JSON när vi frågar efter koordinater för en stad:
+
+```cs
+{
+    "city": "Stockholm",
+    "longitude": 18.0649,
+    "latitude": 59.3326
+}
+```
+
+Om vi vill enkelt hämta hem detta i vår kod med en GET-request behöver vi första skapa en klass eller en record som matchar strukturen i JSON-svaret:
+
+```cs
+record LonLat(double Longitude, double Latitude);
+```
+
+Nu kan vi använda HttpClient för att hämta hem JSON:en och deserialisera den direkt till vår LonLat-typ:
+
+```cs
+LonLat result = httpClient.GetAsJsonAsync<LonLat>($"https://api.weather.com/coords?city={cityName}");
+```
+
+Om vi skippar `city` i vår record så kommer den egenskapen i JSON-svaret ignoreras vid deserialisering.
