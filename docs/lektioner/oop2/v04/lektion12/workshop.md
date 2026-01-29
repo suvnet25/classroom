@@ -35,7 +35,8 @@ graph LR
     H -- GET --> Cat[CatImageAPI]
     H -- GET --> F[WeatherFactsAPI]
     H -- GET --> SpaceAPI[SpaceAPI]
-    APIACCESS[API-Access] -- POST --> 
+    APIACCESS[API-Access] -- POST --> Ad
+    APIACCESS[API-Access] -- POST --> Cat
 ```
 
 ## Startkod
