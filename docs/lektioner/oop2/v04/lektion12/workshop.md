@@ -19,21 +19,22 @@ APIerna är följande:
 * **LocationAPI:** `GET /api/location?city={stadsnamn}`. Svarar med stadens longitude och latitude i JSON, beroende på stadens namn. Gör en egen liten databas med några städer och deras koordinater. Går att ladda ner online.
 * **CatImageAPI:** `GET /api/cats/random`. Svarar med en URL till en slumpmässig bild på en katt. Se till att ha lite katbilder, använda static files i WebAPI-projektet.
 * **WeatherFactsAPI:** `GET /api/facts/random`. Svarar med ett slumpmässigt väderrelaterat citat eller "Visste du att..."-fakta. Gör en egen liten databas med några fakta/citat.
+* **SpaceAPI:** `GET /api/space/weather`. Svarar med rymdväderdata, exempelvis solstormar, geomagnetiska stormar etc. Gör en egen liten databas med några rymdväderdata.
 
 Så här hänger allt ihop:
 
 ```mermaid
 graph LR
-    A[WeatherAPI] --> L[LocationAPI]
-    C --> S[StatsAPI]
-    Ad[AdsAPI] --> L
-    Ad --> S
-    B[**STATISTIKHEMSIDA**] --> S
-    C[**VÄDERHEMSIDA**] --> A
-    C --> Ad
-    C --> Cat[CatImageAPI]
-    C --> F[WeatherFactsAPI]
-    C --> ApiX[Annat APIs?]
+    A[WeatherAPI] -- GET --> L[LocationAPI]
+    H -- POST --> S[StatsAPI]
+    Ad[AdsAPI] -- GET --> L
+    Ad -- GET --> S
+    B[**STATISTIKHEMSIDA**] -- GET --> S
+    H[**VÄDERHEMSIDA**] -- GET --> A
+    H -- GET --> Ad
+    H -- GET --> Cat[CatImageAPI]
+    H -- GET --> F[WeatherFactsAPI]
+    H -- GET --> SpaceAPI[SpaceAPI]
 ```
 
 ## Startkod
