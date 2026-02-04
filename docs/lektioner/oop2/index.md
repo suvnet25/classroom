@@ -1,3 +1,9 @@
+---
+weekProgress: true
+startDate: 2026-01-07
+totalWeeks: 14
+---
+
 # OOP2
 
 ## Lektionsöversikt
@@ -24,68 +30,68 @@
 
 ### Vecka 4
 
-- **09** Tre vanliga mönster för APIer: Minimal API, API Controllers och Extensionmethods (IEndpoints).
-- **10** Asynkrona metoder i C#: async, await, Task.
-- **11** Stor gruppövning: Väderhemsidan med många APIer (WebAPI+EF+Async)
+- **10** Tre vanliga mönster för APIer: Minimal API, API Controllers och Extensionmethods (IEndpoints).
+- **11** Asynkrona metoder i C#: async, await, Task.
+- **12** Stor gruppövning: Väderhemsidan med många APIer (WebAPI+EF+Async)
 
 ### Vecka 5
 
-- **12** Tenta. MVC Intro: Vad är MVC? Skapa en enkel MVC applikation.
-- **13** MVC fortsättning: MSDN Tutorial.
-- **14** MVC Events: Eventhemsida från existerande kod.
+- **13** Tenta. MVC Intro: Vad är MVC? Skapa en enkel MVC applikation.
+- **14** MVC fortsättning: MSDN Tutorial.
+- **15** MVC Events: Eventhemsida från existerande kod.
 
 ### Vecka 6
 
-- **15** Designmönster del 1
-- **16** Designmönster del 2
-- **17** Designmönster presentation
+- **16** Designmönster del 1
+- **17** Designmönster del 2 Grupparbete
+- **18** Designmönster presentation *obligatorish
 
 ### Vecka 7
 
-- **18** Blazor I
-- **19** Blazor II
-- **20** Blazor III
+- **19** Blazor I
+- **20** Blazor II
+- **21** Blazor III
 
 ### Vecka 8
 
-- **21** Arkitekturövning E-ShopOnWeb
 - **22** Arkitekturövning E-ShopOnWeb
-- **23** Arkitekturövning E-ShopOnWeb + Test inför nästa vecka
+- **23** Arkitekturövning E-ShopOnWeb
+- **24** Arkitekturövning E-ShopOnWeb + Test inför nästa vecka
 
 ### Vecka 9
 
-- **24** Valfritt miniprojekt
 - **25** Valfritt miniprojekt
 - **26** Valfritt miniprojekt
+- **27** Valfritt miniprojekt
 
 ### Vecka 10
 
 PROJEKTARBETE START
 
-- **27** Projektgenomgång och start
-- **28** Extragenomgång och fördjupning utvalda ämnen
+- **28** Projektgenomgång och start
 - **29** Extragenomgång och fördjupning utvalda ämnen
+- **30** Extragenomgång och fördjupning utvalda ämnen
 
 ### Vecka 11
 
-- **30** Cookies + Authentication/Authorization
-- **31** JWT + Session Cookies
-- **32** Workshop: Säkerhet + OWASP 
+- **31** Cookies + Authentication/Authorization
+- **32** JWT + Session Cookies
+- **33** Workshop: Säkerhet + OWASP 
 
 ### Vecka 12
 
-- **33** Återblick enhetstestning
-- **34** ASP.Net och testning
-- **35** Integrationstestning
+- **34** Återblick enhetstestning
+- **35** ASP.Net och testning
+- **36** Integrationstestning
 
 ### Vecka 13
 
-- **36** Integrationstestning
-- **37** Projektworkshopdag
+- **37** Integrationstestning
 - **38** Projektworkshopdag
+- **39** Projektworkshopdag
 
 ### Vecka 14
 
-- **39** Code Review
 - **40** Code Review
 - **41** Code Review
+- **42** Code Review

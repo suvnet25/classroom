@@ -4,9 +4,11 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/week_color/week_color.css
   - assets/quiz/quiz.css
+  - assets/progress-weekbar.css
 extra_javascript:
   - assets/week_color/week_color.js
   - assets/quiz/quiz.js
+  - assets/progress-weekbar.js
 theme:
   features:
     - content.code.copy

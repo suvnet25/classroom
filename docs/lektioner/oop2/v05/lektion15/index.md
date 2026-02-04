@@ -2,4 +2,6 @@
 
 ## Innehåll
 
-* MVC
+* Gör något av följande MiniMVC-projekt:
+    * [Events hemsida](eventsite.md)
+    * [Infoscreen](infoscreen.md)
