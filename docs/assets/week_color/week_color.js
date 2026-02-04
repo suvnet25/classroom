@@ -1,5 +1,5 @@
 /* --- Konfiguration --- */
-const START_WEEK = 36;  // v.1 motsvarar vecka 36
+const START_WEEK = 2;  // v01 motsvarar vecka 2
 
 function getISOWeek(date) {
   const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));

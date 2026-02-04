@@ -1,10 +1,10 @@
-# Event site
+# EventHomepage
 
 ## MVC
 
 Bygg frontenden för vår eventsida med MVC-mönstret. Ladda ner startkoden från [BYSuvNet GitHub: SuvEnt](https://github.com/BYSuvNet/SuvEnt)
 
-Lägg till ett MVC-projket i lösningen under src-mappen, och se till att referera till Core och Infrastructure-projekten. Där hittar du entities och dbcontext som du ska använda dig av.
+Lägg till ett MVC-projket i lösningen under src/EventHomepage, och se till att referera till Core och Infrastructure-projekten. Där hittar du entities och dbcontext som du ska använda dig av.
 
 Sidan skall visa:
 
@@ -14,11 +14,11 @@ Sidan skall visa:
 
 Följande routes skall hanteras av MVC:
 
-| Route                       | Beskrivning                            |
-|-----------------------------|----------------------------------------|
-|**/home/index**              | Visar en lista på kommande event       | 
-|**/home/events/{id}**        | Visar detaljer för ett specifikt event |
-|**(POST) /home/events/{id}** | Tar emot anmälan för ett event         |
+| Route                         | Beskrivning                            |
+|-------------------------------|----------------------------------------|
+|**/home/index**                | Visar en lista på kommande event       | 
+|**/home/events/{id}**          | Visar detaljer för ett specifikt event |
+|**(POST) /home/register/{id}** | Tar emot anmälan för ett event         |
 
 ## API-Endpoints
 
@@ -28,9 +28,9 @@ För att lägga till, uppdatera eller ta bort events behöver du inte skapa någ
 
 | Metod         | Route                   | Beskrivning          |
 |---------------|-------------------------|----------------------|
-| **DELETE**    | */api/events/{id}*      | Ta bort event        |
 | **POST**      | */api/events/{id}*      | Skapa ett event      |
-| **PUT**       | */api/events/{id}*      | Uppdatera ett event  |
+| **DELETE**    | */api/events/{id}*      | Ta bort event        (valfri)|
+| **PUT**       | */api/events/{id}*      | Uppdatera ett event  (valfri)|
 
 ## Extra
 

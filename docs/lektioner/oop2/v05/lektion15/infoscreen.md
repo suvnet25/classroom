@@ -20,3 +20,7 @@ Grundläggande krav:
 ### Mockup
 
 ![Infoscreen](infoscreen.png)
+
+## Extra
+
+Använd inte EF Core som databas, utan använd Google Sheets! Kom ihåg att du kan publicera ett google sheets och sedan komma åt datan som en CSV-fil via en URL. Kan du få in all data du behöver i detta spreadsheets istället? I så fall har du ju ett enkelt sätt att uppdatera informationen utan att behöva skapa en admin-frontend eller skicka HTTP-requests manuellt.
