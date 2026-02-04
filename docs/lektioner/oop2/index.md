@@ -36,9 +36,9 @@ totalWeeks: 14
 
 ### Vecka 5
 
-- **13** Tenta. MVC Intro: Vad är MVC? Skapa en enkel MVC applikation.
-- **14** MVC fortsättning: MSDN Tutorial.
-- **15** MVC Events: Eventhemsida från existerande kod.
+- **13** Tenta. MVC Intro: Vad är MVC? Skapa en enkel MVC applikation
+- **14** MVC fortsättning: MSDN Tutorial
+- **15** MVC Miniprojekt
 
 ### Vecka 6
 
@@ -60,9 +60,9 @@ totalWeeks: 14
 
 ### Vecka 9
 
-- **25** Valfritt miniprojekt
-- **26** Valfritt miniprojekt
-- **27** Valfritt miniprojekt
+- **25** TBA
+- **26** TBA
+- **27** TBA
 
 ### Vecka 10
 
