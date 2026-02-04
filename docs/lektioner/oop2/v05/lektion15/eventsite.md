@@ -32,15 +32,15 @@ För att lägga till, uppdatera eller ta bort events behöver du inte skapa någ
 | **DELETE**    | */api/events/{id}*      | Ta bort event        (valfri)|
 | **PUT**       | */api/events/{id}*      | Uppdatera ett event  (valfri)|
 
-## Extra
-
-Se till så att man måste skicka med en header med ett lösenord för att kunna skapa, uppdatera eller ta bort events. Kolla headern i dina endpoint-metoder för att verifiera lösenordet innan du utför operationen. Om lösenordet saknas, returnera en 401 Unauthorized statuskod.
-
-För att lösa detta måste du lista ut hur du kommer åt en HTTP-requests headers i en MVC Controller-metod.
-
 ## Tips
 
 Vad är [Tag Helpers](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-10.0)
 Undersök [Eager Loading](https://learn.microsoft.com/en-us/ef/core/querying/related-data/eager), du kan komma att behöva det när du hämtar ut Events med sina Registreringar ur databasen.
 Läs mer om [Query Execution](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution)
 Läs mer om [Efficient Querying](https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying)
+
+## Extra
+
+Se till så att man måste skicka med en header med ett lösenord för att kunna skapa, uppdatera eller ta bort events. Kolla headern i dina endpoint-metoder för att verifiera lösenordet innan du utför operationen. Om lösenordet saknas, returnera en 401 Unauthorized statuskod.
+
+För att lösa detta måste du lista ut hur du kommer åt en HTTP-requests headers i en MVC Controller-metod.
