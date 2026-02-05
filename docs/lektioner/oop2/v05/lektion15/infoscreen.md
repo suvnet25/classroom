@@ -4,7 +4,7 @@ Börja med att göra det så fult som möjligt. Fokus ligger på funktionalitet,
 
 Hemsidan skall först bara visa ett sökfält där man kan skriva namnet på en byggnad eller adress. När man trycker på "OK" skall sidan gå vidare till att visa den byggnadens infosida som man sedan kan köra i fullskärm på en skärm i en lobby tex.
 
-I databasen behövs bara en typ av objekt: Location. Använd bilden nedan för att lista ut vilken struktur din data behöver.
+I databasen behövs Location, och troligen också något som håller info per våningsplan. Använd bilden nedan för att lista ut vilken struktur din data behöver.
 
 Grundläggande krav:
 
