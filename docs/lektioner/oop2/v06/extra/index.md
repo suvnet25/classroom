@@ -2,11 +2,20 @@
 
 Saker att göra till nästa vecka:
 
-## Ta reda på vad WebSockets och SignalR är och hur det fungerar
+## Websockets, SignalR och Blazor
 
-## Undersök Eager loading vs Lazy Loading i Entity Framework
+* WebSockets. Vad är det? Vad används det till? När används det? På ett ungefär hur funkar det?
+* SignalR. Vad är det? Hur är det relaterat till WebSockets?
+* Blazor.  Vad är det? Vad används det till? Hur skiljer det sig mot webapier och MVC i Asp.Net?
 
-## Repetera vad Immediate vs Deferred Execution i LINQ är
+## Entity Framework
+
+* Vad är eager loading och lazy loading i Entity Framwork? Hur kan detta se ut i kod?
+* Vad är deferred och immediate execution i Entity Framework? Kan du visa på exempel i kod på de två olika sätten?
+
+## C#
+
+Immutability / Mutability vad är det och varför är det relevant för oss när vi kodar?
 
 ## Kod-övningar:
 
