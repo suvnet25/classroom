@@ -60,9 +60,9 @@ totalWeeks: 14
 
 ### Vecka 9
 
-- **25** TBA
-- **26** TBA
-- **27** TBA
+- **25** Säkerhetsworkshop
+- **26** Säkerhetsworkshop
+- **27** Säkerhetsworkshop
 
 ### Vecka 10
 
@@ -74,9 +74,9 @@ PROJEKTARBETE START
 
 ### Vecka 11
 
-- **31** Cookies + Authentication/Authorization
-- **32** JWT + Session Cookies
-- **33** Workshop: Säkerhet + OWASP 
+- **31** TBA
+- **32** TBA
+- **33** TBA 
 
 ### Vecka 12
 
