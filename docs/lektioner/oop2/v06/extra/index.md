@@ -13,11 +13,11 @@ Saker att göra till nästa vecka:
 * Vad är eager loading och lazy loading i Entity Framwork? Hur kan detta se ut i kod?
 * Vad är deferred och immediate execution i Entity Framework? Kan du visa på exempel i kod på de två olika sätten?
 
-## C#
+## C#-relaterat  
 
-Immutability / Mutability vad är det och varför är det relevant för oss när vi kodar?
+* Immutability / Mutability vad är det och varför är det relevant för oss när vi kodar?
 
-## Kod-övningar:
+## Kod-övningar i mån av tid
 
 1. [Minirefaktorering](minirefaktorering.md)
 2. Klona ner och följ instruktionerna här: [Lite större refaktoreringsövning / arkitekturövning](https://github.com/BYSuvNet/SchoolApp)
