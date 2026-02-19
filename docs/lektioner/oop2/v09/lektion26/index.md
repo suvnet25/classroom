@@ -1,7 +1,7 @@
 # Lektion 26
 
-> Moment: ``
+> Moment: `säkerhet`
 
 ## Innehåll
 
-* 
+* Säkerhetsworkshop - Suverän Bank

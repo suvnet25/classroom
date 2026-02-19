@@ -3,9 +3,31 @@
 {% block extrahead %}
   {{ super() }}
   <meta name="robots" content="noindex, nofollow, noarchive">
+
+  {# --- Vecko-progress (som du redan har) --- #}
   {% if page and page.meta and page.meta.weekProgress %}
-  <meta name="week-progress" content="true">
-  <meta name="start-date" content="{{ page.meta.startDate }}">
-  <meta name="total-weeks" content="{{ page.meta.totalWeeks }}">
+    <meta name="week-progress" content="true">
+    <meta name="start-date" content="{{ page.meta.startDate }}">
+    <meta name="total-weeks" content="{{ page.meta.totalWeeks }}">
+  {% endif %}
+
+  {# --- Kunskapskoll / checklist (bara på sidor som har checklist: true) --- #}
+  {% if page and page.meta and page.meta.checklist %}
+    <link rel="stylesheet" href="{{ 'assets/kc-checklist.css' | url }}">
   {% endif %}
 {% endblock %}
+
+{# Lägg JS sist i body så att DOM finns #}
+{% block scripts %}
+  {{ super() }}
+
+  {% if page and page.meta and page.meta.weekProgress %}
+    <script src="{{ 'assets/week-progress.js' | url }}"></script>
+  {% endif %}
+
+  {% if page and page.meta and page.meta.checklist %}
+    <script src="{{ 'assets/kc-checklist.js' | url }}"></script>
+  {% endif %}
+{% endblock %}
+
+

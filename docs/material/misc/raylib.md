@@ -34,10 +34,10 @@ while (!Window.ShouldClose())
 
     Graphics.DrawText("Basic Window!", 10, 10, 20, Color.White);
 
-    if (Input.IsKeyDown(KeyboardKey.Left)) x -= 1;
-    if (Input.IsKeyDown(KeyboardKey.Right)) x += 1;
     if (Input.IsKeyDown(KeyboardKey.Up)) y -= 1;
+    if (Input.IsKeyDown(KeyboardKey.Left)) x -= 1;
     if (Input.IsKeyDown(KeyboardKey.Down)) y += 1;
+    if (Input.IsKeyDown(KeyboardKey.Right)) x += 1;
 
     //För att cirkeln inte ska försvinna utanför skärmen:
     if (x < 0) x = 0;

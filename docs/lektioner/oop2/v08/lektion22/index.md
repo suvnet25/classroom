@@ -1,6 +1,6 @@
 # Lektion 22
 
-> Moment: ``
+> Moment: `arkitektur`
 
 ## Innehåll
 
