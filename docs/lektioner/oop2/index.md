@@ -56,13 +56,13 @@ totalWeeks: 14
 
 - **22** Arkitekturövning E-ShopOnWeb
 - **23** Arkitekturövning E-ShopOnWeb
-- **24** Arkitekturövning E-ShopOnWeb + Test inför nästa vecka
+- **24** Arkitekturövning E-ShopOnWeb
 
 ### Vecka 9
 
-- **25** Säkerhetsworkshop
-- **26** Säkerhetsworkshop
-- **27** Säkerhetsworkshop
+- **25** Säkerhet: Intro, OWASP, CWS.
+- **26** Säkerhet: Workshop - Sårbarehetsanalays av Suverän Bank
+- **27** Säkerhet: Workshop - Åtgärder för att säkra Suverän Bank
 
 ### Vecka 10
 
