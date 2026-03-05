@@ -52,7 +52,7 @@ Förenklat kan processen delas in i tre steg:
 
 1. **Informationsinsamling och kartläggning**: Vi behöver ta reda på så mycket som möjligt om webbplatsen, dess funktioner, teknologier och potentiella ingångspunkter. Det kan inkludera att undersöka källkoden om den finns, analysera HTTP-trafik, identifiera API:er och leta efter dolda sidor eller funktioner.
 2. **Test av vanliga sårbarheter**: När vi har en bra förståelse för webbplatsen kan vi börja testa för vanliga sårbarheter som SQL-injektion, XSS, CSRF, och så vidare. Det kan göras manuellt eller med hjälp av automatiserade verktyg.
-3. **Raportering**: När vi har identifierat potentiella sårbarheter är det viktigt att dokumentera dem noggrant, inklusive hur de kan utnyttjas och rekommendationer för åtgärder.
+3. **Raportering**: När vi har identifierat potentiella sårbarheter är det viktigt att dokumentera dem noggrant, inklusive hur de kan utnyttjas och rekommendationer för åtgärder.  
 
 # Säkerhetsworkshop - Suverän Bank
 
@@ -84,7 +84,7 @@ Denna guide följer OWASP WSTG:s struktur, men hoppar över vissa delar. Det är
 | 1.4 | Undersök cookies som sätts. | Öppna **Application → Cookies** i DevTools. |
 | 1.5 | Testa att navigera till sökvägar som inte finns (t.ex. `/bank/admin`, `/bank/test`). | Vad händer? Får du ett felmeddelande? Avslöjar det något? |
 
-**Dokumentera:** Gör en enkel site-karta med alla sidor och formulär du hittade.
+**Dokumentera:** Gå igenom och dokumentera det så kallade "Happy Path", där du testar applikationen så som den är tänkt att användas. Skapa användare, gör transaktioner. Du kan alltid skicka pengar till konto 1001, bankens egna konto. Gör en enkel site-karta med alla sidor och formulär du hittade.
 
 ---
 
