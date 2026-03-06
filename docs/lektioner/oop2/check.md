@@ -51,29 +51,49 @@ Här kan du göra en egenkoll på vad du har koll på just nu och vad du behöve
     * Jag kan förklara varför ASP.Net-kod bör vara asynkron
 
 * ASP.Net
-    * Jag kan förklara vad ASP.Net används till.
+    * Jag kan förklara vad ASP.Net är och vad det kan används till.
     * Jag kan nämna olika typer av ASP.Net-applikationer och deras användningsområden.
     * Jag kan förklara skillnaden mellan ett WebAPI och en MVC-applikation.
-    * 
+    * Jag kan förklara skillnaden mellan MVC och Blazor.
 
 * WebAPI
-    * Jag har skrivit ett litet WebAPI i ASP.Net.
+    * Jag har skrivit ett WebAPI i ASP.Net.
     * Jag kan förklara hur routing fungerar i ASP.Net WebAPI.
     * Jag kan förklara hur jag kan skicka en request till mitt WebAPI och få ett svar tillbaka.
     * Jag kan steg för steg förklara vad som händer när en request kommer in till mitt api, och hur svaret genereras och skickas tillbaka.
+    * Jag kan förklara skillnanden mellan att använda en API Controller och minimal API i ASP.Net.
 
 * MVC
     * Jag har skrivit en enklare MVC-applikation i ASP.Net.
     * Jag kan förklara hur routing fungerar i ASP.Net MVC och hur det skiljer sig från routing i WebAPI.
     * Jag kan förklara vad en controller, en view och en model är i MVC-arkitekturen.
     * Jag kan förklara hur data skickas mellan controller och view i MVC.
+    * Jag kan förklara skillnaden mellan en Controller i MVC och en Controller i ett WebAPI i ASP.Net.
 
+* Blazor och Websockets
+    * Jag kan förklara vad Blazor är och vilka olika hosting-modeller det finns.
+    * Jag kan förklara vad WebSockets är och när det är användbart.
+    * Jag kan skriva en enkel Blazor-applikation som styr interaktionen med C#-kod.
 
-* BLazor
-
-* Designmönster
+* Designmönster & Arkitektur
     * Jag kan förklara vad ett designmönster är och varför de finns
     * Jag kan ge exempel på några vanliga designmönster
-    * Jag kan förklara skillnaden mellan designmönster och arkitektur 
+    * Jag kan förklara skillnaden mellan designmönster och arkitektur
+    * När det gäller arkitektur i ASP.Net kan jag förklara skillnaden mellan monolitisk arkitektur och mikrotjänstarkitektur.
+
+* Säkerhet. Jag kan förklara: 
+    * vilka tre tillstånd data kan befinna sig i och vilka hot som finns mot dessa.
+    * vad en sårbarhet är och ge exempel på några vanliga sårbarheter i en webbapplikation.
+    * vad XSS är för något och ge exempel på hur det kan utnyttjas.
+    * vad SQL-injektion är för något och ge exempel på hur det kan utnyttjas.
+    * vad CSRF är för något och ge exempel på hur det kan utnyttjas.
+    * skillnaden mellan autentisering och auktorisering.
+    * vikten av att inte lagra lösenord i klartext.
+    * varför det är viktigt att hasha lösenord och vad en salt är.
+    * vad HTTPS är och varför det är viktigt att använda det. 
+
+* Integrationstestning
+    * Jag kan förklara vad integrationstestning är och varför det är viktigt.
+    * Jag kan skriva ett integrationstest i C# med hjälp av xUnit och TestServer.
 
 </div>

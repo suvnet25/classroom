@@ -12,7 +12,7 @@ totalWeeks: 14
 
 ### Vecka 1
 
-- **01** Delegater och lambda
+- **01** Delegater och Lambda
 - **02** LINQ
 - **03** Entity Framework
 
@@ -74,7 +74,7 @@ PROJEKTARBETE START
 
 ### Vecka 11
 
-- **31** Återblick enhetstestning
+- **31** Återblick enhetstestning 
 - **32** ASP.Net och testning
 - **33** Integrationstestning 
 
