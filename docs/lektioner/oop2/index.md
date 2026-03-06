@@ -60,7 +60,7 @@ totalWeeks: 14
 
 ### Vecka 9
 
-- **25** Säkerhet: Intro, OWASP, CWS.
+- **25** Säkerhet: Intro, OWASP, CWS. Juice Shop Workshop.
 - **26** Säkerhet: Workshop - Sårbarehetsanalays av Suverän Bank
 - **27** Säkerhet: Workshop - Åtgärder för att säkra Suverän Bank
 
@@ -74,21 +74,21 @@ PROJEKTARBETE START
 
 ### Vecka 11
 
-- **31** TBA
-- **32** TBA
-- **33** TBA 
+- **31** Återblick enhetstestning
+- **32** ASP.Net och testning
+- **33** Integrationstestning 
 
 ### Vecka 12
 
-- **34** Återblick enhetstestning
-- **35** ASP.Net och testning
-- **36** Integrationstestning
+- **34** TBA
+- **35** TBA
+- **36** TBA
 
 ### Vecka 13
 
-- **37** Integrationstestning
-- **38** Projektworkshopdag
-- **39** Projektworkshopdag
+- **37** TBA
+- **38** TBA
+- **39** TBA
 
 ### Vecka 14
 
