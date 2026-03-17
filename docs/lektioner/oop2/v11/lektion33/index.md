@@ -4,6 +4,7 @@
 
 ## Innehåll
 
-* API-testning
+* API-testning med WebApplicationFactory
 * Testning av API:er i eShopOnWeb
-* Load tests med NBomber
+* (Load tests med NBomber)
+* Avstämningar projektarbete

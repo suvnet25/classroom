@@ -4,4 +4,5 @@
 
 ## Innehåll
 
-* Integrationstester
+* Integrationstester - Intro och övningar
+* Avstämningar projektarbete
