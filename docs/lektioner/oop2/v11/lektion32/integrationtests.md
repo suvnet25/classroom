@@ -25,12 +25,15 @@ I eShopOnWeb används `Microsoft.EntityFrameworkCore.InMemory` som databas i int
 
 ### 1: Jämför integrationstest med enhetstest
 
-Öppna integrationstestet `Repositories/BasketRepositoryTests/SetQuantities.cs` och enhetstestet `ApplicationCore/Services/BasketServiceTests/AddItemToBasket.cs` (i `tests/UnitTests/`).
+* Öppna integrationstestet `Repositories/BasketRepositoryTests/SetQuantities.cs`
+* Öppna också enhetstestet `ApplicationCore/Services/BasketServiceTests/AddItemToBasket.cs` (i `tests/UnitTests/`).
 
-1. Vilka klasser instansieras i integrationstestet? Vilka klasser mockas i enhetstestet (med `Substitute.For`)?
-2. Var skapas databasen i integrationstestet? Varför används `UseInMemoryDatabase`?
-3. Vilken fördel får vi av att testa mot en riktig `CatalogContext` istället för en mockad repository?
-4. Vilken nackdel kan det finnas med InMemory-databasen jämfört med en riktig SQL-databas?
+1. Vilka klasser kommer att instansieras när integrationstesterna körs? 
+2. Vilka klasser mockas i enhetstestet (med `Substitute.For`)?
+3. Vilka slutsatser kan du dra av 1. och 2?
+4. Var skapas databasen i integrationstestet? Varför används `UseInMemoryDatabase`?
+5. Vilken fördel får vi av att testa mot en riktig `CatalogContext` istället för en mockad repository?
+6. Vilken nackdel kan det finnas med InMemory-databasen jämfört med en riktig SQL-databas?
 
 ---
 
