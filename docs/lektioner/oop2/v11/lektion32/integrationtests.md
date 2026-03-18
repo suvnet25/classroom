@@ -43,23 +43,12 @@ Studera koden i `Repositories/BasketRepositoryTests/SetQuantities.cs`:
 
 1. Identifiera **Arrange**, **Act** och **Assert** i testet `RemoveEmptyQuantities`.
 2. Varför anropas både `_basketRepository.AddAsync(...)` och `_catalogContext.SaveChanges()` tror du?
-3. Vad gör `BasketService.UpdateBasket(...)` när man skickar in kvantitet `0`?
+3. Vad gör `BasketService.SetQuantities(...)` när man skickar in kvantitet `0`?
 4. Varför skickas `null` som andra parameter till `BasketService`-konstruktorn? (Titta på konstruktorns signatur i `BasketService.cs`).
 
 ---
 
-### 3: Analysera Order-testerna
-
-Öppna `Repositories/OrderRepositoryTests/GetById.cs`.
-
-1. Testet skapar en order med `OrderBuilder.WithDefaultValues()`. Vilka standardvärden används? Öppna `tests/UnitTests/Builders/OrderBuilder.cs` och lista alla standardvärden.
-2. Varför läggs ordern till via `_catalogContext.Orders.Add(...)` istället för `_orderRepository.AddAsync(...)`? Hade det fungerat med repository-metoden istället?
-3. Vad testar assertionen `Assert.Equal(OrderBuilder.TestBuyerId, orderFromRepo.BuyerId)`?
-4. Läs kommentaren i koden om `InMemoryDatabase` kontra `SQL DB`. Varför ger InMemory-databasen tillgång till `OrderItems` direkt, men det gör inte en riktig SQL-databas?
-
----
-
-### 4: Specification-mönstret
+### 3: Specification-mönstret
 
 Öppna `Repositories/OrderRepositoryTests/GetByIdWithItemsAsync.cs` och studera hur testet använder `OrderWithItemsByIdSpec`.
 
@@ -100,25 +89,9 @@ Bygg vidare på övning 5. Skriv ett test som:
 
 Fundering: Kan du verifiera `Items` efter att ha hämtat med `GetByIdAsync`? Eller behöver du en Specification med `.Include(b => b.Items)`? Testa båda alternativen och ta dig en funderare över resultatet.
 
----
-
-### 7: Testa Order.Total()
-
-Skapa en ny testfil `Repositories/OrderRepositoryTests/OrderTotal.cs` i `tests/IntegrationTests/`.
-
-Skriv ett integrationstest som:
-
-1. Skapar en order med **tre olika `OrderItem`** med kända priser och antal.
-2. Sparar ordern i databasen.
-3. Hämtar ordern med `OrderWithItemsByIdSpec`.
-4. Anropar `Total()` på den hämtade ordern och verifierar att summan stämmer.
-
-Exempel: Om du har artiklar med (pris: 10kr, antal: 2), (pris: 25kr, antal: 1) och (pris: 5kr, antal: 4) bör totalen bli 65kr.
-
-
 ## Extra funderingar
 
-### 9: Databasnamn och hur isolerade är testerna egentligen?
+### Databasnamn och hur isolerade är testerna egentligen?
 
 Studera konstruktorerna i de befintliga integrationstesterna. Alla använder:
 

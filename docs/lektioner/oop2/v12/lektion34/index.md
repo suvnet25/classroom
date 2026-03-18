@@ -4,4 +4,6 @@
 
 ## Innehåll
 
-* 
+* OpenAPI + Scalar
+* IsDevelopment
+* Projektfokus
