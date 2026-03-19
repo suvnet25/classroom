@@ -84,6 +84,6 @@ public class WeatherForecastTests : IClassFixture<WebApplicationFactory<Program>
 
 ## Entity Framwork
 
-> dotnet add package Microsoft.EntityFrameworkCore.Sqlite
-> dotnet add package Microsoft.EntityFrameworkCore.Design
-> dotnet add package Microsoft.EntityFrameworkCore.InMemory
+> dotnet add package Microsoft.EntityFrameworkCore.Sqlite  
+> dotnet add package Microsoft.EntityFrameworkCore.Design  
+> dotnet add package Microsoft.EntityFrameworkCore.InMemory  
