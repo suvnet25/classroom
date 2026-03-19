@@ -1,11 +1,21 @@
 .md-content h1 {
-    color: #e2e4e9; /* Your color */
-    font-weight: 500; /* Semi-bold */
+    color: #e2e4e9;
+    font-weight: 500;
 }
 
 .md-content h2 {
     color: #e2e4e9;
-    font-weight: 300; /* Semi-bold */
+    font-weight: 300;
+}
+
+/* Dark headlines in light mode */
+[data-md-color-scheme="default"] .md-content h1,
+[data-md-color-scheme="default"] .md-content h2,
+[data-md-color-scheme="default"] .md-content h3,
+[data-md-color-scheme="default"] .md-content h4,
+[data-md-color-scheme="default"] .md-content h5,
+[data-md-color-scheme="default"] .md-content h6 {
+    color: #2d2d2d;
 }
 
 /* Section headers in sidebar */
@@ -34,6 +44,16 @@
 .md-content .footnotes {
   font-size: 0.9em;
   color: #555;
+}
+
+/* Inline code: colored text in dark mode for better contrast */
+[data-md-color-scheme="slate"] .md-content code {
+    color: #e1aa88;
+}
+
+/* Inline code: colored text in light mode for better contrast */
+[data-md-color-scheme="default"] .md-content code {
+    color: #9b2c2c;
 }
 
 /* Sidebar links */
