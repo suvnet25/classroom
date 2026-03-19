@@ -20,23 +20,17 @@ Du har nu skapat två projekt i samma lösning, samt lagt till en referens till 
 
 Du ska nu End to End-testa den endpoint som finns i WebApi-projektet, dvs `GET /weatherforecast`.
 
-1. Börja med att skapa ett tomt interface i WebApi-projektet som heter `IApiMarker`. Det ska inte innehålla något, det är bara en markör för att WebApplicationFactory ska veta vilket projekt som är API:t.
-
-```csharp
-public interface IApiMarker;
-```
-
 2. I `UnitTest1.cs` i `Tests`-projektet, lägg till följande kod:
 
 ```csharp
 using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net;
 
-public class WeatherForecastTests : IClassFixture<WebApplicationFactory<IApiMarker>>
+public class WeatherForecastTests : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly HttpClient _client;
 
-    public WeatherForecastTests(WebApplicationFactory<IApiMarker> factory)
+    public WeatherForecastTests(WebApplicationFactory<Program> factory)
     {
         _client = factory.CreateClient();
     }
@@ -57,8 +51,6 @@ public class WeatherForecastTests : IClassFixture<WebApplicationFactory<IApiMark
 
 `IClassFixture<T>` är ett xUnit-koncept för att dela en gemensam resurs mellan alla tester i en testklass. Utan den skulle alla tester i en testklass behöva skapa sin egen instans av `WebApplicationFactory`, vilket skulle vara ineffektivt. Genom att använda `IClassFixture<WebApplicationFactory<IApiMarker>>` så skapas en enda instans av `WebApplicationFactory` som delas mellan alla tester i klassen.
 
-`IApiMarker` är ett tomt interface som används som en markör för att `WebApplicationFactory` ska veta vilket projekt som är API:t. `WebApplicationFactory` behöver en startpunkt för att veta vilket assembly som innehåller din webbapplikation. När den hittat rätt assembly så startar den upp applikationen i minnet via `Program.cs`.
-
 `factory.CreateClient()` skapar en `HttpClient` som är kopplad till in-memory-servern. Anrop via denna klient går direkt till applikationen utan nätverkstrafik.
 
 `GetAsync("/weatherforecast")` skickar ett riktigt HTTP GET-anrop mot din endpoint.
@@ -76,7 +68,7 @@ public class WeatherForecastTests : IClassFixture<WebApplicationFactory<IApiMark
 - Använd `HttpStatusCode.NotFound` för att jämföra med 404
 - Använd samma `_client` som redan finns
 
-### Övning 2: Testa att response-bodyn innehåller rätt data
+## Övning 2: Testa att response-bodyn innehåller rätt data
 
 **Uppgift:** Utöka testerna för `/weatherforecast` så att du inte bara kollar statuskoden — utan även **läser och validerar JSON-svaret**.
 
