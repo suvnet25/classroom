@@ -1,9 +1,13 @@
 # Lektion 34
 
-> Moment: ``
+> Moment: `projektarbete`
 
 ## Innehåll
 
 * OpenAPI + Scalar
-* IsDevelopment
+    * `dotnet add package Scalar.AspNetCore`
+    * `using Scalar.AspNetCore;`
+    * `app.MapScalarApiReference();`
+* Result-patterns
+
 * Projektfokus
