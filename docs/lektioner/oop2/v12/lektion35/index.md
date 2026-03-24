@@ -11,3 +11,4 @@
     * I controllers
     * I Asp.Net
     * Bibliotek såsom FluentValidation
+* Projektfokus

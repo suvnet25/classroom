@@ -8,6 +8,6 @@
     * `dotnet add package Scalar.AspNetCore`
     * `using Scalar.AspNetCore;`
     * `app.MapScalarApiReference();`
-* Result-patterns
+* [Result-patterns](results.md)
 
 * Projektfokus

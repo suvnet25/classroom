@@ -1,4 +1,6 @@
-# Driftsätta en ASP.NET Core-applikation på en VPS
+# Driftsättning
+
+## En ASP.NET Core-applikation på en VPS
 
 ## 1. Registrering av domännamn
 

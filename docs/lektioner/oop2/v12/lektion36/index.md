@@ -16,3 +16,4 @@
     * HTTPS: Skaffa certifikat med Let's Encrypt
     * UFW: Konfigurera brandvägg för att bara tillåta port 22, 80 och 443.
     * SSH: Stäng av lösenordsinloggning på VPS:en och använd istället SSH-nycklar för bättre säkerhet.
+* Projektfokus
