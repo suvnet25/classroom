@@ -32,9 +32,7 @@ public class ApiIntegrationTests : IClassFixture<WebApplicationFactory<Program>>
                 var descriptor = services.SingleOrDefault(
                     d => d.ServiceType == typeof(DbContextOptions<AppDbContext>));
                 if (descriptor != null)
-                    services.Remove(descriptor);
-
-                services.RemoveDbContext<AppDbContext>();    
+                    services.Remove(descriptor);  
 
                 // Use the shared in-memory SQLite connection
                 services.AddDbContext<AppDbContext>(options =>
