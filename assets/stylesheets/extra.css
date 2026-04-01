@@ -1,0 +1,67 @@
+.md-content h1 {
+    color: #e2e4e9;
+    font-weight: 500;
+}
+
+.md-content h2 {
+    color: #e2e4e9;
+    font-weight: 300;
+}
+
+/* Dark headlines in light mode */
+[data-md-color-scheme="default"] .md-content h1,
+[data-md-color-scheme="default"] .md-content h2,
+[data-md-color-scheme="default"] .md-content h3,
+[data-md-color-scheme="default"] .md-content h4,
+[data-md-color-scheme="default"] .md-content h5,
+[data-md-color-scheme="default"] .md-content h6 {
+    color: #2d2d2d;
+}
+
+/* Section headers in sidebar */
+.md-sidebar .md-nav__title {
+    color: #e2e4e9;
+}
+
+.md-nav__title {
+  display: none;
+}
+
+/* Footnote number in the text */
+.md-content .footnote-ref {
+  font-size: 0.85em;  /* slightly larger */
+  font-weight: 600;       /* semi-bold */
+  color: #eee60f;         /* accent color */
+}
+
+/* Hover effect for footnote number */
+.md-content .footnote-ref:hover {
+  color: #ff3333;
+  text-decoration: underline;
+}
+
+/* Footnote section at bottom */
+.md-content .footnotes {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Inline code: colored text in dark mode for better contrast */
+[data-md-color-scheme="slate"] .md-content code {
+    color: #e1aa88;
+}
+
+/* Inline code: colored text in light mode for better contrast */
+[data-md-color-scheme="default"] .md-content code {
+    color: #9b2c2c;
+}
+
+/* Sidebar links */
+/* .md-sidebar .md-nav__link {
+  color: #e2e4e9;
+} */
+
+/* On hover */
+/* .md-sidebar .md-nav__link:hover {
+  color: #ff5555;
+} */
