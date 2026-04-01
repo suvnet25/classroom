@@ -1,5 +1,7 @@
 # WebApplicationFactory
 
+Här är ett exempel på hur WebApplicationFactory kan användas för att konfigurera om databaskontexten i integrationstester så att den använder en delad in-memory SQLite-databas.
+
 ```cs
 public class ApiIntegrationTests : IClassFixture<WebApplicationFactory<Program>>, IDisposable
 {
