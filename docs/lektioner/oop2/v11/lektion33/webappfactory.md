@@ -3,6 +3,16 @@
 Här är ett exempel på hur WebApplicationFactory kan användas för att konfigurera om databaskontexten i integrationstester så att den använder en delad in-memory SQLite-databas.
 
 ```cs
+using System.Net;
+using System.Net.Http.Json;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MockingDemo.Core; //Detta är namespacet där AppDbContext och Product finns, anpassa efter din projektstruktur
+
+namespace MockingDemo.Api.Tests; // Anpassa namespace efter din projektstruktur
+
 public class ApiIntegrationTests : IClassFixture<WebApplicationFactory<Program>>, IDisposable
 {
     private readonly HttpClient _client;
@@ -23,6 +33,8 @@ public class ApiIntegrationTests : IClassFixture<WebApplicationFactory<Program>>
                     d => d.ServiceType == typeof(DbContextOptions<AppDbContext>));
                 if (descriptor != null)
                     services.Remove(descriptor);
+
+                services.RemoveDbContext<AppDbContext>();    
 
                 // Use the shared in-memory SQLite connection
                 services.AddDbContext<AppDbContext>(options =>
