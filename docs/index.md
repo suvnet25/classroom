@@ -11,7 +11,7 @@ Här hittar du all planering för kursen, lektion för lektion, med anteckningar
 
 Det finns *tre viktiga sektioner* här:
 
-1. [Moment](moment.md) - Här kan du se vad vi gått igenom hittils.
+1. [OOP1](planering/oop/index.md) - Det här är vad första kursen innehåller.
 2. [Studiematerial](material/index.md) - Här finns material om allt vi går igenom i kursen.
 3. Veckoplaneringen du ser till vänster, med lektioner och tillhörande övningar.
 

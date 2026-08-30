@@ -1,10 +1,9 @@
 nav:
-  - Lektioner: 
+  - Planering: 
     - index.md
-    - moment.md
     - Kategorier: categories.md
-    - examination 
-    - Veckor: lektioner
+    - Examination: examination
+    - Kurser: kurser
     - Extra övningar: extra
   - Material:
     - material/index.md
