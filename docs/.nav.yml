@@ -1,10 +1,10 @@
 nav:
   - Planering: 
     - index.md
-    - Kategorier: categories.md
-    - Examination: examination
     - Kurser: kurser
+    - Examination: examination
     - Extra övningar: extra
+    - Kategorier: categories.md
   - Material:
     - material/index.md
     - Allmänt: material/general

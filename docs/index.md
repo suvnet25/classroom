@@ -9,12 +9,10 @@ hide:
 Välkommen till **suvnets** site för objektorienterad programmering i C# och .NET!
 Här hittar du all planering för kursen, lektion för lektion, med anteckningar, länkar till material och övningar. Har ni egna idéer på vad som kan vara bra att ha med så är det bara att säga till. 
 
-Det finns *tre viktiga sektioner* här:
+Siten är uppdelad i två stora delar: 
 
-1. [OOP1](planering/oop/index.md) - Det här är vad första kursen innehåller.
+1. Planering. Här finns samtliga kursers lektionsinnehåll, veckoplanering, labbar och info.
 2. [Studiematerial](material/index.md) - Här finns material om allt vi går igenom i kursen.
-3. Veckoplaneringen du ser till vänster, med lektioner och tillhörande övningar.
-
 
 Utöver denna site så finns några fler ställen att hålla reda på:
 
