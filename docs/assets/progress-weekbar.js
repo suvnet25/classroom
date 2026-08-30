@@ -27,10 +27,16 @@
 
     const msPerDay = 24 * 60 * 60 * 1000;
     const daysSinceStart = Math.floor((now - start) / msPerDay);
-    const currentWeek =
-      clamp(Math.floor(daysSinceStart / 7) + 1, 1, totalWeeks);
 
-    const percent = clamp((currentWeek / totalWeeks) * 100, 0, 100);
+    // Before the course starts, show 0% progress and no completed weeks.
+    const hasStarted = now >= start;
+    const currentWeek = hasStarted
+      ? clamp(Math.floor(daysSinceStart / 7) + 1, 1, totalWeeks)
+      : 0;
+
+    const percent = hasStarted
+      ? clamp((currentWeek / totalWeeks) * 100, 0, 100)
+      : 0;
 
     // Lägg baren överst i innehållet
     const content =
@@ -56,7 +62,7 @@
         <div class="fill" style="width:${percent}%"></div>
         <div class="week-markers">${weekMarkersHTML}</div>
       </div>
-      <div class="label">Vecka ${currentWeek} av ${totalWeeks} • ${Math.round(percent)}% klart</div>
+      <div class="label">${hasStarted ? `Vecka ${currentWeek} av ${totalWeeks}` : `Inte startat ännu.`} • ${Math.round(percent)}% klart</div>
     `;
 
     content.prepend(host);
