@@ -30,12 +30,15 @@
 
     // Before the course starts, show 0% progress and no completed weeks.
     const hasStarted = now >= start;
+    const completedWeeks = hasStarted
+      ? clamp(Math.floor(daysSinceStart / 7), 0, totalWeeks)
+      : 0;
     const currentWeek = hasStarted
       ? clamp(Math.floor(daysSinceStart / 7) + 1, 1, totalWeeks)
       : 0;
 
     const percent = hasStarted
-      ? clamp((currentWeek / totalWeeks) * 100, 0, 100)
+      ? clamp((completedWeeks / totalWeeks) * 100, 0, 100)
       : 0;
 
     // Lägg baren överst i innehållet
