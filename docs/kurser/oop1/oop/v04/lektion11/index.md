@@ -16,8 +16,8 @@
 ## Länkar
 
 * [Microsoft: Namespaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces)
-* [**Material:** Primary Constructors](../../../../material/cs/oop/constructors.md#primary-constructors)
-* [**Material:** Polymorfism](../../../../material/cs/oop/polymorphism.md)
+* [**Material:** Primary Constructors](../../../../../material/cs/oop/constructors.md#primary-constructors)
+* [**Material:** Polymorfism](../../../../../material/cs/oop/polymorphism.md)
 
 ---
 

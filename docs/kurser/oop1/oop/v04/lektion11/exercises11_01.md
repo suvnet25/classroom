@@ -5,7 +5,7 @@ tags:
 
 # Övning 11 Arv
 
-> Se [avsnittet om arv](../../../../material/cs/oop/inheritance.md) för att se hur det skrivs i kod.
+> Se [avsnittet om arv](../../../../../material/cs/oop/inheritance.md) för att se hur det skrivs i kod.
 
 I många system är det vanligt att det finns en basklass som innehåller tex ett ID. Låt oss skapa en basklass `Entity` som innehåller ett ID, och låt sedan `Contact` ärva från den.
 

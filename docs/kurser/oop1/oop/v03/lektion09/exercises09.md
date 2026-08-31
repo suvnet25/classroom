@@ -8,9 +8,9 @@ tags:
 I den här övningen får du träna på att använda Git för att spara och hantera filer. Vi börjar med enkla textfiler (ingen C#-kod behövs).
 Målet är att lära sig de vanligaste kommandona och situationerna.
 
-Använd [dokumentationen](../../../../material/misc/git/index.md) och internet för att hitta svar på frågor och lösningar på problem.  
+Använd [dokumentationen](../../../../../material/misc/git/index.md) och internet för att hitta svar på frågor och lösningar på problem.  
 
-Speciellt [listan på kommandon](../../../../material/misc/git/commands.md) kan vara användbar.
+Speciellt [listan på kommandon](../../../../../material/misc/git/commands.md) kan vara användbar.
 
 ## **Del 1: Grunder**
 

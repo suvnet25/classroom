@@ -12,4 +12,4 @@
 
 ## Länkar
 
-* [**Material:** Enums](../../../../material/cs/basics/enums.md)
+* [**Material:** Enums](../../../../../material/cs/basics/enums.md)

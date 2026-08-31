@@ -5,7 +5,7 @@ tags:
 
 # Övning 03 String
 
-Kika på dokumentationen om [string-metoder i .Net](../../../../material/cs/standardbibliotek/string.md).
+Kika på dokumentationen om [string-metoder i .Net](../../../../../material/cs/standardbibliotek/string.md).
 
 #### 1. Räkna bokstäver
 Skriv ett program som frågar användaren om deras namn och skriver ut hur många tecken det innehåller.

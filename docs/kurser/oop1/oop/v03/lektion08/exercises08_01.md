@@ -73,7 +73,7 @@ Rita ett enkelt "klassdiagram" över de objekt ni identifierat. Papper och penna
 
 > Titta på sammanställningen och ställ er frågan: Har vi fått med alla viktiga objekt? Har vi missat något objekt som kanske inte är så självklart? Är det några objekt som är onödiga? Har vi fått med de viktigaste egenskaperna och metoderna?
 
-Vill du se ett exempel på hur klassdiagram kan se ut? Kolla in [denna sida om UML](../../../../material/general/methodology/uml.md).
+Vill du se ett exempel på hur klassdiagram kan se ut? Kolla in [denna sida om UML](../../../../../material/general/methodology/uml.md).
 
 ---
 

@@ -5,7 +5,7 @@ tags:
 
 # Övning 03 File
 
-Kika på dokumentationen om [File-klassen](../../../../material/cs/standardbibliotek/file.md).
+Kika på dokumentationen om [File-klassen](../../../../../material/cs/standardbibliotek/file.md).
 
 Gör ett program som använder någon av funktionerna i `File`-klassen och/eller `String`-klassen för att lösa något av följande problem:
 

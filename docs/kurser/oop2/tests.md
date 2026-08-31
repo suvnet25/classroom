@@ -5,6 +5,8 @@ tags:
 
 # Övningar
 
+## Lambda
+
 ??? Lambda
 
     === "Övningar"

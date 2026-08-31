@@ -17,5 +17,5 @@
 
 ## Länkar
 
-* [**Material:** Properties](../../../../material/cs/oop/properties.md)
-* [**Material:** Konstruktorer](../../../../material/cs/oop/constructors.md)
+* [**Material:** Properties](../../../../../material/cs/oop/properties.md)
+* [**Material:** Konstruktorer](../../../../../material/cs/oop/constructors.md)

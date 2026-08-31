@@ -14,4 +14,4 @@
 
 ## Länkar
 
-* [**Material:** SOLID](../../../../material/cs/oop/solid.md)
+* [**Material:** SOLID](../../../../../material/cs/oop/solid.md)

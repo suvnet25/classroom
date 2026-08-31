@@ -5,8 +5,8 @@ tags:
 
 # Övning 05 Metoder
 
-Kika på dokumentationen om [String](../../../../material/cs/standardbibliotek/string.md) och 
-[File](../../../../material/cs/standardbibliotek/file.md) om du behöver hjälp med strängar och filhantering.
+Kika på dokumentationen om [String](../../../../../material/cs/standardbibliotek/string.md) och 
+[File](../../../../../material/cs/standardbibliotek/file.md) om du behöver hjälp med strängar och filhantering.
 
 ## En meny i flera steg
 
@@ -25,7 +25,7 @@ Val:
 Användaren ska kunna skriva in 1, 2 eller 3. Detta ska hända i de olika fallen: 
 
 1. Dagens datum och tid skrivs ut.[^1] Sätt texten till blå text.
-[^1]: Använd `DateTime.Now` för att få dagens datum och tid. Läs mer [här](../../../../material/cs/standardbibliotek/datetime.md).
+[^1]: Använd `DateTime.Now` för att få dagens datum och tid. Läs mer [här](../../../../../material/cs/standardbibliotek/datetime.md).
 2. Programmet utför samma sak som i övning 1.
 3. Programmet avslutas.
 
@@ -85,7 +85,7 @@ Se till så att metoderna blir "rena", dvs att de bara gör en sak var. Om en me
 
 När du är klar med denna övning har du gjotr vad som kallas för att **"refaktorera"** koden, alltså att ändra dess struktur utan att ändra dess funktionalitet. Det är en viktig del av programmering att kunna göra koden mer läsbar och återanvändbar genom att bryta ut delar i metoder.
 
-[^1]: Du kan använda `File.Exists(path)` för att kolla om filen finns innan du försöker läsa in den, på så vis slipper du att ditt program kraschar om filen inte finns. Läs mer [här](../../../../material/cs/standardbibliotek/file.md).
+[^1]: Du kan använda `File.Exists(path)` för att kolla om filen finns innan du försöker läsa in den, på så vis slipper du att ditt program kraschar om filen inte finns. Läs mer [här](../../../../../material/cs/standardbibliotek/file.md).
 
 ## Refaktoreringsövning
 

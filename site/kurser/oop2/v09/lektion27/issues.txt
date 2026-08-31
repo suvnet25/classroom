@@ -1,0 +1,19 @@
+Injections:
+1. SQL Injections möjliga i Export Datas username-fält
+2. Stored XSS möjliga i meddelandefält i transaktioner
+
+3. CSRF
+
+4. Broken auth: Ingen begränsning på antalet inloggningsförsök
+
+5. Inga lösenordskrav
+
+6. Lösenord lagras i klartext i databasen
+
+7. Ingen rate limiting
+
+8. Insecure Design: Sekventiella kontonummer och användarid
+
+9. Error Handling: Stacktrace visas om inget meddelande skickas i transaktioner eller felaktig SQL Injection
+
+10. IDOR: Osäker hantering av customerID i osäkra cookies

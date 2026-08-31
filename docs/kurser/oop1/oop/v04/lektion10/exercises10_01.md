@@ -5,7 +5,7 @@ tags:
 
 # Övning 10 Properties
 
-> **OBS:** Se [avsnittet om properties](../../../../material/cs/oop/properties.md) för att se hur det skrivs i kod.
+> **OBS:** Se [avsnittet om properties](../../../../../material/cs/oop/properties.md) för att se hur det skrivs i kod.
 
 ## Steg 1: *Properties* istället för get/set metoder
 

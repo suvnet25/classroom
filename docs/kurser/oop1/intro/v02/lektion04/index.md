@@ -17,4 +17,4 @@ Vi nämnde det kommaseparerade formatet CSV (Comma Separated Values) som är van
 
 ## Relevanta länkar
 
-* [Metoder](../../../../material/cs/basics/methods.md)
+* [Metoder](../../../../../material/cs/basics/methods.md)

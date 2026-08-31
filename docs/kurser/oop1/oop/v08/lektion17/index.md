@@ -19,10 +19,10 @@
 
 ## Relevanta länkar
 
-* [**Material:** Livslängd och scope](../../../../material/cs/syntax/codeblocks.md)
-* [**Material:** Metoder](../../../../material/cs/basics/methods.md)
-* [**Material:** Klasser och objekt](../../../../material/cs/oop/classes.md)
-* [**Material:** Statiska och instansmedlemmar](../../../../material/cs/oop/static.md)
-* [**Material:** Loopar](../../../../material/cs/basics/iteration.md)
-* [**Material:** Indexering](../../../../material/cs/basics/array.md)
-* [**Material:** Värde- och referenstyper](../../../../material/cs/oop/types.md)
+* [**Material:** Livslängd och scope](../../../../../material/cs/syntax/codeblocks.md)
+* [**Material:** Metoder](../../../../../material/cs/basics/methods.md)
+* [**Material:** Klasser och objekt](../../../../../material/cs/oop/classes.md)
+* [**Material:** Statiska och instansmedlemmar](../../../../../material/cs/oop/static.md)
+* [**Material:** Loopar](../../../../../material/cs/basics/iteration.md)
+* [**Material:** Indexering](../../../../../material/cs/basics/array.md)
+* [**Material:** Värde- och referenstyper](../../../../../material/cs/oop/types.md)

@@ -23,4 +23,4 @@
 
 ## Länkar
 
-* [**Material:** Inkapsling](../../../../material/cs/oop/encapsulation.md)
+* [**Material:** Inkapsling](../../../../../material/cs/oop/encapsulation.md)

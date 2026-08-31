@@ -5,7 +5,7 @@ tags:
 
 # Övning 04 Metoder
 
-Relevant dokumentation: [metoder](../../../../material/cs/basics/methods.md).
+Relevant dokumentation: [metoder](../../../../../material/cs/basics/methods.md).
 
 #### 1. PrintHello()
 Skriv en enkel metod som skriver ut "Hello, World!" i konsolen. Anropa sedan metoden tre gånger på raken från din kod. Koden kan heta vad som helst, men tex kan den heta `PrintHello`.

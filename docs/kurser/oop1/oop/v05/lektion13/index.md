@@ -2,4 +2,4 @@
 
 ## Innehåll
 
-* [Lab #2](../../../../examination/Labbar/lab2.md)
+* [Lab #2](../../../../../examination/Labbar%20OOP1/lab2.md)

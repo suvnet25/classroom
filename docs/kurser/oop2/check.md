@@ -12,14 +12,14 @@ Här kan du göra en egenkoll på vad du har koll på just nu och vad du behöve
 * Delegater och lambda
     * Jag kan förklara för någon vad delegater är. 
     * Jag vet vilka olika typer av inbyggda delegater det finns i .NET []()
-    * Jag kan skriva en lambda-funktion [[Testa]](tests.md#övningar) 
+    * Jag kan skriva en lambda-funktion [[Testa]](tests.md#lambda) 
 
 * LINQ
     * Jag kan förklara för någon vad LINQ är och varför det är användbart.
     * Jag kan förklara skillnaden mellan LINQ to Objects och LINQ to SQL.
     * Jag kan med exakthet förklara vad som händer när en LINQ-metod tar emot ett lambda-uttryck.
-    * Jag kan skriva en LINQ-query med Where. [[Testa]](tests.md#övningar_1)
-    * Jag kan skriva en LINQ-query med Select. [[Testa]](tests.md#övningar_1)
+    * Jag kan skriva en LINQ-query med Where. [[Testa]](tests.md#lambda)
+    * Jag kan skriva en LINQ-query med Select. [[Testa]](tests.md#lambda)
 
 * Entity Framework
     * Jag kan förklara vad Entity Framework är och varför det är användbart.

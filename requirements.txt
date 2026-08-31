@@ -1,3 +1,4 @@
-mkdocs>=1.5
-mkdocs-material
+mkdocs==1.6.1
+mkdocs-material==9.7.5
 mkdocs-awesome-nav
+
