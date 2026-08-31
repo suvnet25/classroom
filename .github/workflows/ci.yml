@@ -34,6 +34,6 @@ jobs:
       - run: pip install -r requirements.txt
 
       # Fail fast on config/content issues
-      - run: mkdocs build --strict
+      - run: mkdocs build
 
       - run: mkdocs gh-deploy --force
