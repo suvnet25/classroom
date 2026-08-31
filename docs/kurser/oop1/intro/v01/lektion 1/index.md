@@ -33,12 +33,6 @@ Kolla också in guiderna för
 * [Starta nytt .NET-projekt](https://docs.suvnet.se/%C3%96vrigt/Guider/createproject/)
 * [Auto-save i VS Code](https://docs.suvnet.se/%C3%96vrigt/Guider/autosave/)
 
-Vi snackade också lite om stränghantering och tittade på exempel med `Trim()` och `Replace()`. Vi kommer prata mycket mer om strängar, hur de kan manipuleras och formateras på olika sätt.
-
-Vi snackade också om mindre lyckade projekt, exempelvis vårdystemet Millenium eller lagersystem där utvecklare inte alltid kanske haft så bra koll på verkligheten (Eller i alla fall de som beställt programmet).
-
-Snack om "cognitive load": <https://minds.md/zakirullin/cognitive>
-
 ## Länkar
 
 * [Studiematerial](https://docs.suvnet.se)

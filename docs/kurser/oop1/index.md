@@ -81,21 +81,21 @@ totalWeeks: 14
 Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig själv frågan ibland: Bland de ikryssadeade punkterna nedan, vilka vet jag vad de betyder och hur de fungerar? Skulle jag kunna förklara för någon annan något om det?
 
 ## **Allmänna begrepp**
-- [ ] [Filsystem](material/general/datorkunskap/filesystem.md)
+- [ ] [Filsystem](../../material/general/datorkunskap/filesystem.md)
 - [ ] IDE / Editor / VSCode
-- [ ] [Terminal/Console](material/general/datorkunskap/console.md)
+- [ ] [Terminal/Console](../../material/general/datorkunskap/console.md)
 - [ ] Miljö (Environment)
 - [ ] Ramverk / Framework
-- [ ] [C# och .NET](material/general/dotnet/index.md)
-- [ ] [Kompilering: Källkod / Bytekod / Maskinkod](material/general/dotnet/compilation.md)
+- [ ] [C# och .NET](../../material/general/dotnet/index.md)
+- [ ] [Kompilering: Källkod / Bytekod / Maskinkod](../../material/general/dotnet/compilation.md)
 - [ ] Algoritmer
 
 ## **Metodik**
-- [ ] [Pseudokod](material/general/methodology/pseudocode.md)
-- [ ] [Flödesscheman](material/general/methodology/flowcharts.md)
-- [ ] [Debugging](material/general/methodology/debugging.md)
-- [ ] [Kodstandard](material/general/methodology/codeconventions.md)
-- [ ] [Parprogrammering](material/general/methodology/pairprogramming.md)
+- [ ] [Pseudokod](../../material/general/methodology/pseudocode.md)
+- [ ] [Flödesscheman](../../material/general/methodology/flowcharts.md)
+- [ ] [Debugging](../../material/general/methodology/debugging.md)
+- [ ] [Kodstandard](../../material/general/methodology/codeconventions.md)
+- [ ] [Parprogrammering](../../material/general/methodology/pairprogramming.md)
 
 ## **C\#**
 
