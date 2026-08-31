@@ -15,7 +15,7 @@
 #### Terminalövning
 Testa om du får detta att fungera och fundera på vilka kommandon du behöver lära dig.
 
-1. Öppna terminalen[^1]
+1. Öppna terminalen
 2. Navigera till din hemkatalog
 3. Skapa en ny mapp som heter `SUVNET`
 4. Navigera in i mappen `SUVNET`
@@ -24,18 +24,16 @@ Testa om du får detta att fungera och fundera på vilka kommandon du behöver l
 
 ## Anteckningar
 
-Läs mer om terminalen [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/console/). 
-Mer om filsystemet [här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/filesystem/)
+Läs mer om terminalen [här](../../../../../material/general/datorkunskap/console.md). 
+Mer om filsystemet [här](../../../../../material/general/datorkunskap/filesystem.md)
 
 Kolla också in guiderna för
 
-* [Installera VS Code och .NET](https://docs.suvnet.se/%C3%96vrigt/Guider/quickstart/)
-* [Starta nytt .NET-projekt](https://docs.suvnet.se/%C3%96vrigt/Guider/createproject/)
-* [Auto-save i VS Code](https://docs.suvnet.se/%C3%96vrigt/Guider/autosave/)
+* [Installera VS Code och .NET](../../../../../material/misc/guides/quickstart.md)
+* [Starta nytt .NET-projekt](../../../../../material/misc/guides/createproject.md)
+* [Auto-save i VS Code](../../../../../material/misc/guides/vscode.md)
 
 ## Länkar
 
-* [Studiematerial](https://docs.suvnet.se)
+* [Studiematerial](../../../../../material/index.md)
 * [The Art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U)
-
-[^1]: Det finns många sätt att öppna terminalen! Om du vill ha en guide [kolla här](https://docs.suvnet.se/Allm%C3%A4nt/Datorkunskap/console/)
