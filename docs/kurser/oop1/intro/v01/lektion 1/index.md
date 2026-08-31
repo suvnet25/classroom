@@ -14,6 +14,7 @@
 
 #### Terminalövning
 Testa om du får detta att fungera och fundera på vilka kommandon du behöver lära dig.
+Läs mer om terminalen [här](../../../../../material/general/datorkunskap/console.md). 
 
 1. Öppna terminalen
 2. Navigera till din hemkatalog[^1]
@@ -25,10 +26,9 @@ Testa om du får detta att fungera och fundera på vilka kommandon du behöver l
 
 ## Anteckningar
 
-Läs mer om terminalen [här](../../../../../material/general/datorkunskap/console.md). 
-Mer om filsystemet [här](../../../../../material/general/datorkunskap/filesystem.md)
+Mer om filsystemet [här](../../../../../material/general/datorkunskap/filesystem.md)  
 
-Kolla också in guiderna för
+Kolla också in guiderna för detta:    
 
 * [Installera VS Code och .NET](../../../../../material/misc/guides/quickstart.md)
 * [Starta nytt .NET-projekt](../../../../../material/misc/guides/createproject.md)
