@@ -5,10 +5,19 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
 
   {# --- Vecko-progress (som du redan har) --- #}
-  {% if page and page.meta and page.meta.weekProgress %}
+  {% if page and page.meta %}
+    {% set week_progress = page.meta['weekProgress'] if 'weekProgress' in page.meta else (page.meta['weekprogress'] if 'weekprogress' in page.meta else false) %}
+    {% set start_date = page.meta['startDate'] if 'startDate' in page.meta else (page.meta['startdate'] if 'startdate' in page.meta else '') %}
+    {% set total_weeks = page.meta['totalWeeks'] if 'totalWeeks' in page.meta else (page.meta['totalweeks'] if 'totalweeks' in page.meta else '') %}
+  {% else %}
+    {% set week_progress = false %}
+    {% set start_date = '' %}
+    {% set total_weeks = '' %}
+  {% endif %}
+  {% if week_progress and start_date and total_weeks %}
     <meta name="week-progress" content="true">
-    <meta name="start-date" content="{{ page.meta.startDate }}">
-    <meta name="total-weeks" content="{{ page.meta.totalWeeks }}">
+    <meta name="start-date" content="{{ start_date }}">
+    <meta name="total-weeks" content="{{ total_weeks }}">
   {% endif %}
 
   {# --- Kunskapskoll / checklist (bara på sidor som har checklist: true) --- #}
@@ -20,10 +29,6 @@
 {# Lägg JS sist i body så att DOM finns #}
 {% block scripts %}
   {{ super() }}
-
-  {% if page and page.meta and page.meta.weekProgress %}
-    <script src="{{ 'assets/week-progress.js' | url }}"></script>
-  {% endif %}
 
   {% if page and page.meta and page.meta.checklist %}
     <script src="{{ 'assets/kc-checklist.js' | url }}"></script>

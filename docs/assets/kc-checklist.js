@@ -39,9 +39,9 @@
     const progressBar = root.querySelector(".kc-progress-bar");
     if (progressBar) {
       const fill = progressBar.querySelector(".kc-progress-fill");
-      const text = progressBar.querySelector(".kc-progress-text");
+      const text = progressBar.querySelector(".kc-progress-title");
       if (fill) fill.style.width = percentage + "%";
-      if (text) text.textContent = `${checked} / ${total} (${percentage}%)`;
+      if (text) text.textContent = `Moment ${checked} / ${total} (${percentage}%)`;
     }
   }
 
@@ -65,9 +65,65 @@
     return wrapper;
   }
 
+  function initLegacyChecklistProgress() {
+    if (document.body.dataset.kcLegacyProgressInitialized === "true") return;
+
+    const heading = Array.from(document.querySelectorAll("h1, h2, h3")).find(el => /moment oop1/i.test(el.textContent || ""));
+    const articleRoot = heading ? heading.parentElement : (document.querySelector(".md-content__inner, main") || document.body);
+    const items = Array.from(articleRoot.querySelectorAll("li.task-list-item input[type='checkbox']"));
+    if (!items.length) return;
+
+    const weekProgressBar = document.getElementById("week-progress-bar");
+    const progressBar = document.createElement("div");
+    progressBar.className = "kc-progress-bar";
+    progressBar.dataset.mode = "legacy-checklist";
+    progressBar.innerHTML = `
+      <div class="kc-progress-title">Moment 0 / 0 (0%)</div>
+      <div class="kc-progress-track">
+        <div class="kc-progress-fill"></div>
+      </div>
+    `;
+
+    if (weekProgressBar && weekProgressBar.parentNode) {
+      weekProgressBar.parentNode.insertBefore(progressBar, weekProgressBar.nextSibling);
+    } else if (heading && heading.parentNode) {
+      heading.parentNode.insertBefore(progressBar, heading.nextSibling);
+    } else {
+      const firstChecklist = items[0].closest("ul,ol");
+      if (!firstChecklist || !firstChecklist.parentNode) return;
+      firstChecklist.parentNode.insertBefore(progressBar, firstChecklist);
+    }
+
+    const update = () => {
+      const all = Array.from(articleRoot.querySelectorAll("li.task-list-item input[type='checkbox']"));
+      const total = all.length;
+      const checked = all.filter(cb => cb.checked).length;
+      const percentage = total > 0 ? Math.round((checked / total) * 100) : 0;
+
+      const fill = progressBar.querySelector(".kc-progress-fill");
+      const text = progressBar.querySelector(".kc-progress-title");
+      if (fill) fill.style.width = percentage + "%";
+      if (text) text.textContent = `Moment ${checked} / ${total} (${percentage}%)`;
+    };
+
+    document.addEventListener("change", (event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLInputElement)) return;
+      if (target.type !== "checkbox") return;
+      if (!target.closest("li.task-list-item")) return;
+      update();
+    });
+
+    document.body.dataset.kcLegacyProgressInitialized = "true";
+    update();
+  }
+
   function initAuto() {
     const root = document.querySelector(".kc-auto[data-kc-scope]");
-    if (!root) return;
+    if (!root) {
+      initLegacyChecklistProgress();
+      return;
+    }
     
     // Prevent double initialization
     if (root.hasAttribute("data-kc-initialized")) return;
@@ -80,10 +136,10 @@
     const progressBar = document.createElement("div");
     progressBar.className = "kc-progress-bar";
     progressBar.innerHTML = `
+      <div class="kc-progress-title">Moment 0 / 0 (0%)</div>
       <div class="kc-progress-track">
         <div class="kc-progress-fill"></div>
       </div>
-      <div class="kc-progress-text">0 / 0 (0%)</div>
     `;
     root.insertBefore(progressBar, root.firstChild);
 

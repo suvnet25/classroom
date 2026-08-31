@@ -2,29 +2,32 @@
 
 /* Progress bar */
 .kc-progress-bar {
-  margin-bottom: 2rem;
+  margin: 0 0 1.5rem;
   width: 100%;
 }
 
-.kc-progress-text {
-  margin-top: 0.5rem;
+.kc-progress-title {
+  margin: 0 0 0.5rem;
   font-weight: 400;
-  text-align: center;
-  font-size: 0.9em;
-  color: var(--md-default-fg-color);
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 .kc-progress-track {
-  height: 0.75rem;
-  background-color: var(--md-default-fg-color--lightest);
-  border-radius: 0.75rem;
+  height: 0.8rem;
+  background:rgba(0,0,0,0.4);
+  border: 1px solid rgba(55, 65, 81, 0.12);
+  border-radius: 999px;
   overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.18);
 }
 
 .kc-progress-fill {
   height: 100%;
-  background: #00c853;
-  border-radius: 0.75rem;
+  background:#868ea0;
+  border-radius: 999px;
   transition: width 0.3s ease;
   width: 0%;
 }

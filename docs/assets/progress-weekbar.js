@@ -1,11 +1,7 @@
 (function () {
   function initProgressBar() {
     console.log("Progress Weekbar script running...");
-    
-    // Ta bort tidigare bar om den finns
-    const existingBar = document.getElementById("week-progress-bar");
-    if (existingBar) existingBar.remove();
-    
+
     const weekProgressMeta = document.querySelector('meta[name="week-progress"]');
     if (!weekProgressMeta) return;
 
@@ -45,6 +41,11 @@
     const content =
       document.querySelector(".md-content__inner") ||
       document.querySelector("main");
+    if (!content) return;
+
+    // Ta bort tidigare bar först när vi vet att sidan verkligen ska ha en veckobar.
+    const existingBar = document.getElementById("week-progress-bar");
+    if (existingBar) existingBar.remove();
 
     const host = document.createElement("div");
     host.id = "week-progress-bar";
@@ -61,11 +62,11 @@
     }
 
     host.innerHTML = `
+      <div class="progress-title">${hasStarted ? `Vecka ${currentWeek} av ${totalWeeks} • ${Math.round(percent)}% klart` : `Vecka 0 av ${totalWeeks} • 0% klart`}</div>
       <div class="bar-container">
         <div class="fill" style="width:${percent}%"></div>
         <div class="week-markers">${weekMarkersHTML}</div>
       </div>
-      <div class="label">${hasStarted ? `Vecka ${currentWeek} av ${totalWeeks}` : `Inte startat ännu.`} • ${Math.round(percent)}% klart</div>
     `;
 
     content.prepend(host);
@@ -73,7 +74,7 @@
 
   // Kör vid initial laddning
   document.addEventListener("DOMContentLoaded", initProgressBar);
-  
+
   // Kör vid MkDocs Material instant navigation
-  document$.subscribe(initProgressBar);
+  if (window.document$) window.document$.subscribe(initProgressBar);
 })();
