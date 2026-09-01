@@ -3,6 +3,25 @@ tags:
   - OOP1-Övning
 ---
 
+# Pseudokod
+
+### Exempel 1 på pseudokod
+
+```
+SKAPA en variabel som heter INPUT och sätt den till "Hej"
+LOOPA oändligt:
+    SKRIV UT INPUT
+```
+
+### Exempel 2 på pseudokod
+
+```
+IF INPUT är lika med "Hej"
+    SKRIV UT "Du skrev Hej!"
+ELSE
+    SKRIV UT "Du skrev inte Hej!"
+```
+
 # Övning 03 Pseudokod
 
 #### Övning 1
