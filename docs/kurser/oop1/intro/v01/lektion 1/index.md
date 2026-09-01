@@ -21,8 +21,10 @@ Läs mer om terminalen [här](../../../../../material/general/datorkunskap/conso
 3. Skapa en ny mapp som heter `SUVNET`
 4. Navigera in i mappen `SUVNET`
 5. Skapa en ny mapp som heter `OOP1` och gå in i den
-6. Skapa ett nytt projekt med kommandot `dotnet new console -n Lektion2`
-7. Start VS Code i denna mapp genom att skriva `code .` i terminalen
+6. Skapa ett nytt projekt med kommandot `dotnet new console -n Lektion2`  
+   En ny mapp med namnet `Lektion2` skapas. Den innehåller en fil som heter `Program.cs` och en fil som heter `Lektion2.csproj`.
+7. Gå in i mappen `Lektion2` med kommandot `cd Lektion2`.
+8. Start VS Code i denna mapp genom att skriva `code .` i terminalen.
 
 ## Anteckningar
 
