@@ -78,16 +78,16 @@ totalWeeks: 14
 
 # Moment OOP1
 
-Det vi har gått igenom hittils i kursen är grönmarkerat nedan. Ställ dig själv frågan ibland: Bland de ikryssadeade punkterna nedan, vilka vet jag vad de betyder och hur de fungerar? Skulle jag kunna förklara för någon annan något om det?
+Det vi har gått igenom hittills i kursen är grönmarkerat nedan. Ställ dig själv frågan ibland: Bland de ikryssade punkterna nedan, vilka vet jag vad de betyder och hur de fungerar? Skulle jag kunna förklara för någon annan något om det?
 
 ## **Allmänna begrepp**
-- [ ] [Filsystem](../../material/general/datorkunskap/filesystem.md)
-- [ ] IDE / Editor / VSCode
-- [ ] [Terminal/Console](../../material/general/datorkunskap/console.md)
-- [ ] Miljö (Environment)
-- [ ] Ramverk / Framework
-- [ ] [C# och .NET](../../material/general/dotnet/index.md)
-- [ ] [Kompilering: Källkod / Bytekod / Maskinkod](../../material/general/dotnet/compilation.md)
+- [x] [Filsystem](../../material/general/datorkunskap/filesystem.md)
+- [x] IDE / Editor / VSCode
+- [x] [Terminal/Console](../../material/general/datorkunskap/console.md)
+- [x] Miljö (Environment)
+- [x] Ramverk / Framework
+- [x] [C# och .NET](../../material/general/dotnet/index.md)
+- [x] [Kompilering: Källkod / Bytekod / Maskinkod](../../material/general/dotnet/compilation.md)
 - [ ] Algoritmer
 
 ## **Metodik**

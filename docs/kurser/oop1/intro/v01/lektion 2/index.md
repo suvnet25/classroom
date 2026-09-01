@@ -18,6 +18,8 @@
 * Arrayer (0.5h)
 * Loopar (1h)
 
+En tutorial hos Microsoft: [https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/)
+
 ---
 
 #### Anteckningar
