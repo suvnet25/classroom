@@ -5,13 +5,13 @@
 * Lite repetition av föregående lektion
 * Den där for-loopen (1h)
 * Debuggern (1h)
-* Problemlösning - Hur gör man?
-* Pseudokod och flödesscheman
+* [Problemlösning](../../../../../material/general/methodology/problemsolving.md) - Hur gör man?
+* [Pseudokod](../../../../../material/general/methodology/pseudocode.md) och [flödesscheman](../../../../../material/general/methodology/flowcharts.md)
 * Övningar i pseudokod och C# (1h)
 * Vanliga .NET Bibliotek och några av deras funktioner
-    * Random
-    * File.*
-    * String
+    * [Random](../../../../../material/cs/standardbibliotek/random.md)
+    * [File.*](../../../../../material/cs/standardbibliotek/file.md)
+    * [String](../../../../../material/cs/standardbibliotek/string.md)
 * Övningar (3h)
 
 ---

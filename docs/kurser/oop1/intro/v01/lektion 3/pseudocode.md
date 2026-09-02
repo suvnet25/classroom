@@ -36,26 +36,7 @@ Tänk dig ett program där användaren matar in ett ord. Ordet visas på skärme
 1. Skriv pseudokod för programmet som kommentarer
 2. Skriv koden för programmet i C#
 
-#### Övning 3  
-Tänk dig ett progam som ser ut så här när det körs:
-```
-Ange en X-koordinat (1-5): 4
-Ange en Y-koordinat (1-5): 3
-
-y
-5 *
-4 *
-3 *       X
-2 *
-1 *
-0 * * * * * *
-  0 1 2 3 4 5 x
-```
-
-* Skriv pseudokod för programmet som kommentarer
-* Skriv koden för programmet i C#
-
-#### Övning 4 
+#### Övning 3 
 Skriv programmet för denna pseudokod:
 
 ```
@@ -73,6 +54,25 @@ LOOPA oändligt
         SKRIV UT "Det där var inte ett giltigt tal!"
 SKRIV UT "Summan av talen är: " + SUMMA
 ```
+
+#### Övning 4  
+Tänk dig ett progam som ser ut så här när det körs:
+```
+Ange en X-koordinat (1-5): 4
+Ange en Y-koordinat (1-5): 3
+
+y
+5 *
+4 *
+3 *       X
+2 *
+1 *
+0 * * * * * *
+  0 1 2 3 4 5 x
+```
+
+* Skriv pseudokod för programmet som kommentarer
+* Skriv koden för programmet i C#  
 
 ??? "Exempellösning på uppgift 1"
     ```csharp
@@ -95,9 +95,9 @@ SKRIV UT "Summan av talen är: " + SUMMA
     På vilka andra sätt kan du lösa uppgiften?
 
 
-??? "Exempellösning på övning 3"
+??? "Exempellösning på övning 4"
 
-??? "Mer extrem lösning på övning 3"
+??? "Mer extrem lösning på övning 4"
     ```csharp
     Console.Write("Ange en X-koordinat (1-5): ");
     int x = int.Parse(Console.ReadLine());
