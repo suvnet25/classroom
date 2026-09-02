@@ -4,7 +4,6 @@
 
 * Veckans enkät!
 * Vad ska ni göra hemma?
-* Ledningsgruppen stormar in!
 * Introduktion till metoder (1h)
 * Övningar på metoder (2h)
 
