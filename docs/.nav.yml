@@ -1,9 +1,4 @@
 nav:
-  - Planering: 
-    - index.md
-    - Kurser: kurser
-    - Extra övningar: extra
-    - Kategorier: categories.md
   - Material:
     - material/index.md
     - Allmänt: material/general

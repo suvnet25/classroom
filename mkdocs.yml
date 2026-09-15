@@ -86,7 +86,7 @@ extra:
     title: Cookie consent
     description: >- 
       Hjälp mig förstå hur denna dokumentation används genom att tillåta cookies! På så vis kan jag förbättra denna dokumentation. Tack <3
-copyright: Copyright &copy; 2024 - 2025 Gustav Bodell
+copyright: Copyright &copy; 2024 - 2026 Gustav Bodell
 plugins:
     - tags
     - meta
