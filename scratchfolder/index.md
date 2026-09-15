@@ -1,5 +1,5 @@
 ---
-  title: Börja här!
+  title: Hem
   description: Kom igång med C# och .NET
 ---
 
@@ -27,7 +27,7 @@ Versionshantering och samarbete med GIT och GitHub.
 Framförallt enhetstestning och TDD (Test Driven Development).
 
 #### Övrigt
-Här hittar du
+Här hittar du:
 
 * Länkar
 * Guider
