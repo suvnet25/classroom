@@ -1,64 +1,68 @@
 # Raylib
 
-Kom igång med lite grafikprogrammering med hjälp av [RayLib](https://github.com/MrScautHD/Raylib-CSharp/). Raylib är ett enkelt och lättanvänt bibliotek för att skapa fönster, rita former, hantera input med mera.
+Kom igång med lite grafikprogrammering med hjälp av [raylib-cs](https://github.com/raylib-cs/raylib-cs). Raylib är ett enkelt och lättanvänt bibliotek för att skapa fönster, rita former, hantera input med mera.
 
 För att komma igång snabbt, gör så här:
 
 1. Skapa ett nytt konsolprojekt.
-2. I terminalen, skriv följande kommando för att installera Raylib via NuGet:
-(Obs, du måste stå i projektmappen i terminalen när du kör detta kommando)
+2. I terminalen, skriv följande kommando för att installera raylib-cs via NuGet.  
+   **Obs:** Du måste stå i projektmappen i terminalen när du kör kommandot.
 
 ```bash
-dotnet add package Raylib-CSharp --version 5.0.0
+dotnet add package Raylib-cs --version 8.1.0
 ```
 
 Sedan, i din `Program.cs`, ersätt all kod med följande exempel:
 
-```cs title="Enkelt exedmpel med en cirkel som går att styra med piltangenterna"
-using Raylib_CSharp.Colors;
-using Raylib_CSharp.Rendering;
-using Raylib_CSharp.Windowing;
-using Raylib_CSharp.Interact;
+**Enkelt exempel med en cirkel som går att styra med piltangenterna**
 
-Window.Init(1280, 720, "Basic Window");
-Raylib_CSharp.Time.SetTargetFPS(60);
+```csharp
+using Raylib_cs;
 
-//Startposition för cirkeln:
+const int screenWidth = 1280;
+const int screenHeight = 720;
+const int radius = 25;
+
+Raylib.InitWindow(screenWidth, screenHeight, "Basic Window");
+Raylib.SetTargetFPS(60);
+
+// Startposition för cirkeln:
 int x = 600;
 int y = 400;
 
-while (!Window.ShouldClose())
+while (!Raylib.WindowShouldClose())
 {
-    Graphics.BeginDrawing();
-    Graphics.ClearBackground(Color.Black);
+    if (Raylib.IsKeyDown(KeyboardKey.Up)) y -= 1;
+    if (Raylib.IsKeyDown(KeyboardKey.Left)) x -= 1;
+    if (Raylib.IsKeyDown(KeyboardKey.Down)) y += 1;
+    if (Raylib.IsKeyDown(KeyboardKey.Right)) x += 1;
 
-    Graphics.DrawText("Basic Window!", 10, 10, 20, Color.White);
+    // För att cirkeln inte ska försvinna utanför skärmen:
+    if (x < radius) x = radius;
+    if (x > screenWidth - radius) x = screenWidth - radius;
+    if (y < radius) y = radius;
+    if (y > screenHeight - radius) y = screenHeight - radius;
 
-    if (Input.IsKeyDown(KeyboardKey.Up)) y -= 1;
-    if (Input.IsKeyDown(KeyboardKey.Left)) x -= 1;
-    if (Input.IsKeyDown(KeyboardKey.Down)) y += 1;
-    if (Input.IsKeyDown(KeyboardKey.Right)) x += 1;
+    Raylib.BeginDrawing();
 
-    //För att cirkeln inte ska försvinna utanför skärmen:
-    if (x < 0) x = 0;
-    if (x > 1280) x = 1280;
-    if (y < 0) y = 0;
-    if (y > 720) y = 720;
+    Raylib.ClearBackground(Color.Black);
 
+    Raylib.DrawText("Basic Window!", 10, 10, 20, Color.White);
+    Raylib.DrawCircle(x, y, radius, Color.Maroon);
 
-    Graphics.DrawCircle(x, y, 25, Color.Maroon);
-
-    Graphics.EndDrawing();
+    Raylib.EndDrawing();
 }
+
+Raylib.CloseWindow();
 ```
 
 Kör programmet med `dotnet run` i terminalen. Du bör nu se ett fönster med en cirkel som du kan styra med piltangenterna.
 
-Detta är bara början! Läs mer om alla funktioner [här](https://github.com/MrScautHD/Raylib-CSharp/wiki)
+Detta är bara början! Läs mer om raylib-cs [här](https://github.com/raylib-cs/raylib-cs/wiki).
 
-# Enklare saker att testa på egen hand:
+# Enklare saker att testa på egen hand
 
-* Skapa en rektangel som kan styras med tangenterna W, A, S, och D.
-* Skapa en for-loop som ritar 10 cirklar på rad med olika färger.
-* Skapa ett program där användaren kan klicka med musen för att placera ut cirklar på skärmen.
-* Skapa ett enkelt spel där en cirkel ska undvika att bli träffad av fallande rektanglar.
+- Skapa en rektangel som kan styras med tangenterna W, A, S och D.
+- Skapa en `for`-loop som ritar 10 cirklar på rad med olika färger.
+- Skapa ett program där användaren kan klicka med musen för att placera ut cirklar på skärmen.
+- Skapa ett enkelt spel där en cirkel ska undvika att bli träffad av fallande rektanglar.
